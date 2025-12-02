@@ -121,4 +121,4 @@ Este trabalho é parte de uma tese/dissertação acadêmica.
 ---
 
 **Última atualização:** Dezembro 2025
-**Repositório GitHub:** [Link será adicionado após criação]
+**Repositório GitHub:** https://github.com/ldvsantos-uefs/revisao-sistematica-geotexteis
