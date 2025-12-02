@@ -62,7 +62,7 @@ $$
 
 Para *Typha* (L/C = 0,46), isso resulta em $k$ = 0,0118 dia⁻¹, o que implica uma meia-vida de 59 dias sob condições mesofílicas (25°C, 60% de umidade relativa). Em contraste, *Syagrus* (L/C = 0,67) apresenta $k$ = 0,0082 dia⁻¹ (meia-vida = 85 dias), consistente com observações de campo onde geotêxteis de *Syagrus* não tratados mantiveram integridade estrutural após 120 dias de exposição, enquanto os geotêxteis de *Typha* falharam em 60 dias.
 
-**Tabela Suplementar 1.** Perfil químico-mecânico comparativo de fibras lignocelulósicas tropicais para geotêxteis biodegradáveis.
+**Tabela 1.** Perfil químico-mecânico comparativo de fibras lignocelulósicas tropicais para geotêxteis biodegradáveis.
 
 | Espécie | Celulose (%) | Lignina (%) | L/C | Tração inicial (N/mm) | Deformação (%) | k (dia⁻¹) | t½ (dias) | VUF P₁₀ (dias)† |
 |---------|-------------|-------------|-----|----------------------|----------------|-----------|-----------|-----------------|
@@ -122,7 +122,7 @@ Ainda, para as fibras de *Typha domingensis* a deformação por ruptura (ε) apr
 Essa combinação singular de propriedades mecânicas encontra sua justificativa nas transformações estruturais nanoscópicas reveladas pela análise morfométrica quantitativa (Tabela 1). Contrariamente à expectativa simplista de preenchimento de poros, a mercerização com 6% NaOH promoveu reorganização da arquitetura porosa através da consolidação de múltiplos poros pequenos em cavidades maiores e mais eficientes (área média +73,6%), com melhoria simultânea da circularidade (+5,9%) e redução da heterogeneidade dimensional (desvio padrão angular -24,4%). Esse fenômeno de "otimização estrutural controlada" resulta em porosidade total ligeiramente aumentada (+7,6%) apesar da redução no número de poros (-42,1%), indicando que o tratamento não atua como simples agente de vedação, mas como modificador estrutural que maximiza a eficiência do transporte capilar.
 
 
-**Tabela 1.** Efeitos comparativos da mercerização alcalina e tratamentos com resina sobre as características morfológicas e estruturais de fibras de *Typha domingensis*.
+**Tabela 2.** Efeitos comparativos da mercerização alcalina e tratamentos com resina sobre as características morfológicas e estruturais de fibras de *Typha domingensis*.
 
 | **Parâmetro** | **Fibras Não Tratadas** | **NaOH 6%** | **Resina Monocamada** | **Variação (%)** |
 |---|---|---|---|---|
@@ -222,7 +222,7 @@ Enquanto o nitrogênio obedece a essa lógica de reserva temporária, a mobiliza
 O produto final dessa intensa atividade biológica e enzimática é a cimentação física do solo, onde exopolissacarídeos microbianos e pontes de cátions (Ca²⁺, Fe³⁺) unem-se ao entrelaçamento fibroso para aumentar a estabilidade dos agregados [@Kemper1986; @Rillig2002]. Dados de campo confirmam essa reestruturação, com agregados estáveis em água (AEA > 0,25 mm) saltando de 42,1 ± 3,8% para 58,3 ± 4,2% (p = 0,003) e o diâmetro médio ponderado crescendo 42,5% (0,87 mm para 1,24 mm). Essa melhoria estrutural reflete-se diretamente na equação de perda de solo (USLE), onde o ganho de 15 pontos percentuais em AEA abate a erodibilidade (fator K) em 30–40%.
 
 
-**Tabela 2.** Parâmetros de textura superficial e propriedades estruturais do solo após 180 dias de incubação com geotêxteis de *Typha domingensis*.
+**Tabela 3.** Parâmetros de textura superficial e propriedades estruturais do solo após 180 dias de incubação com geotêxteis de *Typha domingensis*.
 
 | **Parâmetro** | **Controle (sem geotêxtil)** | **Geotêxtil *Typha* 6% NaOH** | **Δ absoluta** | **Δ relativa (%)** | **Significância** |
 |---|---|---|---|---|---|
