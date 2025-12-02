@@ -1,0 +1,36 @@
+# Arquivos temporários
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de backup do VS Code
+*.vscode/settings.json.bak
+
+# Arquivos de log
+*.log
+
+# Arquivos de dados temporários
+temp/
+cache/
+
+# Arquivos de saída do Pandoc (opcional - descomente se quiser gerar sempre)
+# *.docx
+# *.pdf
+
+# Arquivos de backup do BibTeX
+*.bib.bak
+*.bib.bak2
+
+# Arquivos de dados SPSS (se não quiser versionar)
+# *.sav
+# *.spv
+# *.spo
+
+# Arquivos de dados CSV grandes (se não quiser versionar)
+# Dados_*.csv

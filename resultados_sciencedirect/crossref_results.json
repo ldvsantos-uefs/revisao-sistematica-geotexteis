@@ -1,0 +1,1891 @@
+{
+  "results": {
+    "Wu1979": {
+      "doi": "10.1139/t79-003",
+      "title": "Strength of tree roots and landslides on Prince of Wales Island, Alaska",
+      "authors": [
+        {
+          "given": "Tien H.",
+          "family": "Wu",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "William P.",
+          "family": "McKinnell III",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Douglas N.",
+          "family": "Swanston",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "editor": null,
+      "container-title": [
+        "Canadian Geotechnical Journal"
+      ]
+    },
+    "Holanda2021": {
+      "doi": "10.3389/frsus.2025.1552255",
+      "title": "Resistance of Syagrus coronata fibers in waterproof-coated natural geotextiles under environmental degradation",
+      "authors": [
+        {
+          "given": "Francisco S. R.",
+          "family": "Holanda",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "Luiz D. V.",
+          "family": "Santos",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Eliana M.",
+          "family": "Sussuchi",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Alceu",
+          "family": "Pedrotti",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "José F.",
+          "family": "Santos",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Emersson G.",
+          "family": "Silva",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Cátia S.",
+          "family": "Fontes",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Renisson N.",
+          "family": "Araujo Filho",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "editor": null,
+      "container-title": [
+        "Frontiers in Sustainability"
+      ]
+    },
+    "Fontes2021": {
+      "doi": "10.1038/s41598-024-56978-3",
+      "title": "Resistance of the fiber-derived geotextile from Typha domingensis submitted to field degradation",
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-3575-8105",
+          "authenticated-orcid": false,
+          "given": "Francisco Sandro Rodrigues",
+          "family": "Holanda",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8659-8557",
+          "authenticated-orcid": false,
+          "given": "Luiz Diego Vidal",
+          "family": "Santos",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8701-0118",
+          "authenticated-orcid": false,
+          "given": "Jeangela Carla Rodrigues De",
+          "family": "Melo",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4982-1913",
+          "authenticated-orcid": false,
+          "given": "Gizelio Menezes",
+          "family": "Boge",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9425-0921",
+          "authenticated-orcid": false,
+          "given": "Eliana Midori",
+          "family": "Sussuchi",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5280-9763",
+          "authenticated-orcid": false,
+          "given": "Brenno Lima",
+          "family": "Nascimento",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0111-1699",
+          "authenticated-orcid": false,
+          "given": "Marcos Vinícius Quirino dos",
+          "family": "Santos",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Marla Ibrahim Uehbe de",
+          "family": "Oliveira",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "editor": null,
+      "container-title": [
+        "Scientific Reports"
+      ]
+    },
+    "Brady2009": {
+      "doi": "10.22533/at.ed.653182002",
+      "title": "Elementos da natureza e propriedades do solo",
+      "authors": [
+        {
+          "given": "Atena",
+          "family": "Editora",
+          "sequence": "first",
+          "affiliation": []
+        }
+      ],
+      "editor": null,
+      "container-title": null
+    },
+    "Lorenzo2024_Typha": {
+      "doi": "10.1016/0144-4565(88)90073-x",
+      "title": "Production of cattail (Typha spp.) biomass in Minnesota, USA",
+      "authors": [
+        {
+          "given": "D.R.",
+          "family": "Dubbe",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "E.G.",
+          "family": "Garver",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "D.C.",
+          "family": "Pratt",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "editor": null,
+      "container-title": [
+        "Biomass"
+      ]
+    },
+    "Kemper1986": {
+      "doi": "10.2136/sssabookser5.1.2ed.c17",
+      "title": "Aggregate Stability and Size Distribution",
+      "authors": [
+        {
+          "given": "W. D.",
+          "family": "Kemper",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "R. C.",
+          "family": "Rosenau",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "editor": null,
+      "container-title": [
+        "SSSA Book Series",
+        "Methods of Soil Analysis"
+      ]
+    },
+    "Rillig2002": {
+      "doi": "10.1023/a:1014483303813",
+      "title": "The role of arbuscular mycorrhizal fungi and glomalin in soil aggregation: comparing effects of five plant species",
+      "authors": [
+        {
+          "given": "Matthias C.",
+          "family": "Rillig",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "Sara F.",
+          "family": "Wright",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Valerie T.",
+          "family": "Eviner",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "editor": null,
+      "container-title": [
+        "Plant and Soil"
+      ]
+    },
+    "Segal1959": {
+      "doi": "10.1177/004051755902901003",
+      "title": "An Empirical Method for Estimating the Degree of Crystallinity of Native Cellulose Using the X-Ray Diffractometer",
+      "authors": [
+        {
+          "given": "L.",
+          "family": "Segal",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Southern Regsoral Research Laboratory,2 New Orkans, Louisiana"
+            }
+          ]
+        },
+        {
+          "given": "J.J.",
+          "family": "Creely",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Southern Regsoral Research Laboratory,2 New Orkans, Louisiana"
+            }
+          ]
+        },
+        {
+          "suffix": "Jr",
+          "given": "A.E.",
+          "family": "Martin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Southern Regsoral Research Laboratory,2 New Orkans, Louisiana"
+            }
+          ]
+        },
+        {
+          "given": "C.M.",
+          "family": "Conrad",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Southern Regsoral Research Laboratory,2 New Orkans, Louisiana"
+            }
+          ]
+        }
+      ],
+      "editor": null,
+      "container-title": [
+        "Textile Research Journal"
+      ]
+    },
+    "Medema2014": {
+      "doi": "10.30638/eemj.2014.201",
+      "title": "INTEGRATING ADAPTIVE LEARNING INTO ADAPTIVE WATER RESOURCES MANAGEMENT",
+      "authors": [
+        {
+          "given": "Jan",
+          "family": "Adamowski",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "McGill University, Department of Bioresource Engineering, 21 111 Lakeshore, Ste Anne de Bellevue, QC, H9X 3V9, Canada"
+            }
+          ]
+        },
+        {
+          "given": "Wietske",
+          "family": "Medema",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "McGill University, Department of Bioresource Engineering, 21 111 Lakeshore, Ste Anne de Bellevue, QC, H9X 3V9, Canada"
+            }
+          ]
+        },
+        {
+          "given": "Stephen",
+          "family": "Light",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "McGill University, Department of Bioresource Engineering, 21 111 Lakeshore, Ste Anne de Bellevue, QC, H9X 3V9, Canada"
+            }
+          ]
+        }
+      ],
+      "editor": null,
+      "container-title": [
+        "Environmental Engineering and Management Journal"
+      ]
+    },
+    "Nilsson1988": {
+      "doi": "10.1007/3-540-32139-x_4",
+      "title": "Wood Cell Wall Degradation",
+      "authors": null,
+      "editor": null,
+      "container-title": [
+        "Wood and Tree Fungi"
+      ]
+    }
+  },
+  "extra": {
+    "deVries2010": {
+      "indexed": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            5
+          ]
+        ],
+        "date-time": "2024-09-05T19:53:09Z",
+        "timestamp": 1725565989905
+      },
+      "publisher-location": "Berlin, Heidelberg",
+      "reference-count": 124,
+      "publisher": "Springer Berlin Heidelberg",
+      "isbn-type": [
+        {
+          "type": "print",
+          "value": "9783642114571"
+        },
+        {
+          "type": "electronic",
+          "value": "9783642114588"
+        }
+      ],
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                2010,
+                8,
+                12
+              ]
+            ],
+            "date-time": "2010-08-12T00:00:00Z",
+            "timestamp": 1281571200000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "http://www.springer.com/tdm"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "link.springer.com"
+        ],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [],
+      "published-print": {
+        "date-parts": [
+          [
+            2011
+          ]
+        ]
+      },
+      "DOI": "10.1007/978-3-642-11458-8_16",
+      "type": "book-chapter",
+      "created": {
+        "date-parts": [
+          [
+            2010,
+            9,
+            13
+          ]
+        ],
+        "date-time": "2010-09-13T09:20:24Z",
+        "timestamp": 1284369624000
+      },
+      "page": "341-355",
+      "update-policy": "http://dx.doi.org/10.1007/springer_crossmark_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "(Hemi-)Cellulose Degrading Enzymes and Their Encoding Genes from Aspergillus and Trichoderma"
+      ],
+      "prefix": "10.1007",
+      "author": [
+        {
+          "given": "Ronald P.",
+          "family": "de Vries",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "Evy",
+          "family": "Battaglia",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Pedro M.",
+          "family": "Coutinho",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Bernard",
+          "family": "Henrissat",
+          "sequence": "additional",
+          "affiliation": []
+        },
+        {
+          "given": "Jaap",
+          "family": "Visser",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2010,
+            8,
+            12
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "16_CR1_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "199",
+          "DOI": "10.1016/S0168-1656(98)00086-8",
+          "volume": "63",
+          "author": "P Ademark",
+          "year": "1998",
+          "unstructured": "Ademark P, Varga A, Medve J, Harjunpaa V, Drakenberg T, Tjerneld F, Stålbrand H (1998) Softwood hemicellulose-degrading enzymes from Aspergillus niger: purification and properties of a β-mannanase. J Biotechnol 63:199–200",
+          "journal-title": "J Biotechnol"
+        },
+        {
+          "key": "16_CR2_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "281",
+          "DOI": "10.1016/S0168-1656(99)00172-8",
+          "volume": "75",
+          "author": "P Ademark",
+          "year": "1999",
+          "unstructured": "Ademark P, Lundqvist J, Hagglund P, Tenkanen M, Torto N, Tjerneld F, Stålbrand H (1999) Hydrolytic properties of a β-mannosidase purified from Aspergillus niger. J Biotechnol 75:281–289",
+          "journal-title": "J Biotechnol"
+        },
+        {
+          "key": "16_CR3_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "2982",
+          "DOI": "10.1046/j.1432-1327.2001.02188.x",
+          "volume": "268",
+          "author": "P Ademark",
+          "year": "2001",
+          "unstructured": "Ademark P, de Vries RP, Hagglund P, Stalbrand H, Visser J (2001a) Cloning and characterization of Aspergillus niger genes encoding an alpha-galactosidase and a beta-mannosidase involved in galactomannan degradation. Eur J Biochem 268:2982–2990",
+          "journal-title": "Eur J Biochem"
+        },
+        {
+          "key": "16_CR4_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "441",
+          "DOI": "10.1016/S0141-0229(01)00415-X",
+          "volume": "29",
+          "author": "P Ademark",
+          "year": "2001",
+          "unstructured": "Ademark P, Larsson M, Tjerneld F, Stålbrand H (2001b) Multiple α-galactosidases from Aspergillus niger: purification, characterization, and substrate specificities. Enzyme Microb Technol 29:441–448",
+          "journal-title": "Enzyme Microb Technol"
+        },
+        {
+          "key": "16_CR5_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "1837",
+          "DOI": "10.1128/EC.00162-09",
+          "volume": "8",
+          "author": "E Akel",
+          "year": "2009",
+          "unstructured": "Akel E, Metz B, Seiboth B, Kubicek CP (2009) Molecular regulation of arabinan and l-arabinose metabolism in Hypocrea jecorina (Trichoderma reesei). Eukaryot Cell 8:1837–1844",
+          "journal-title": "Eukaryot Cell"
+        },
+        {
+          "key": "16_CR6_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "47",
+          "DOI": "10.1016/S0921-0423(96)80245-0",
+          "volume-title": "Pectins and pectinases",
+          "author": "P Albersheim",
+          "year": "1996",
+          "unstructured": "Albersheim P, Darvill AG, O’Neill MA, Schols HA, Voragen AGJ (1996) An hypothesis: the same six polysaccharides are components of the primary cell walls of all higher plants. In: Visser J, Voragen AGJ (eds) Pectins and pectinases. Elsevier, Amsterdam, pp 47–55"
+        },
+        {
+          "key": "16_CR7_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "278",
+          "DOI": "10.1111/j.1472-765X.2009.02655.x",
+          "volume": "49",
+          "author": "F Alberto",
+          "year": "2009",
+          "unstructured": "Alberto F, Navarro D, de Vries RP, Asther M, Record E (2009) Technical advance in fungal biotechnology: development of a miniaturized culture method and an automated high-throughput screening. Lett Appl Microbiol 49:278–282",
+          "journal-title": "Lett Appl Microbiol"
+        },
+        {
+          "key": "16_CR8_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "73",
+          "DOI": "10.1007/BF01200691",
+          "volume": "8",
+          "author": "S Ali",
+          "year": "1992",
+          "unstructured": "Ali S, Sayed A (1992) Regulation of cellulase biosynthesis in Aspergillus terreus. World J Microbiol Biotechnol 8:73–75",
+          "journal-title": "World J Microbiol Biotechnol"
+        },
+        {
+          "key": "16_CR9_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "4387",
+          "DOI": "10.1073/pnas.0709964105",
+          "volume": "105",
+          "author": "MR Andersen",
+          "year": "2008",
+          "unstructured": "Andersen MR, Vongsangnak W, Panagiotou G, Salazar MP, Lehmann L, Nielsen J (2008) A trispecies Aspergillus microarray: comparative transcriptomics of three Aspergillus species. Proc Natl Acad Sci USA 105:4387–4392",
+          "journal-title": "Proc Natl Acad Sci USA"
+        },
+        {
+          "key": "16_CR10_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "61",
+          "DOI": "10.1111/j.1365-2672.1990.tb02549.x",
+          "volume": "68",
+          "author": "PS Bagga",
+          "year": "1990",
+          "unstructured": "Bagga PS, Sandhu DK, Sharma S (1990) Purification and characterization of cellulolytic enzymes produced by Aspergillus nidulans. J Appl Bacteriol 68:61–68",
+          "journal-title": "J Appl Bacteriol"
+        },
+        {
+          "key": "16_CR11_16",
+          "doi-asserted-by": "crossref",
+          "unstructured": "Battaglia E, Visser L, Nijssen A, van Veluw J, Wösten HAB, de Vries RP (2010) Analysis of regulation of pentose utilisation in Aspergillus niger reveals evolutionary adaptations in the Eurotiales. Stud Mycol (in press)",
+          "DOI": "10.3114/sim.2011.69.03"
+        },
+        {
+          "key": "16_CR12_16",
+          "first-page": "361",
+          "volume-title": "Xylans and xylanases",
+          "author": "MR Bedford",
+          "year": "1992",
+          "unstructured": "Bedford MR, Classen HL (1992) The influence of dietary xylanase on intestinal viscosity and molecular weight distribution of carbohydrates in rye-fed broiler chicks. In: Visser J, Beldman G, Kusters-van Someren MA, Voragen AGJ (eds) Xylans and xylanases. Elsevier, Amsterdam, pp 361–370"
+        },
+        {
+          "key": "16_CR13_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "387",
+          "DOI": "10.1007/s10529-007-9564-6",
+          "volume": "30",
+          "author": "I Benoit",
+          "year": "2008",
+          "unstructured": "Benoit I, Danchin EG, Bleichrodt RJ, de Vries RP (2008) Biotechnological applications and potential of fungal feruloyl esterases based on prevalence, classification and biochemical diversity. Biotechnol Lett 30:387–396",
+          "journal-title": "Biotechnol Lett"
+        },
+        {
+          "key": "16_CR14_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "286",
+          "DOI": "10.1016/0167-7799(85)90004-6",
+          "volume": "3",
+          "author": "P Biely",
+          "year": "1985",
+          "unstructured": "Biely P (1985) Microbial xylanolytic systems. Trends Biotechnol 3:286–290",
+          "journal-title": "Trends Biotechnol"
+        },
+        {
+          "key": "16_CR15_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "155",
+          "DOI": "10.1016/0167-4838(83)90429-6",
+          "volume": "743",
+          "author": "P Biely",
+          "year": "1983",
+          "unstructured": "Biely P, Vrsanská M, Gorbacheva IV (1983) The active site of an acidic endo-1,4-beta-xylanase of Aspergillus niger. Biochim Biophys Acta 743:155–161",
+          "journal-title": "Biochim Biophys Acta"
+        },
+        {
+          "key": "16_CR16_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "157",
+          "DOI": "10.1111/j.1432-1033.1991.tb21062.x",
+          "volume": "200",
+          "author": "P Biely",
+          "year": "1991",
+          "unstructured": "Biely P, Vrsanská M, Claeyssens M (1991) The endo-1,4-beta-glucanase I from Trichoderma reesei – action on beta-1,4-oligomers and polymers derived from d-glucose and d-xylose. Eur J Biochem 200:157–163",
+          "journal-title": "Eur J Biochem"
+        },
+        {
+          "key": "16_CR17_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "360",
+          "DOI": "10.1016/S0304-4165(00)00029-5",
+          "volume": "1474",
+          "author": "P Biely",
+          "year": "2000",
+          "unstructured": "Biely P, de Vries RP, Vranská M, Visser J (2000) Inverting character of α-glucuronidase A from Aspergillus tubingensis. Biochim Biophys Acta 1474:360–364",
+          "journal-title": "Biochim Biophys Acta"
+        },
+        {
+          "key": "16_CR18_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "109",
+          "DOI": "10.1016/S0008-6215(00)90009-0",
+          "volume": "159",
+          "author": "J-M Brillouet",
+          "year": "1987",
+          "unstructured": "Brillouet J-M, Joseleau JP (1987) Investigation of the structure of a heteroxylan from the outer pericarp (beeswing bran) of wheat kernel. Carbohydr Res 159:109–126",
+          "journal-title": "Carbohydr Res"
+        },
+        {
+          "key": "16_CR19_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "D233",
+          "DOI": "10.1093/nar/gkn663",
+          "volume": "37",
+          "author": "BL Cantarel",
+          "year": "2009",
+          "unstructured": "Cantarel BL, Coutinho PM, Rancurel C, Bernard T, Lombard V, Henrissat B (2009) The carbohydrate-active enzymes database (CAZy): an expert resource for glycogenomics. Nucleic Acids Res 37:D233–D238",
+          "journal-title": "Nucleic Acids Res"
+        },
+        {
+          "key": "16_CR20_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1111/j.1365-313X.1993.tb00007.x",
+          "volume": "3",
+          "author": "NC Carpita",
+          "year": "1993",
+          "unstructured": "Carpita NC, Gibeaut DM (1993) Structural models of primary cell walls in flowering plants: consistency of molecular structure with the physical properties of the walls during growth. Plant J 3:1–30",
+          "journal-title": "Plant J"
+        },
+        {
+          "key": "16_CR21_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "857",
+          "DOI": "10.1042/bj2190857",
+          "volume": "219",
+          "author": "A Civas",
+          "year": "1984",
+          "unstructured": "Civas A, Eberhard R, le Dizet P, Petek F (1984) Glycosidases induced in Aspergillus tamarii. Secreted α-d-galactosidase and β-d-mannanase. Biochem J 219:857–863",
+          "journal-title": "Biochem J"
+        },
+        {
+          "issue": "[Suppl 1]",
+          "key": "16_CR22_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "S161",
+          "DOI": "10.1016/j.fgb.2008.07.020",
+          "volume": "46",
+          "author": "PM Coutinho",
+          "year": "2009",
+          "unstructured": "Coutinho PM, Andersen MR, Kolenova K, vanKuyk PA, Benoit I, Gruben BS, Trejo-Aguilar B, Visser H, van Solingen P, Pakula T, Seiboth B, Battaglia E, Aguilar-Osorio G, de Jong JF, Ohm RA, Aguilar M, Henrissat B, Nielsen J, Stalbrand H, de Vries RP (2009) Post-genomic insights into the plant polysaccharide degradation potential of Aspergillus nidulans and comparison to Aspergillus niger and Aspergillus oryzae. Fungal Genet Biol 46[Suppl 1]:S161–S169",
+          "journal-title": "Fungal Genet Biol"
+        },
+        {
+          "key": "16_CR23_16",
+          "first-page": "173",
+          "volume-title": "Biocatalysis in organic media",
+          "author": "P Critchley",
+          "year": "1987",
+          "unstructured": "Critchley P (1987) Commercial aspects of biocatalysis in low-water systems. In: Laane C, Tramper J, Lilly MD (eds) Biocatalysis in organic media. Elsevier, Amsterdam, pp 173–183"
+        },
+        {
+          "key": "16_CR24_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "479",
+          "DOI": "10.1111/j.1365-2958.1994.tb01036.x",
+          "volume": "12",
+          "author": "LH de Graaff",
+          "year": "1994",
+          "unstructured": "de Graaff LH, van den Broeck HC, van Ooijen AJJ, Visser J (1994) Regulation of the xylanase-encoding xlnA gene of Aspergillus tubingensis. Mol Microbiol 12:479–490",
+          "journal-title": "Mol Microbiol"
+        },
+        {
+          "key": "16_CR25_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "1183",
+          "DOI": "10.1099/mic.0.25993-0",
+          "volume": "149",
+          "author": "MJL de Groot",
+          "year": "2003",
+          "unstructured": "de Groot MJL, van de Vondervoort PJI, de Vries RP, vanKuyk PA, Ruijter GJG, Visser J (2003) Isolation and characterization of two specific regulatory Aspergillus niger mutants shows antagonistic regulation of arabinan and xylan metabolism. Microbiology 149:1183–1191",
+          "journal-title": "Microbiology"
+        },
+        {
+          "key": "16_CR26_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "5500",
+          "DOI": "10.1128/AEM.65.12.5500-5503.1999",
+          "volume": "65",
+          "author": "RP de Vries",
+          "year": "1999",
+          "unstructured": "de Vries RP, Visser J (1999) Regulation of the feruloyl esterase (faeA) gene from Aspergillus niger. Appl Environ Microbiol 65:5500–5503",
+          "journal-title": "Appl Environ Microbiol"
+        },
+        {
+          "key": "16_CR27_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "4638",
+          "DOI": "10.1128/AEM.63.12.4638-4644.1997",
+          "volume": "63",
+          "author": "RP de Vries",
+          "year": "1997",
+          "unstructured": "de Vries RP, Michelsen B, Poulsen CH, Kroon PA, van den Heuvel RH, Faulds CB, Williamson G, van den Hombergh JP, Visser J (1997) The faeA genes from Aspergillus niger and Aspergillus tubingensis encode ferulic acid esterases involved in degradation of complex cell wall polysaccharides. Appl Environ Microbiol 63:4638–4644",
+          "journal-title": "Appl Environ Microbiol"
+        },
+        {
+          "key": "16_CR28_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "243",
+          "DOI": "10.1128/JB.180.2.243-249.1998",
+          "volume": "180",
+          "author": "RP de Vries",
+          "year": "1998",
+          "unstructured": "de Vries RP, Poulsen CH, Madrid S, Visser J (1998) aguA, the gene encoding an extracellular α-glucuronidase from Aspergillus tubingensis, is specifically induced on xylose and not on glucuronic acid. J Bacteriol 180:243–249",
+          "journal-title": "J Bacteriol"
+        },
+        {
+          "key": "16_CR29_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "2453",
+          "DOI": "10.1128/AEM.65.6.2453-2460.1999",
+          "volume": "65",
+          "author": "RP de Vries",
+          "year": "1999",
+          "unstructured": "de Vries RP, van den Broeck HC, Dekkers E, Manzanares P, de Graaff LH, Visser J (1999a) Differential expression of three α-galactosidase genes and a single β-galactosidase gene from Apergillus niger. Appl Environ Microbiol 65:2453–2460",
+          "journal-title": "Appl Environ Microbiol"
+        },
+        {
+          "key": "16_CR30_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "281",
+          "DOI": "10.1016/S0923-2508(99)80053-9",
+          "volume": "150",
+          "author": "RP de Vries",
+          "year": "1999",
+          "unstructured": "de Vries RP, Visser J, de Graaff LH (1999b) CreA modulates the XlnR-induced expression on xylose of Aspergillus niger genes involved in xylan degradation. Res Microbiol 150:281–285",
+          "journal-title": "Res Microbiol"
+        },
+        {
+          "key": "16_CR31_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "401",
+          "DOI": "10.1016/S0008-6215(00)00066-5",
+          "volume": "327",
+          "author": "RP de Vries",
+          "year": "2000",
+          "unstructured": "de Vries RP, Kester HCM, Poulsen CH, Benen JAE, Visser J (2000) Synergy between accessory enzymes from Aspergillus in the degradation of plant cell wall polysaccharides. Carbohydr Res 327:401–410",
+          "journal-title": "Carbohydr Res"
+        },
+        {
+          "key": "16_CR32_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "377",
+          "DOI": "10.1042/bj3630377",
+          "volume": "363",
+          "author": "RP de Vries",
+          "year": "2002",
+          "unstructured": "de Vries RP, Kester HCM, vanKuyk PA, Visser J (2002a) The Aspergillus niger faeB gene encodes a second feruloyl esterase involved in pectin and xylan degradation, and is specifically induced on aromatic compounds. Biochem J 363:377–386",
+          "journal-title": "Biochem J"
+        },
+        {
+          "key": "16_CR33_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "96",
+          "DOI": "10.1007/s00438-002-0729-7",
+          "volume": "268",
+          "author": "RP de Vries",
+          "year": "2002",
+          "unstructured": "de Vries RP, van de Vondervoort PJI, Hendriks L, van de Belt M, Visser J (2002b) Regulation of the α-glucuronidase encoding gene (aguA) from Aspergillus niger. Mol Gen Genet 268:96–102",
+          "journal-title": "Mol Gen Genet"
+        },
+        {
+          "key": "16_CR34_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "3954",
+          "DOI": "10.1128/AEM.70.7.3954-3959.2004",
+          "volume": "70",
+          "author": "RP de Vries",
+          "year": "2004",
+          "unstructured": "de Vries RP, Burgers K, van de Vondervoort PJI, Frisvad JC, Samson RA, Visser J (2004) A new black Aspergillus species, A. vadensis, is a promising host for homologous and heterologous protein production. Appl Environ Microbiol 70:3954–3959",
+          "journal-title": "Appl Environ Microbiol"
+        },
+        {
+          "key": "16_CR35_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "195",
+          "DOI": "10.1007/s10482-004-3194-y",
+          "volume": "87",
+          "author": "RP de Vries",
+          "year": "2005",
+          "unstructured": "de Vries RP, Burgers K, van de Vondervoort PJI, Frisvad JC, Samson RA, Visser J (2005a) AAspergillus vadensis, a new species of the group of black aspergilli. Antonie Van Leeuwenhoek 87:195–203",
+          "journal-title": "Antonie Van Leeuwenhoek"
+        },
+        {
+          "key": "16_CR36_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "157",
+          "DOI": "10.2174/1389202053971974",
+          "volume": "6",
+          "author": "RP de Vries",
+          "year": "2005",
+          "unstructured": "de Vries RP, van Grieken C, vanKuyk PA, Wösten HAB (2005b) The value of genome sequences in the rapid identification of novel genes encoding specific plant cell wall degrading enzymes. Curr Genomics 6:157–187",
+          "journal-title": "Curr Genomics"
+        },
+        {
+          "key": "16_CR37_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "5701",
+          "DOI": "10.1128/MCB.11.11.5701",
+          "volume": "11",
+          "author": "CEA Dowzer",
+          "year": "1991",
+          "unstructured": "Dowzer CEA, Kelly JM (1991) Analysis of the creA gene, a regulator of carbon catabolite repression in Aspergillus nidulans. Mol Cell Biol 11:5701–5709",
+          "journal-title": "Mol Cell Biol"
+        },
+        {
+          "key": "16_CR38_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "2483",
+          "DOI": "10.1271/bbb.90486",
+          "volume": "73",
+          "author": "M Duranova",
+          "year": "2009",
+          "unstructured": "Duranova M, Hirsch J, Kolenova K, Biely P (2009a) Fungal glucuronoyl esterases and substrate uronic acid recognition. Biosci Biotechnol Biochem 73:2483–2487",
+          "journal-title": "Biosci Biotechnol Biochem"
+        },
+        {
+          "key": "16_CR39_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "133",
+          "DOI": "10.1007/s00203-008-0434-y",
+          "volume": "191",
+          "author": "M Duranova",
+          "year": "2009",
+          "unstructured": "Duranova M, Spanikova S, Wosten HA, Biely P, de Vries RP (2009b) Two glucuronoyl esterases of Phanerochaete chrysosporium. Arch Microbiol 191:133–140",
+          "journal-title": "Arch Microbiol"
+        },
+        {
+          "key": "16_CR40_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "57",
+          "DOI": "10.1016/0008-6215(90)84276-Z",
+          "volume": "198",
+          "author": "A Ebringerová",
+          "year": "1990",
+          "unstructured": "Ebringerová A, Hromádková Z, Petráková E, Hricovíni M (1990) Structural features of a water-soluble l-arabinoxylan from rye bran. Carbohydr Res 198:57–66",
+          "journal-title": "Carbohydr Res"
+        },
+        {
+          "key": "16_CR41_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "312",
+          "DOI": "10.1271/bbb.70278",
+          "volume": "72",
+          "author": "Y Endo",
+          "year": "2008",
+          "unstructured": "Endo Y, Yokoyama M, Morimoto M, Shirai K, Chikamatsu G, Kato N, Tsukagoshi N, Kato M, Kobayashi T (2008) Novel promoter sequence required for inductive expression of the Aspergillus nidulans endoglucanase gene eglA. Biosci Biotechnol Biochem 72:312–320",
+          "journal-title": "Biosci Biotechnol Biochem"
+        },
+        {
+          "key": "16_CR42_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "1924",
+          "DOI": "10.3891/acta.chem.scand.22-1924",
+          "volume": "22",
+          "author": "K-W Eriksson",
+          "year": "1968",
+          "unstructured": "Eriksson K-W, Winell M (1968) Purification and characterization of a fungal β-mannanase. Acta Chem Scand 22:1924–1934",
+          "journal-title": "Acta Chem Scand"
+        },
+        {
+          "key": "16_CR43_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "2673",
+          "DOI": "10.1099/00221287-140-10-2673",
+          "volume": "140",
+          "author": "MJA Flipphi",
+          "year": "1994",
+          "unstructured": "Flipphi MJA, Visser J, van der Veen P, de Graaff LH (1994) Arabinase gene expression in Aspergillus niger: indications for co-ordinated gene expression. Microbiology 140:2673–2682",
+          "journal-title": "Microbiology"
+        },
+        {
+          "key": "16_CR44_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "564",
+          "DOI": "10.1016/j.fgb.2009.04.001",
+          "volume": "46",
+          "author": "T Furukawa",
+          "year": "2009",
+          "unstructured": "Furukawa T, Shida Y, Kitagami N, Mori K, Kato M, Kobayashi T, Okada H, Ogasawara W, Morikawa Y (2009) Identification of specific binding sites for XYR1, a transcriptional activator of cellulolytic and xylanolytic genes in Trichoderma reesei. Fungal Genet Biol 46:564–574",
+          "journal-title": "Fungal Genet Biol"
+        },
+        {
+          "key": "16_CR45_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "301",
+          "DOI": "10.1016/0168-1656(88)90022-3",
+          "volume": "8",
+          "author": "C Ganter",
+          "year": "1988",
+          "unstructured": "Ganter C, Bock A, Buckel P, Mattes R (1988) Production of thermostable, recombinant α-galactosidase suitable for raffinose elimination from sugar beet syrup. J Biotechnol 8:301–310",
+          "journal-title": "J Biotechnol"
+        },
+        {
+          "key": "16_CR46_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "22",
+          "DOI": "10.1007/s002940050172",
+          "volume": "31",
+          "author": "MMC Gielkens",
+          "year": "1997",
+          "unstructured": "Gielkens MMC, Visser J, de Graaff LH (1997) Arabinoxylan degradation by fungi: characterisation of the arabinoxylan arabinofuranohydrolase encoding genes from Aspergillus niger and Aspergillus tubingensis. Curr Genet 31:22–29",
+          "journal-title": "Curr Genet"
+        },
+        {
+          "key": "16_CR47_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "4340",
+          "DOI": "10.1128/AEM.65.10.4340-4345.1999",
+          "volume": "65",
+          "author": "MMC Gielkens",
+          "year": "1999",
+          "unstructured": "Gielkens MMC, Dekkers E, Visser J, de Graaff LH (1999a) Two cellobiohydrolase-encoding genes from Aspergillus niger require d-xylose and the xylanolytic transcriptional activator XlnR for their expression. Appl Environ Microbiol 65:4340–4345",
+          "journal-title": "Appl Environ Microbiol"
+        },
+        {
+          "key": "16_CR48_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "735",
+          "DOI": "10.1099/13500872-145-3-735",
+          "volume": "145",
+          "author": "MMC Gielkens",
+          "year": "1999",
+          "unstructured": "Gielkens MMC, Gonzales-Candelas L, Sanchez-Torres P, van de Vondervoort PJI, de Graaf LH, Visser J (1999b) The abfB gene encoding the major α-l-arabinofuranosidase of Aspergillus nidulans: nucleotide sequence, regulation and construction of a disrupted strain. Microbiology 145:735–741",
+          "journal-title": "Microbiology"
+        },
+        {
+          "key": "16_CR49_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "268",
+          "DOI": "10.1016/j.bbagen.2004.07.001",
+          "volume": "1674",
+          "author": "SG Grishutin",
+          "year": "2004",
+          "unstructured": "Grishutin SG, Gusakov AV, Markov AV, Ustinov BB, Semenova MV, Sinitsyn AP (2004) Specific xyloglucanases as a new class of polysaccharide-degrading enzymes. Biochim Biophys Acta 1674:268–281",
+          "journal-title": "Biochim Biophys Acta"
+        },
+        {
+          "key": "16_CR50_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "37",
+          "DOI": "10.1016/S0168-1656(02)00290-0",
+          "volume": "101",
+          "author": "P Hagglund",
+          "year": "2003",
+          "unstructured": "Hagglund P, Eriksson T, Collen A, Nerinckx W, Claeyssens M, Stalbrand H (2003) A cellulose-binding module of the Trichoderma reesei beta-mannanase Man5A increases the mannan-hydrolysis of complex substrates. J Biotechnol 101:37–48",
+          "journal-title": "J Biotechnol"
+        },
+        {
+          "key": "16_CR51_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "1556",
+          "DOI": "10.1128/AEM.68.4.1556-1560.2002",
+          "volume": "68",
+          "author": "AA Hasper",
+          "year": "2002",
+          "unstructured": "Hasper AA, Dekkers E, van Mil M, van de Vondervoort PJI, de Graaff LH (2002) EglC, a new endoglucanase from Aspergillus niger with major activity towards xyloglucan. Appl Environ Microbiol 68:1556–1560",
+          "journal-title": "Appl Environ Microbiol"
+        },
+        {
+          "key": "16_CR52_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "1367",
+          "DOI": "10.1099/mic.0.26557-0",
+          "volume": "150",
+          "author": "AA Hasper",
+          "year": "2004",
+          "unstructured": "Hasper AA, Trindade LM, van der Veen D, van Ooyen AJ, de Graaff LH (2004) Functional analysis of the transcriptional activator XlnR from Aspergillus niger. Microbiology 150:1367–1375",
+          "journal-title": "Microbiology"
+        },
+        {
+          "key": "16_CR53_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "139",
+          "DOI": "10.1146/annurev.pp.40.060189.001035",
+          "volume": "40",
+          "author": "T Hayashi",
+          "year": "1989",
+          "unstructured": "Hayashi T (1989) Xyloglucans in the primary cell wall. Annu Rev Plant Physiol Plant Mol Biol 40:139–168",
+          "journal-title": "Annu Rev Plant Physiol Plant Mol Biol"
+        },
+        {
+          "key": "16_CR54_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "7762",
+          "DOI": "10.1021/bi8009168",
+          "volume": "47",
+          "author": "FM Ibatullin",
+          "year": "2008",
+          "unstructured": "Ibatullin FM, Baumann MJ, Greffe L, Brumer H (2008) Kinetic analyses of retaining endo-(xylo)glucanases from plant and microbial sources using new chromogenic xylogluco-oligosaccharide aryl glycosides. Biochemistry 47:7762–7769",
+          "journal-title": "Biochemistry"
+        },
+        {
+          "key": "16_CR55_16",
+          "first-page": "1",
+          "volume": "1988",
+          "author": "A Kantelinen",
+          "year": "1988",
+          "unstructured": "Kantelinen A, Ratto M, Sundquist J, Ranua M, Viikari L, Linko M (1988) Hemicelluloses and their potential role in bleaching. Int Pulp Bleach Conf 1988:1–9",
+          "journal-title": "Int Pulp Bleach Conf"
+        },
+        {
+          "key": "16_CR56_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "2161",
+          "DOI": "10.1021/jf011348w",
+          "volume": "50",
+          "author": "H Kikuzaki",
+          "year": "2002",
+          "unstructured": "Kikuzaki H, Hisamoto M, Hirose K, Akiyama K, Taniguchi H (2002) Antioxidant properties of ferulic acid and its related compounds. J Agric Food Chem 50:2161–2168",
+          "journal-title": "J Agric Food Chem"
+        },
+        {
+          "key": "16_CR57_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "558",
+          "DOI": "10.1007/s002530051334",
+          "volume": "50",
+          "author": "N Kitamoto",
+          "year": "1998",
+          "unstructured": "Kitamoto N, Yoshino S, Ito M, Kimura T, Ohmiya K, Tsukagoshi N (1998) Repression of the expression of genes encoding xylanolytic enzymes in Aspergillus oryzae by introduction of multiple copies of the xynF1 promoter. Appl Microbiol Biotechnol 50:558–563",
+          "journal-title": "Appl Microbiol Biotechnol"
+        },
+        {
+          "key": "16_CR58_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "273",
+          "DOI": "10.1021/ma60050a019",
+          "volume": "9",
+          "author": "FJ Kolpak",
+          "year": "1976",
+          "unstructured": "Kolpak FJ, Blackwell J (1976) Determination of the structure of cellulose II. Macromolecules 9:273–278",
+          "journal-title": "Macromolecules"
+        },
+        {
+          "key": "16_CR59_16",
+          "first-page": "753",
+          "volume": "35",
+          "author": "FJM Kormelink",
+          "year": "1991",
+          "unstructured": "Kormelink FJM, Searle-van Leeuwen MJF, Wood TM, Voragen AGJ (1991) Purification and characterization of a (1,4)-β-d-arabinoxylan arabinofuranohydrolase from Aspergillus awamori. Appl Microbiol Biotechnol 35: 753–758",
+          "journal-title": "Appl Microbiol Biotechnol"
+        },
+        {
+          "key": "16_CR60_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "355",
+          "DOI": "10.1016/0008-6215(93)84100-K",
+          "volume": "249",
+          "author": "FJM Kormelink",
+          "year": "1993",
+          "unstructured": "Kormelink FJM, Gruppen H, Vietor RJ, Voragen AGJ (1993a) Mode of action of the xylan-degrading enzymes from Aspergillus awamori on alkali-extractable cereal arabinoxylans. Carbohydr Res 249:355–367",
+          "journal-title": "Carbohydr Res"
+        },
+        {
+          "key": "16_CR61_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "267",
+          "DOI": "10.1016/0168-1656(93)90090-A",
+          "volume": "27",
+          "author": "FJM Kormelink",
+          "year": "1993",
+          "unstructured": "Kormelink FJM, Lefebvre B, Strozyk F, Voragen AGJ (1993b) The purification and characterisation of an acetyl xylan esterase from Aspergillus niger. J Biotechnol 27:267–282",
+          "journal-title": "J Biotechnol"
+        },
+        {
+          "key": "16_CR62_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "485",
+          "DOI": "10.1042/bj3260485",
+          "volume": "326",
+          "author": "T Koseki",
+          "year": "1997",
+          "unstructured": "Koseki T, Furuse S, Iwano K, Sakai H, Matsuzawa H (1997) An Aspergillus awamori acetylesterase: purification of the enzyme, and cloning and sequencing of the gene. Biochem J 326:485–490",
+          "journal-title": "Biochem J"
+        },
+        {
+          "key": "16_CR63_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "355",
+          "DOI": "10.1002/(SICI)1097-0010(19990301)79:3<355::AID-JSFA255>3.0.CO;2-G",
+          "volume": "79",
+          "author": "PA Kroon",
+          "year": "1999",
+          "unstructured": "Kroon PA, Wiliamson G (1999) Hydroxycinnamates in plants and food: current and future perspectives. J Sci Food Agric 79:355–361",
+          "journal-title": "J Sci Food Agric"
+        },
+        {
+          "key": "16_CR64_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "847",
+          "DOI": "10.1111/j.1365-2958.1993.tb01175.x",
+          "volume": "7",
+          "author": "P Kulmburg",
+          "year": "1993",
+          "unstructured": "Kulmburg P, Mathieu M, Dowzer C, Kelly J, Felenbok B (1993) Specific binding sites in the alcR and alcA promoters of the ethanol regulon for the CreA repressor mediating carbon catabolite repression in Aspergillus nidulans. Mol Microbiol 7:847–857",
+          "journal-title": "Mol Microbiol"
+        },
+        {
+          "key": "16_CR65_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "7482",
+          "DOI": "10.1128/AEM.00807-08",
+          "volume": "74",
+          "author": "X-L Li",
+          "year": "2008",
+          "unstructured": "Li X-L, Skory CD, Cotta MA, Puchart V, Biely P (2008) Novel family of carbohydrate esterases, based on identification of the Hypocrea jecorina acetyl esterase gene. Appl Environ Microbiol 74:7482–7489",
+          "journal-title": "Appl Environ Microbiol"
+        },
+        {
+          "key": "16_CR66_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "233",
+          "DOI": "10.1021/bk-1987-0340.ch014",
+          "volume-title": "The structures of cellulose",
+          "author": "JS Lin",
+          "year": "1987",
+          "unstructured": "Lin JS, Tang M-Y, Fellers JF (1987) Fractal analysis of cotton cellulose as characterized by small-angle X-ray scattering. In: Atalla RH (ed.) The structures of cellulose. ACS symposium series. ACS, Washington, D.C., pp 233–254"
+        },
+        {
+          "key": "16_CR67_16",
+          "first-page": "349",
+          "volume-title": "Xylans and xylanases",
+          "author": "J Maat",
+          "year": "1992",
+          "unstructured": "Maat J, Roza M, Verbakel J, Stam H, Santos da Silva M, Borrel M, Egmond MR, Hagemans MLD, van Gorcom RFM, Hessing JGM, van den Hondel CAMJJ, van Rotterdam C (1992) Xylanases and their applications in bakery. In: Visser J, Beldman G, Kusters-van Someren MA, Voragen AGJ (eds) Xylans and xylanases. Elsevier, Amsterdam, pp 349–360"
+        },
+        {
+          "key": "16_CR68_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "1157",
+          "DOI": "10.1038/nature04300",
+          "volume": "438",
+          "author": "M Machida",
+          "year": "2005",
+          "unstructured": "Machida M, Asai K, Sano M, Tanaka T, Kumagai T, Terai G, Kusumoto K, Arima T, Akita O, Kashiwagi Y, Abe K, Gomi K, Horiuchi H, Kitamoto K, Kobayashi T, Takeuchi M, Denning DW, Galagan JE, Nierman WC, Yu J, Archer DB, Bennett JW, Bhatnagar D, Cleveland TE, Fedorova ND, Gotoh O, Horikawa H, Hosoyama A, Ichinomiya M, Igarashi R, Iwashita K, Juvvadi PR, Kato M, Kato Y, Kin T, Kokubun A, Maeda H, Maeyama N, Maruyama J, Nagasaki H, Nakajima T, Oda K, Okada K, Paulsen I, Sakamoto K, Sawano T, Takahashi M, Takase K, Terabayashi Y, Wortman JR, Yamada O, Yamagata Y, Anazawa H, Hata Y, Koide Y, Komori T, Koyama Y, Minetoki T, Suharnan S, Tanaka A, Isono K, Kuhara S, Ogasawara N, Kikuchi H (2005) Genome sequencing and analysis of Aspergillus oryzae. Nature 438:1157–1161",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "16_CR69_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "1789",
+          "DOI": "10.1021/jf00055a008",
+          "volume": "43",
+          "author": "MN Maillard",
+          "year": "1995",
+          "unstructured": "Maillard MN, Berset C (1995) Evolution of antioxidant activity during kilning: role of insoluble bound phenolic acids of barley and malt. J Agric Food Chem 43:1789–1793",
+          "journal-title": "J Agric Food Chem"
+        },
+        {
+          "key": "16_CR70_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "383",
+          "DOI": "10.1016/S0141-0229(97)00207-X",
+          "volume": "22",
+          "author": "P Manzanares",
+          "year": "1998",
+          "unstructured": "Manzanares P, de Graaff LH, Visser J (1998) Characterization of galactosidases from Aspergillus niger: purification of a novel α-galactosidase activity. Enzyme Microb Technol 22:383–390",
+          "journal-title": "Enzyme Microb Technol"
+        },
+        {
+          "key": "16_CR71_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "372",
+          "DOI": "10.1016/j.copbio.2009.05.009",
+          "volume": "20",
+          "author": "A Margeot",
+          "year": "2009",
+          "unstructured": "Margeot A, Hahn-Hagerdal B, Edlund M, Slade R, Monot F (2009) New improvements for lignocellulosic ethanol. Curr Opin Biotechnol 20:372–380",
+          "journal-title": "Curr Opin Biotechnol"
+        },
+        {
+          "key": "16_CR72_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "104",
+          "DOI": "10.1111/j.1432-1033.1996.0104h.x",
+          "volume": "240",
+          "author": "E Margolles-Clark",
+          "year": "1996",
+          "unstructured": "Margolles-Clark E, Tenkanen M, Luonteri E, Penttilä M (1996) Three a-galactosidase genes of Trichoderma reesei cloned by expression in yeast. Eur J Biochem 240:104–111",
+          "journal-title": "Eur J Biochem"
+        },
+        {
+          "key": "16_CR73_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "408",
+          "DOI": "10.1038/356408a0",
+          "volume": "356",
+          "author": "R Marmorstein",
+          "year": "1994",
+          "unstructured": "Marmorstein R, Harrison SC (1994) DNA recognition by GAL4: structure of the protein–DNA complex. Nature 356:408–414",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "16_CR74_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "553",
+          "DOI": "10.1038/nbt1403",
+          "volume": "26",
+          "author": "D Martinez",
+          "year": "2008",
+          "unstructured": "Martinez D, Berka RM, Henrissat B, Saloheimo M, Arvas M, Baker SE, Chapman J, Chertkov O, Coutinho PM, Cullen D, Danchin EGJ, Grigoriev IV, Harris P, Jackson M, Kubicek CP, Han CS, Ho I, Larrondo LF, Lopez de Leon A, Magnuson JK, Merino S, Misra M, Nelson B, Putnam N, Robbertse B, Salamov AA, Schmoll M, Terry A, Thaye N, Westerholm-Parvinen A, Schoch CL, Yao J, Barbote R, Nelson MA, Detter C, Bruce D, Kuske CR, Xie G, Richardson P, Rokhsar DS, Lucas SM, Rubin EM, Dunn-Coleman N, Ward M, Brettin TS (2008) Genome sequence analysis of the cellulolytic fungus Trichoderma reesei (syn. Hypocrea jecorina) reveals a surprisingly limited inventory of carbohydrate-active enzymes. Nat Biotechnol 26:553–560",
+          "journal-title": "Nat Biotechnol"
+        },
+        {
+          "key": "16_CR75_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "279",
+          "DOI": "10.1016/S0014-5793(02)03328-8",
+          "volume": "528",
+          "author": "J Marui",
+          "year": "2002",
+          "unstructured": "Marui J, Kitamoto N, Kato M, Kobayashi T, Tsukagoshi N (2002a) Transcriptional activator, AoXlnR, mediates cellulose-inductive expression of the xylanolytic and cellulolytic genes in Aspergillus oryzae. FEBS Lett 528:279–282",
+          "journal-title": "FEBS Lett"
+        },
+        {
+          "key": "16_CR76_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "157",
+          "DOI": "10.1006/fgbi.2001.1321",
+          "volume": "35",
+          "author": "J Marui",
+          "year": "2002",
+          "unstructured": "Marui J, Tanaka A, Mimura S, de Graaff LH, Visser J, Kitamoto N, Kato M, Kobayashi T, Tsukagoshi N (2002b) A transcriptional activator, AoXlnR, controls the expression of genes encoding xylanolytic enzymes in Aspergillus oryzae. Fungal Genet Biol 35:157–169",
+          "journal-title": "Fungal Genet Biol"
+        },
+        {
+          "key": "16_CR77_16",
+          "first-page": "109",
+          "volume-title": "The cytoskeletal basis of plant growth and form",
+          "author": "MC McCann",
+          "year": "1991",
+          "unstructured": "McCann MC, Roberts K (1991) Architecture of the primary cell wall. In: Lloyd CW (ed.) The cytoskeletal basis of plant growth and form. Academic, New York, pp 109–129"
+        },
+        {
+          "key": "16_CR78_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "826",
+          "DOI": "10.1016/0141-0229(94)90055-8",
+          "volume": "16",
+          "author": "SI McCrae",
+          "year": "1994",
+          "unstructured": "McCrae SI, Leith KM, A.H. G, Wood TM (1994) Xylan degrading enzyme system produced by the fungus Aspergillus awamori: isolation and characterization of a feruloyl esterase and a p-coumaroyl esterase. Enzyme Microbiol Technol 16:826–834",
+          "journal-title": "Enzyme Microbiol Technol"
+        },
+        {
+          "key": "16_CR79_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "625",
+          "DOI": "10.1146/annurev.bi.53.070184.003205",
+          "volume": "53",
+          "author": "M McNeill",
+          "year": "1984",
+          "unstructured": "McNeill M, Darvill AG, Fry SC, Albersheim P (1984) Structure and function of the primary cell walls of plants. Annu Rev Biochem 53:625–663",
+          "journal-title": "Annu Rev Biochem"
+        },
+        {
+          "key": "16_CR80_16",
+          "volume-title": "Nova Plantarum Genera",
+          "author": "PA Micheli",
+          "year": "1729",
+          "unstructured": "Micheli PA (1729) Nova Plantarum Genera. Micheli, Florence"
+        },
+        {
+          "key": "16_CR81_16",
+          "first-page": "897",
+          "volume": "36",
+          "author": "VH Mulimani",
+          "year": "1995",
+          "unstructured": "Mulimani VH, Ramalingam R (1995) Enzymic hydrolysis of raffinose and stachiose in soymilk by alpha-galactosidase from Gibberella fujikuroi. Biochem Mol Biol Int 36:897–905",
+          "journal-title": "Biochem Mol Biol Int"
+        },
+        {
+          "key": "16_CR82_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "121",
+          "DOI": "10.1016/S0304-3835(01)00858-8",
+          "volume": "180",
+          "author": "A Murakami",
+          "year": "2002",
+          "unstructured": "Murakami A, Nakamura Y, Koshimizu K, Takahashi D, Matsumoto K, Hagihara K, Taniguchi H, Nomura E, Hosoda A, Tsuno T, Maruta Y, Kim HW, Kawabata K, Ohigashi H (2002) FA15, a hydrophobic derivative of ferulic acid, suppresses inflammatory responses and skin tumor promotion: comparison with ferulic acid. Cancer Lett 180:121–129",
+          "journal-title": "Cancer Lett"
+        },
+        {
+          "key": "16_CR83_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "141",
+          "DOI": "10.1007/s00253-009-2236-9",
+          "volume": "85",
+          "author": "Y Noguchi",
+          "year": "2009",
+          "unstructured": "Noguchi Y, Sano M, Kanamaru K, Ko T, Takeuchi M, Kato M, Kobayashi T (2009) Genes regulated by AoXlnR, the xylanolytic and cellulolytic transcriptional regulator, in Aspergillus oryzae. Appl Microbiol Biotechnol 85:141–154",
+          "journal-title": "Appl Microbiol Biotechnol"
+        },
+        {
+          "key": "16_CR84_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "491",
+          "DOI": "10.1017/S0953756202005701",
+          "volume": "106",
+          "author": "J O’Neil",
+          "year": "2002",
+          "unstructured": "O’Neil J, Bugno M, Stanley MS, Barham-Morris JB, Woodcock NA, Clement DJ, Clipson NJW, Whitehead MP, Fincham DA, Hooley P (2002) Cloning of a novel gene encoding a C2H2 zinc finger protein that alleviates sensitivity to abiotic stresses in Aspergillus nidulans. Mycol Res 106:491–498",
+          "journal-title": "Mycol Res"
+        },
+        {
+          "key": "16_CR85_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "1266",
+          "DOI": "10.1002/biot.200600103",
+          "volume": "1",
+          "author": "J Ouyang",
+          "year": "2006",
+          "unstructured": "Ouyang J, Yan M, Kong D, Xu L (2006) A complete protein pattern of cellulase and hemicellulase genes in the filamentous fungus Trichoderma reesei. Biotechnol J 1:1266–1274",
+          "journal-title": "Biotechnol J"
+        },
+        {
+          "key": "16_CR86_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "221",
+          "DOI": "10.1038/nbt1282",
+          "volume": "25",
+          "author": "HJ Pel",
+          "year": "2007",
+          "unstructured": "Pel HJ, de Winde JH, Archer DB, Dyer PS, Hofmann G, Schaap PJ, Turner G, de Vries RP, Albang R, Albermann K, Andersen MR, Bendtsen JD, Benen JAE, van den Berg M, Breestraat S, Caddick MX, Contreras R, Cornell M, Coutinho PM, Danchin E, GJ, Debets AJM, Dekker P, van Dijck PWM, van Dijk A, Dijkhuizen L, Driessen AJM, d’Enfert C, Geysens S, Goosen C, Groot GSP, de Groot PWJ, Guillemette T, Henrissat B, Herweijer M, van den Hombergh JPTW, van den Hondel CAMJJ, van der Heijden RTJM, van der Kaaij RM, Klis FM, Kools HJ, Kubicek CP, vanKuyk PA, Lauber J, Lu X, van der Maarel MJEC, Meulenberg R, Menke H, Mortimer AM, Nielsen J, Oliver SG, Olsthoorn M, Pal K, van Peij NNME, Ram AFJ, Rinas U, Roubos JA, Sagt CMJ, Schmoll M, Sun J, Ussery D, Varga J, Vervecken W, van de Vondervoort PJI, Wedler H, Wösten HAB, Zeng A-P, van Ooyen AJJ, Visser J, Stam H (2007) Genome sequence of Aspergillus niger strain CBS 513.88: a versatile cell factory. Nat Biotechnol 25:221–231",
+          "journal-title": "Nat Biotechnol"
+        },
+        {
+          "key": "16_CR87_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "764",
+          "DOI": "10.1021/jf00017a011",
+          "volume": "40",
+          "author": "H Peleg",
+          "year": "1992",
+          "unstructured": "Peleg H, Naim M, Zehavi U, Rouseff RL, Nag S (1992) Pathways of 4-vinylguaiacol formation from ferulic acid in model solutions of orange juice. J Agric Food Chem 40:764–767",
+          "journal-title": "J Agric Food Chem"
+        },
+        {
+          "key": "16_CR88_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "617",
+          "DOI": "10.1016/0141-0229(91)90074-K",
+          "volume": "13",
+          "author": "P Pellerin",
+          "year": "1991",
+          "unstructured": "Pellerin P, Gosselin M, Lepoutre J-P, Samain E, Debeire P (1991) Enzymic production of oligosaccharides from corncob xylan. Enzyme Microb Technol 13:617–621",
+          "journal-title": "Enzyme Microb Technol"
+        },
+        {
+          "key": "16_CR89_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "551",
+          "DOI": "10.1094/CCHEM.1998.75.4.551",
+          "volume": "75",
+          "author": "M-D Petit-Benvegnen",
+          "year": "1998",
+          "unstructured": "Petit-Benvegnen M-D, Saulnier L, Rouau X (1998) Solubilization of arabinoxylans from isolated water-unextractable pentosans and wheat flour doughs by cell wall degrading enzymes. Cereal Chem 75:551–556",
+          "journal-title": "Cereal Chem"
+        },
+        {
+          "key": "16_CR90_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "300",
+          "DOI": "10.1016/S0924-2244(97)01063-7",
+          "volume": "8",
+          "author": "K Poutanen",
+          "year": "1997",
+          "unstructured": "Poutanen K (1997) Enzymes. An important tool in the improvement of the quality of cereal foods. Trends Food Sci Technol 8:300–306",
+          "journal-title": "Trends Food Sci Technol"
+        },
+        {
+          "key": "16_CR91_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "528",
+          "DOI": "10.1016/0076-6879(88)60164-9",
+          "volume": "160",
+          "author": "J Puls",
+          "year": "1988",
+          "unstructured": "Puls J, Borneman A, Gottschalk D, Wiegel J (1988) Xylobiose and xylooligomers. Methods Enzymol 160:528–536",
+          "journal-title": "Methods Enzymol"
+        },
+        {
+          "key": "16_CR92_16",
+          "first-page": "357",
+          "volume-title": "Biotechnology in pulp and paper industry",
+          "author": "J Puls",
+          "year": "1992",
+          "unstructured": "Puls J, Schorn B, Schuseil J (1992) Acetylmannanesterase: a new component in the arsenal of wood mannan degrading enzymes. In: Kuwahara M, Shimada M (eds) Biotechnology in pulp and paper industry. Uni, Tokyo, pp 357–363"
+        },
+        {
+          "key": "16_CR93_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "167",
+          "DOI": "10.1139/m65-023",
+          "volume": "11",
+          "author": "ET Reese",
+          "year": "1965",
+          "unstructured": "Reese ET, Shibata Y (1965) β-Mannanases of fungi. Can J Microbiol 11:167–183",
+          "journal-title": "Can J Microbiol"
+        },
+        {
+          "key": "16_CR94_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "103",
+          "DOI": "10.1111/j.1574-6968.1997.tb12557.x",
+          "volume": "151",
+          "author": "GJG Ruijter",
+          "year": "1997",
+          "unstructured": "Ruijter GJG, Visser J (1997) Carbon repression in Aspergilli. FEMS Microbiol Lett 151:103–114",
+          "journal-title": "FEMS Microbiol Lett"
+        },
+        {
+          "key": "16_CR95_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "127",
+          "DOI": "10.1016/S0168-1656(00)00253-4",
+          "volume": "80",
+          "author": "A Sachslehner",
+          "year": "2000",
+          "unstructured": "Sachslehner A, Foidl G, Foidl N, Gubitz G, Haltrich D (2000) Hydrolysis of isolated coffee mannan and coffee extract by mannanases of Sclerotium rolfsii. J Biotechnol 80:127–134",
+          "journal-title": "J Biotechnol"
+        },
+        {
+          "key": "16_CR96_16",
+          "first-page": "377",
+          "volume-title": "Biopolymers",
+          "author": "T Schafer",
+          "year": "2002",
+          "unstructured": "Schafer T, Kirk O, Borchert TV, Fuglsang CC, Pedersen S, Salmon S, Olsen HS, Deinhammer R, Lund H (2002) Enzymes for technical applications. In: Fahnestock SR, Steinbuchel SR (eds) Biopolymers. Wiley VCH, Weinheim, pp 377–438"
+        },
+        {
+          "key": "16_CR97_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "333",
+          "DOI": "10.1016/j.jbiotec.2004.09.006",
+          "volume": "115",
+          "author": "C Sigoillot",
+          "year": "2005",
+          "unstructured": "Sigoillot C, Camarero S, Vidal T, Record E, Asther M, Perez-Boada M, Martinez MJ, Sigoillot JC, Asther M, Colom JF, Martinez AT (2005) Comparison of different fungal enzymes for bleaching high-quality paper pulps. J Biotechnol 115:333–343",
+          "journal-title": "J Biotechnol"
+        },
+        {
+          "key": "16_CR98_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "79",
+          "DOI": "10.1016/S0008-6215(97)00144-4",
+          "volume": "303",
+          "author": "I Sims",
+          "year": "1997",
+          "unstructured": "Sims I, Craik DJ, Bacic A (1997) Structural characterisation of galactoglucomannan secreted by suspension-cultured cells of Nicotiana plumbaginifolia. Carbohydr Res 303:79–92",
+          "journal-title": "Carbohydr Res"
+        },
+        {
+          "key": "16_CR99_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "3",
+          "DOI": "10.1186/1754-6834-2-3",
+          "volume": "2",
+          "author": "R Slade",
+          "year": "2009",
+          "unstructured": "Slade R, Bauen A, Shah N (2009) The commercial performance of cellulosic ethanol supply-chains in Europe. Biotechnol Biofuels 2:3",
+          "journal-title": "Biotechnol Biofuels"
+        },
+        {
+          "key": "16_CR100_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "311",
+          "DOI": "10.1016/0141-0229(94)00006-9",
+          "volume": "17",
+          "author": "RI Somiari",
+          "year": "1995",
+          "unstructured": "Somiari RI, Balogh E (1995) Properties of an extracellular glycosidase of Aspergillus niger suitable for removal of oligosaccharides from cowpea meal. Enzyme Microb Technol 17:311–316",
+          "journal-title": "Enzyme Microb Technol"
+        },
+        {
+          "key": "16_CR101_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "3915",
+          "DOI": "10.1016/j.febslet.2007.07.025",
+          "volume": "581",
+          "author": "AR Stricker",
+          "year": "2007",
+          "unstructured": "Stricker AR, Steiger MG, Mach RL (2007) Xyr1 receives the lactose induction signal and regulates lactose metabolism in Hypocrea jecorina. FEBS Lett 581:3915–3920",
+          "journal-title": "FEBS Lett"
+        },
+        {
+          "key": "16_CR102_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "211",
+          "DOI": "10.1007/s00253-007-1322-0",
+          "volume": "78",
+          "author": "AR Stricker",
+          "year": "2008",
+          "unstructured": "Stricker AR, Mach RL, de Graaff LH (2008) Regulation of transcription of cellulases- and hemicellulases-encoding genes in Aspergillus niger and Hypocrea jecorina (Trichoderma reesei). Appl Microbiol Biotechnol 78:211–220",
+          "journal-title": "Appl Microbiol Biotechnol"
+        },
+        {
+          "key": "16_CR103_16",
+          "first-page": "670",
+          "volume": "12",
+          "author": "M Sundberg",
+          "year": "1990",
+          "unstructured": "Sundberg M, Poutanen K, Markkanen P, Linko M (1990) An extracellular esterase of Aspergillus awamori. Biotechnol Appl Biochem 12:670–680",
+          "journal-title": "Biotechnol Appl Biochem"
+        },
+        {
+          "key": "16_CR104_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "897",
+          "DOI": "10.1016/j.enzmictec.2006.01.021",
+          "volume": "39",
+          "author": "MG Tabka",
+          "year": "2006",
+          "unstructured": "Tabka MG, Herpoël-Gimberta I, Monod F, Asther M, Sigoillot JC (2006) Enzymatic saccharification of wheat straw for bioethanol production by a combined cellulase xylanase and feruloyl esterase treatment. Enzyme Microbiol Technol 39:897–902",
+          "journal-title": "Enzyme Microbiol Technol"
+        },
+        {
+          "key": "16_CR105_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "984",
+          "DOI": "10.1016/j.fgb.2008.03.002",
+          "volume": "45",
+          "author": "EN Tamayo",
+          "year": "2008",
+          "unstructured": "Tamayo EN, Villanueva A, Hasper AA, de Graaff LH, Ramon D, Orejas M (2008) CreA mediates repression of the regulatory gene xlnR which controls the production of xylanolytic enzymes in Aspergillus nidulans. Fungal Genet Biol 45:984–993",
+          "journal-title": "Fungal Genet Biol"
+        },
+        {
+          "key": "16_CR106_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "3697",
+          "DOI": "10.1021/jf052725y",
+          "volume": "54",
+          "author": "S Tapin",
+          "year": "2006",
+          "unstructured": "Tapin S, Sigoillot J-C, Asther M, Petit-Conil M (2006) Feruloyl esterase utilization for simultaneous processing of nonwood plants into phenolic compounds and pulp fibers. J Agric Food Chem 54:3697–3703",
+          "journal-title": "J Agric Food Chem"
+        },
+        {
+          "key": "16_CR107_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "19",
+          "DOI": "10.1111/j.1470-8744.1998.tb01370.x",
+          "volume": "27",
+          "author": "M Tenkanen",
+          "year": "1998",
+          "unstructured": "Tenkanen M (1998) Action of Trichoderma reesei and Aspergillus oryzae esterases in the deacetylation of hemicelluloses. Biotechnol Appl Biochem 27:19–24",
+          "journal-title": "Biotechnol Appl Biochem"
+        },
+        {
+          "key": "16_CR108_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "69",
+          "DOI": "10.1016/0168-1656(91)90236-O",
+          "volume": "18",
+          "author": "M Tenkanen",
+          "year": "1991",
+          "unstructured": "Tenkanen M, Schuseil J, Puls J, Poutanen K (1991) Production, purification and characterisation of an esterase liberating phenolic acids from lignocellulosics. J Biotechnol 18:69–84",
+          "journal-title": "J Biotechnol"
+        },
+        {
+          "key": "16_CR109_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "197",
+          "DOI": "10.1016/0168-1656(95)00080-A",
+          "volume": "42",
+          "author": "M Tenkanen",
+          "year": "1995",
+          "unstructured": "Tenkanen M, Thornton J, Viikari L (1995) An acetylglucomannan esterase of Aspergillus oryzae; purification, characterization and role in the hydrolysis of O-acetyl-galactoglucomannan. J Biotechnol 42:197–206",
+          "journal-title": "J Biotechnol"
+        },
+        {
+          "key": "16_CR110_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "45",
+          "DOI": "10.1007/BF00592255",
+          "volume": "1",
+          "author": "TE Timell",
+          "year": "1967",
+          "unstructured": "Timell TE (1967) Recent progress in the chemistry of wood hemicelluloses. Wood Sci Technol 1:45–70",
+          "journal-title": "Wood Sci Technol"
+        },
+        {
+          "key": "16_CR111_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "1608",
+          "DOI": "10.1271/bbb.56.1608",
+          "volume": "56",
+          "author": "H Uchida",
+          "year": "1992",
+          "unstructured": "Uchida H, Nanri T, Kawabata Y, Kusakabe I, Murakami K (1992) Purification and characterization of intracellular α-glucuronidase from Aspergillus niger 5-16. Biosci Biotechnol Biochem 56:1608–1615",
+          "journal-title": "Biosci Biotechnol Biochem"
+        },
+        {
+          "key": "16_CR112_16",
+          "first-page": "371",
+          "volume-title": "Xylans and xylanases, progress in biotechnology",
+          "author": "PA van Paridon",
+          "year": "1992",
+          "unstructured": "van Paridon PA, Boonman JCP, Selten GCM, Geerse C, Barug D, de Bot PHM, Hemke G (1992) The application of fungal endoxylanase in poultry diets. In: Visser J, Beldman G, Kusters-van Someren MA, Voragen AGJ (eds) Xylans and xylanases, progress in biotechnology. Elsevier, Amsterdam, pp 371–378"
+        },
+        {
+          "key": "16_CR113_16",
+          "volume-title": "Dissertation",
+          "author": "N van Peij",
+          "year": "1999",
+          "unstructured": "van Peij N (1999) Transcriptional regulation of the xylanolytic enzyme system of Aspergillus. Dissertation, Wageningen University, Wageningen"
+        },
+        {
+          "key": "16_CR114_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "3615",
+          "DOI": "10.1128/AEM.64.10.3615-3619.1998",
+          "volume": "64",
+          "author": "N van Peij",
+          "year": "1998",
+          "unstructured": "van Peij N, Gielkens MMC, de Vries RP, Visser J, de Graaff LH (1998a) The transcriptional activator XlnR regulates both xylanolytic and endoglucanase gene expression in Aspergillus niger. Appl Environ Microbiol 64:3615–3619",
+          "journal-title": "Appl Environ Microbiol"
+        },
+        {
+          "key": "16_CR115_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "131",
+          "DOI": "10.1046/j.1365-2958.1998.00666.x",
+          "volume": "27",
+          "author": "N van Peij",
+          "year": "1998",
+          "unstructured": "van Peij N, Visser J, de Graaff LH (1998b) Isolation and analysis of xlnR, encoding a transcriptional activator co-ordinating xylanolytic expression in Aspergillus niger. Mol Microbiol 27:131–142",
+          "journal-title": "Mol Microbiol"
+        },
+        {
+          "key": "16_CR116_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "326",
+          "DOI": "10.1007/BF00270594",
+          "volume": "20",
+          "author": "S Vidmar",
+          "year": "1984",
+          "unstructured": "Vidmar S, Turk V, Kregar I (1984) Cellulolytic complex of Aspergillus niger under conditions for citric acid production. Isolation and characterization of two β-(1→44)-glucan hydrolases. Appl Microbiol Biotechnol 20:326–330",
+          "journal-title": "Appl Microbiol Biotechnol"
+        },
+        {
+          "key": "16_CR117_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "335",
+          "DOI": "10.1111/j.1574-6976.1994.tb00053.x",
+          "volume": "13",
+          "author": "L Viikari",
+          "year": "1994",
+          "unstructured": "Viikari L, Kantelinen A, Sundquist J, Linko M (1994) Xylanases in bleaching – from an idea to the industry. FEMS Microbiol Rev 13:335–350",
+          "journal-title": "FEMS Microbiol Rev"
+        },
+        {
+          "key": "16_CR118_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "215",
+          "DOI": "10.1016/S0065-2318(08)60237-1",
+          "volume": "36",
+          "author": "KCB Wilkie",
+          "year": "1979",
+          "unstructured": "Wilkie KCB (1979) The hemicelluloses of grasses and cereals. Adv Carbohydr Chem Biochem 36:215–264",
+          "journal-title": "Adv Carbohydr Chem Biochem"
+        },
+        {
+          "key": "16_CR119_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "145",
+          "DOI": "10.1016/S0008-6215(00)81927-8",
+          "volume": "57",
+          "author": "KCB Wilkie",
+          "year": "1977",
+          "unstructured": "Wilkie KCB, Woo S-L (1977) A heteroxylan and hemicellulosic materials from bamboo leaves, and a reconsideration of the general nature of commonly occurring xylans and other hemicelluloses. Carbohydr Res 57:145–162",
+          "journal-title": "Carbohydr Res"
+        },
+        {
+          "key": "16_CR120_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "295",
+          "DOI": "10.1016/j.copbio.2009.05.007",
+          "volume": "20",
+          "author": "DB Wilson",
+          "year": "2009",
+          "unstructured": "Wilson DB (2009) Cellulases and biofuels. Curr Opin Biotechnol 20:295–299",
+          "journal-title": "Curr Opin Biotechnol"
+        },
+        {
+          "key": "16_CR121_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "179",
+          "DOI": "10.1002/abio.370090219",
+          "volume": "9",
+          "author": "K Witte",
+          "year": "1989",
+          "unstructured": "Witte K, Wartenberg A (1989) Purification and properties of two β-glucosidases isolated from Aspergillus niger. Acta Biotechnol 9:179–190",
+          "journal-title": "Acta Biotechnol"
+        },
+        {
+          "key": "16_CR122_16",
+          "first-page": "127",
+          "volume-title": "Hemicellulose and hemicellulases",
+          "author": "KKY Wong",
+          "year": "1993",
+          "unstructured": "Wong KKY, Saddler JN (1993) Applications of hemicellulases in the food, feed and paper and pulp industries. In: Coughlan MP, Hazlewood PG (eds) Hemicellulose and hemicellulases. Portland, London, pp 127–143"
+        },
+        {
+          "key": "16_CR123_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "894",
+          "DOI": "10.1093/ps/84.6.894",
+          "volume": "84",
+          "author": "G Wu",
+          "year": "2005",
+          "unstructured": "Wu G, Bryant MM, Voitle RA, Roland DA (2005) Effects of beta-mannanase in corn-soy diets on commercial leghorns in second-cycle hens. Poult Sci 84:894–897",
+          "journal-title": "Poult Sci"
+        },
+        {
+          "key": "16_CR124_16",
+          "doi-asserted-by": "crossref",
+          "first-page": "36",
+          "DOI": "10.1021/bk-1991-0460.ch004",
+          "volume": "460",
+          "author": "JG Zeikus",
+          "year": "1991",
+          "unstructured": "Zeikus JG, Lee C, Lee YE, Saha BC (1991) Thermostable saccharidases. New sources, uses and biodesign. ACS Symp Ser 460:36–51",
+          "journal-title": "ACS Symp Ser"
+        }
+      ],
+      "container-title": [
+        "Industrial Applications"
+      ],
+      "original-title": [],
+      "language": "en",
+      "link": [
+        {
+          "URL": "http://link.springer.com/content/pdf/10.1007/978-3-642-11458-8_16",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            11
+          ]
+        ],
+        "date-time": "2020-06-11T14:33:01Z",
+        "timestamp": 1591885981000
+      },
+      "score": 1,
+      "resource": {
+        "primary": {
+          "URL": "http://link.springer.com/10.1007/978-3-642-11458-8_16"
+        }
+      },
+      "subtitle": [],
+      "short-title": [],
+      "issued": {
+        "date-parts": [
+          [
+            2010,
+            8,
+            12
+          ]
+        ]
+      },
+      "ISBN": [
+        "9783642114571",
+        "9783642114588"
+      ],
+      "references-count": 124,
+      "URL": "https://doi.org/10.1007/978-3-642-11458-8_16",
+      "relation": {},
+      "subject": [],
+      "published": {
+        "date-parts": [
+          [
+            2010,
+            8,
+            12
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "12 August 2010",
+          "order": 1,
+          "name": "first_online",
+          "label": "First Online",
+          "group": {
+            "name": "ChapterHistory",
+            "label": "Chapter History"
+          }
+        }
+      ]
+    },
+    "Kemper1986": {
+      "doi": "10.2136/sssabookser5.1.2ed.c17",
+      "title": "Aggregate Stability and Size Distribution",
+      "authors": [
+        {
+          "given": "W. D.",
+          "family": "Kemper",
+          "sequence": "first",
+          "affiliation": []
+        },
+        {
+          "given": "R. C.",
+          "family": "Rosenau",
+          "sequence": "additional",
+          "affiliation": []
+        }
+      ],
+      "editor": null,
+      "container-title": [
+        "SSSA Book Series",
+        "Methods of Soil Analysis"
+      ]
+    }
+  }
+}

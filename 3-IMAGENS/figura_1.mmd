@@ -1,0 +1,73 @@
+%%{init: {'theme': 'base', 'themeVariables': { 'fontSize': '15px', 'fontFamily': 'Inter, system-ui, sans-serif', 'primaryColor': '#F0F9FF', 'primaryBorderColor': '#0EA5E9', 'secondaryColor': '#FEF3C7', 'secondaryBorderColor': '#F59E0B', 'tertiaryColor': '#F0FDF4', 'tertiaryBorderColor': '#10B981', 'lineColor': '#64748B', 'textColor': '#1E293B'}, 'flowchart': {'useMaxWidth': true, 'htmlLabels': true, 'curve': 'cardinal', 'padding': 20}}}%%
+
+flowchart TD
+    %% --- Estilização Premium dos Nós ---
+    classDef driver fill:#DBEAFE,stroke:#0284C7,stroke-width:3px,color:#075985,font-weight:600,rx:12,ry:12
+    classDef state fill:#FEF08A,stroke:#CA8A04,stroke-width:2.5px,color:#854D0E,font-weight:500,rx:10,ry:10
+    classDef trigger fill:#FBBF24,stroke:#D97706,stroke-width:4px,color:#92400E,font-weight:700,rx:15,ry:15
+    classDef impactEnv fill:#FED7AA,stroke:#EA580C,stroke-width:3px,color:#9A3412,font-weight:600,rx:10,ry:10
+    classDef impactGeo fill:#D6D3D1,stroke:#57534E,stroke-width:3px,color:#292524,font-weight:600,rx:10,ry:10
+    classDef keyNode fill:#FEE2E2,stroke:#DC2626,stroke-width:4px,color:#991B1B,font-weight:700,rx:12,ry:12
+
+    %% --- SUBGRAFO 1: FATORES IMPULSIONADORES ---
+    subgraph Drivers ["Fatores Impulsionadores: Clima e Geologia Tropical"]
+        Climate["Regimes de Precipitação de Alta Intensidade + Temperaturas Elevadas"]:::driver
+        Geology["Oxissolos Intemperizados / Quartzipsamments - Contexto: Cerrado/Caatinga"]:::driver
+    end
+
+    %% --- SUBGRAFO 2: ESTADO DE VULNERABILIDADE ---
+    subgraph Vulnerability ["Vulnerabilidade Intrínseca do Solo"]
+        Mineralogy["Predominância de Minerais Argilosos 1:1 - Caulinita, Goetita"]:::state
+        ChemBio["Mineralização Acelerada da M.O. devido a alta temperatura"]:::state
+        LowCOS["Baixo Carbono Orgânico do Solo - COS menor que 1.5% na superfície"]:::state
+        LowCement["Agentes Cimentantes Limitados - Exsudatos/Hifas reduzidos"]:::state
+        LowCTC["Baixa CTC Inerente - 2-8 mmol c kg-1"]:::state
+        
+        %% Nó Central de Vulnerabilidade
+        LowCohesion["MÍNIMA COESÃO ESTRUTURAL - C menor ou igual 5 kPa em superfícies não cimentadas"]:::keyNode
+    end
+
+    %% --- CONEXÕES DRIVERS -> VULNERABILITY ---
+    Climate --> ChemBio
+    Geology --> Mineralogy
+    Geology --> LowCTC
+    ChemBio --> LowCOS --> LowCement
+    Mineralogy --> LowCohesion
+    LowCement --> LowCohesion
+
+    %% --- GATILHO ---
+    TriggerEvent("EVENTO GATILHO: Tempestades Convectivas"):::trigger
+    LowCohesion ==> TriggerEvent
+
+    %% --- RAMIFICAÇÃO DOS IMPACTOS ---
+    TriggerEvent ==> PathSurface["Processos Superficiais"]
+    TriggerEvent ==> PathSubsurface["Processos Subsuperficiais"]
+
+    %% --- SUBGRAFO 3: IMPACTOS AMBIENTAIS ---
+    subgraph EnvImpact ["**Consequências: Degradação Ambiental**"]
+        Kinetic["Impacto Cinético de Gotas - 0,5 a 5 J cm-2"]:::impactEnv
+        Laminar["Transporte Laminar"]:::impactEnv
+        Erosion["Erosão Hídrica Acentuada - maior que 15 Mg ha-1 ano-1 sob cultivo"]:::keyNode
+        Depletion["Depleção Biogeoquímica - Comprometimento da matriz física e nutrientes"]:::impactEnv
+        
+        PathSurface --> Kinetic
+        PathSurface --> Laminar
+        Kinetic --> Erosion
+        Laminar --> Erosion
+        Erosion --> Depletion
+    end
+
+    %% --- SUBGRAFO 4: IMPACTOS GEOTÉCNICOS ---
+    subgraph GeoImpact ["**Consequências: Instabilidade Geotécnica**"]
+        PorePressure["Aumento da Pressão de Poros uw"]:::impactGeo
+        EffectiveStress["Redução da Tensão Normal Efetiva - sigma n igual sigma n menos uw"]:::keyNode
+        FrictionAngle["Parâmetro: Ângulo de Atrito phi - Tipicamente 28° a 38° Oxissolos"]:::state
+        
+        SlopeFail["Instabilidade de Taludes - FS menor que 1,0 em inclinações maior que 25° - Falhas por escorregamento"]:::impactGeo
+        BearingFail["Capacidade de Carga Limitada - 50 a 100 kPa para fundações superficiais"]:::impactGeo
+
+        PathSubsurface --> PorePressure --> EffectiveStress
+        EffectiveStress --> SlopeFail
+        FrictionAngle -.->|Influencia resistência| SlopeFail
+        EffectiveStress --> BearingFail
+    end
