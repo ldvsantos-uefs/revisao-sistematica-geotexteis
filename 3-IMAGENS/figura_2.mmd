@@ -1,0 +1,47 @@
+graph TD
+    subgraph "**Composição Química**"
+        A1["Typha domingensis<br/>L/C = 0,46<br/>↓ Lignina (22%)<br/>↑ Celulose (48%)"]
+        A2["Syagrus coronata<br/>L/C = 0,80<br/>↑ Lignina (32%)<br/>↓ Celulose (40%)"]
+    end
+    
+    subgraph "**Cinética de Biodegradação**"
+        B1["k = 0,0118 dia⁻¹<br/>Meia-vida: 59 dias<br/>Mecanismo: Erosão<br/>superficial rápida"]
+        B2["k = 0,0082 dia⁻¹<br/>Meia-vida: 85 dias<br/>Mecanismo: Penetração<br/>radial lenta"]
+    end
+    
+    subgraph "**Resistência Mecânica**"
+        C1["T₀: 3,57 N·mm⁻²<br/>T₆₀: 1,31 N·mm⁻² (-63%)<br/>Falha: ≤60 dias"]
+        C2["T₀: 3,14 N·mm⁻²<br/>T₉₀: Integridade mantida<br/>Falha: ≥90 dias"]
+    end
+    
+    subgraph "**VUF - Weibull P₁₀**"
+        D1["β = 2,3<br/>η = 68 dias<br/>VUF = 42 dias<br/><span style='color:red'>⚠ Curta duração</span>"]
+        D2["β = 2,8<br/>η = 85 dias<br/>VUF = 38 dias*<br/><span style='color:orange'>⚠ Falha suave</span>"]
+    end
+    
+    subgraph "**Estratégias de VUF**"
+        E1["Sem tratamento:<br/>60 dias"]
+        E2["NaOH 6%:<br/>142 dias (+137%)<br/>VUF P₁₀: 95 dias"]
+        E3["Resina monocamada:<br/>120 dias (+100%)<br/>VUF P₁₀: 128 dias"]
+        E4["Resina dupla camada:<br/>90 dias (delaminação)<br/><span style='color:red'>❌ Falha abrupta</span>"]
+    end
+    
+    A1 --> B1
+    A2 --> B2
+    B1 --> C1
+    B2 --> C2
+    C1 --> D1
+    C2 --> D2
+    D1 --> E1
+    D1 --> E2
+    D1 --> E3
+    D1 --> E4
+    
+    style A1 fill:#E8F4F8,stroke:#333,stroke-width:2px
+    style A2 fill:#FFF4E6,stroke:#333,stroke-width:2px
+    style D1 fill:#FFB6C1,stroke:#333,stroke-width:3px
+    style D2 fill:#FFE4B5,stroke:#333,stroke-width:3px
+    style E2 fill:#90EE90,stroke:#333,stroke-width:2px
+    style E3 fill:#90EE90,stroke:#333,stroke-width:2px
+    style E4 fill:#FF6B6B,stroke:#333,stroke-width:2px
+
