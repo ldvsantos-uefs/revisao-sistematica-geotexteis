@@ -5,24 +5,24 @@
 | Parâmetro | ST 30d | ST 180d | DC 30d | DC 180d |
 |-----------|--------|---------|--------|----------|
 | Índice Orientação | 0.00 | 0.00 | 0.00 | 0.00 |
-| Porosidade (%) | 75.45 | 35.17 | 59.59 | 68.42 |
-| Densidade Fibrilar (%) | 34.80 | 28.86 | 28.75 | 32.71 |
-| GLCM Contraste | 35.18 | 23.30 | 51.78 | 68.49 |
-| Rugosidade Média | 461.75 | 407.08 | 1123.25 | 950.33 |
-| N° Fraturas | 47 | 128 | 247 | 155 |
-| Severidade Dano (%) | 104.22 | 124.70 | 121.15 | 106.06 |
+| Porosidade (%) | 32.75 | 67.27 | 73.09 | 68.49 |
+| Densidade Fibrilar (%) | 25.41 | 27.78 | 34.73 | 34.80 |
+| GLCM Contraste | 57.18 | 39.93 | 48.49 | 46.44 |
+| Rugosidade Média | 941.64 | 724.26 | 581.04 | 528.27 |
+| N° Fraturas | 237 | 229 | 139 | 75 |
+| Severidade Dano (%) | 103.43 | 117.24 | 121.25 | 106.15 |
 
 ## Syagrus coronata
 
 | Parâmetro | ST 30d | ST 180d | DC 30d | DC 180d |
 |-----------|--------|---------|--------|----------|
 | Índice Orientação | 0.00 | 0.00 | 0.00 | 0.00 |
-| Porosidade (%) | 49.37 | 67.17 | 63.68 | 32.43 |
-| Densidade Fibrilar (%) | 33.92 | 29.46 | 36.10 | 35.01 |
-| GLCM Contraste | 44.78 | 44.88 | 56.73 | 55.18 |
-| Rugosidade Média | 585.60 | 769.52 | 711.51 | 684.24 |
-| N° Fraturas | 32 | 164 | 148 | 187 |
-| Severidade Dano (%) | 102.59 | 134.74 | 104.12 | 111.75 |
+| Porosidade (%) | 50.07 | 63.77 | 57.79 | 58.75 |
+| Densidade Fibrilar (%) | 30.50 | 30.21 | 39.66 | 33.24 |
+| GLCM Contraste | 51.22 | 67.24 | 115.56 | 53.02 |
+| Rugosidade Média | 679.35 | 1012.67 | 1174.66 | 675.67 |
+| N° Fraturas | 47 | 211 | 45 | 43 |
+| Severidade Dano (%) | 101.31 | 126.25 | 103.58 | 103.13 |
 
 
 ## Legenda

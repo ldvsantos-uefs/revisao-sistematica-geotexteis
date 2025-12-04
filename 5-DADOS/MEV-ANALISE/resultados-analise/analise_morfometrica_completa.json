@@ -4,129 +4,129 @@
       "filename": "taboa_DC_180d.png",
       "fiber": "taboa",
       "image_size": [
-        763,
+        770,
         1024
       ],
       "orientation": {
-        "mean_angle": -6.315015403548955,
-        "std_angle": 105.22037243539557,
+        "mean_angle": 5.668723400671788,
+        "std_angle": 103.84700807115527,
         "orientation_index": 0.0
       },
       "porosity": {
-        "porosity_pct": 68.41901826671035,
-        "num_pores": 118,
-        "mean_pore_area": 4530.220338983051,
-        "pore_circularity": 0.39222577231038497,
-        "aspect_ratio": 2.7805086415182805
+        "porosity_pct": 68.48746956168831,
+        "num_pores": 95,
+        "mean_pore_area": 5684.315789473684,
+        "pore_circularity": 0.34265099950483396,
+        "aspect_ratio": 2.49432892339667
       },
       "structure": {
-        "fibril_density": 32.71087606487549,
-        "num_junctions": 243514,
-        "skeleton_length": 255574
+        "fibril_density": 34.79859983766234,
+        "num_junctions": 254584,
+        "skeleton_length": 274380
       },
       "texture": {
-        "glcm_contrast": 68.49083468266804,
-        "glcm_dissimilarity": 5.655331528865915,
-        "glcm_homogeneity": 0.20937664577167447,
-        "glcm_energy": 0.047742980616289836,
-        "glcm_correlation": 0.6068870679806506,
-        "mean_surface_roughness": 950.3332672225428,
-        "std_surface_roughness": 880.0232325616918,
-        "max_surface_roughness": 12769.216859816708
+        "glcm_contrast": 46.44187975500988,
+        "glcm_dissimilarity": 4.376277118099693,
+        "glcm_homogeneity": 0.256465243085013,
+        "glcm_energy": 0.06215120495985826,
+        "glcm_correlation": 0.6206826948865347,
+        "mean_surface_roughness": 528.2706132185782,
+        "std_surface_roughness": 796.9158990158229,
+        "max_surface_roughness": 11852.286569121083
       },
       "fractures": {
-        "num_fractures": 155,
-        "total_fracture_area": 821976.5,
-        "fracture_length": 13438,
-        "damage_severity": 106.06460671281128,
+        "num_fractures": 75,
+        "total_fracture_area": 829852.0,
+        "fracture_length": 14191,
+        "damage_severity": 106.1469536323052,
         "severity_class": "Crítico",
-        "avg_aspect_ratio": 3.0120495615004432
+        "avg_aspect_ratio": 3.7268190683748648
       }
     },
     "taboa_DC_30d": {
       "filename": "taboa_DC_30d.png",
       "fiber": "taboa",
       "image_size": [
-        768,
+        770,
         1024
       ],
       "orientation": {
-        "mean_angle": 20.673496686070166,
-        "std_angle": 104.99986257668277,
+        "mean_angle": 5.999532339118987,
+        "std_angle": 101.3016771220898,
         "orientation_index": 0.0
       },
       "porosity": {
-        "porosity_pct": 59.593709309895836,
-        "num_pores": 117,
-        "mean_pore_area": 4005.675213675214,
-        "pore_circularity": 0.3693452897437507,
-        "aspect_ratio": 2.6977766520559903
+        "porosity_pct": 73.09177150974025,
+        "num_pores": 97,
+        "mean_pore_area": 5941.381443298969,
+        "pore_circularity": 0.39807365682278156,
+        "aspect_ratio": 2.5165647013462644
       },
       "structure": {
-        "fibril_density": 28.747304280598957,
-        "num_junctions": 209636,
-        "skeleton_length": 226078
+        "fibril_density": 34.72554788961039,
+        "num_junctions": 256986,
+        "skeleton_length": 273804
       },
       "texture": {
-        "glcm_contrast": 51.78315772611526,
-        "glcm_dissimilarity": 4.892216121166215,
-        "glcm_homogeneity": 0.2349657266257619,
-        "glcm_energy": 0.04109753284928785,
-        "glcm_correlation": 0.8630132604120816,
-        "mean_surface_roughness": 1123.2503764969133,
-        "std_surface_roughness": 1364.3635026857294,
-        "max_surface_roughness": 14098.457687727463
+        "glcm_contrast": 48.48693882680617,
+        "glcm_dissimilarity": 4.474541000725086,
+        "glcm_homogeneity": 0.255454155432028,
+        "glcm_energy": 0.06213437219235739,
+        "glcm_correlation": 0.6287298537680472,
+        "mean_surface_roughness": 581.0416533420506,
+        "std_surface_roughness": 839.2643778725757,
+        "max_surface_roughness": 12961.13902127013
       },
       "fractures": {
-        "num_fractures": 247,
-        "total_fracture_area": 938262.0,
-        "fracture_length": 29029,
-        "damage_severity": 121.15179697672527,
+        "num_fractures": 139,
+        "total_fracture_area": 932808.5,
+        "fracture_length": 46448,
+        "damage_severity": 121.25006341314935,
         "severity_class": "Crítico",
-        "avg_aspect_ratio": 2.6059722691302016
+        "avg_aspect_ratio": 2.4736293518023604
       }
     },
     "taboa_ST_180d": {
       "filename": "taboa_ST_180d.png",
       "fiber": "taboa",
       "image_size": [
-        779,
+        770,
         1024
       ],
       "orientation": {
-        "mean_angle": 0.4047588826293263,
-        "std_angle": 102.48449176672072,
+        "mean_angle": -14.224708116906958,
+        "std_angle": 105.48751857666463,
         "orientation_index": 0.0
       },
       "porosity": {
-        "porosity_pct": 35.166404244223365,
-        "num_pores": 146,
-        "mean_pore_area": 1921.376712328767,
-        "pore_circularity": 0.34913612702371044,
-        "aspect_ratio": 3.955389156188716
+        "porosity_pct": 67.2652445211039,
+        "num_pores": 190,
+        "mean_pore_area": 2791.436842105263,
+        "pore_circularity": 0.40921515387795254,
+        "aspect_ratio": 2.884451880528623
       },
       "structure": {
-        "fibril_density": 28.86049322047497,
-        "num_junctions": 207548,
-        "skeleton_length": 230219
+        "fibril_density": 27.77724228896104,
+        "num_junctions": 203923,
+        "skeleton_length": 219018
       },
       "texture": {
-        "glcm_contrast": 23.304462263431446,
-        "glcm_dissimilarity": 3.108752729933899,
-        "glcm_homogeneity": 0.3403910315553557,
-        "glcm_energy": 0.06507415507730038,
-        "glcm_correlation": 0.874749943113559,
-        "mean_surface_roughness": 407.0750305898677,
-        "std_surface_roughness": 693.5040138699251,
-        "max_surface_roughness": 11138.473716522942
+        "glcm_contrast": 39.925286875468444,
+        "glcm_dissimilarity": 4.224770096921435,
+        "glcm_homogeneity": 0.268981058674008,
+        "glcm_energy": 0.05212795972110546,
+        "glcm_correlation": 0.7901100536662098,
+        "mean_surface_roughness": 724.2599332796402,
+        "std_surface_roughness": 846.2200028055623,
+        "max_surface_roughness": 15151.630960079196
       },
       "fractures": {
-        "num_fractures": 128,
-        "total_fracture_area": 980896.0,
-        "fracture_length": 27626,
-        "damage_severity": 124.6977545330552,
+        "num_fractures": 229,
+        "total_fracture_area": 910734.5,
+        "fracture_length": 27394,
+        "damage_severity": 117.2422255478896,
         "severity_class": "Crítico",
-        "avg_aspect_ratio": 3.489903449983795
+        "avg_aspect_ratio": 2.827934584405411
       }
     },
     "taboa_ST_30d": {
@@ -137,39 +137,39 @@
         1024
       ],
       "orientation": {
-        "mean_angle": 0.8266261609270944,
-        "std_angle": 103.96960157079286,
+        "mean_angle": 19.35834183409003,
+        "std_angle": 105.9484363898898,
         "orientation_index": 0.0
       },
       "porosity": {
-        "porosity_pct": 75.45036018668831,
-        "num_pores": 29,
-        "mean_pore_area": 20514.172413793105,
-        "pore_circularity": 0.36932552624663967,
-        "aspect_ratio": 2.239973679521402
+        "porosity_pct": 32.754286728896105,
+        "num_pores": 317,
+        "mean_pore_area": 814.7034700315457,
+        "pore_circularity": 0.39104665334163285,
+        "aspect_ratio": 3.0828416871298483
       },
       "structure": {
-        "fibril_density": 34.798346185064936,
-        "num_junctions": 255694,
-        "skeleton_length": 274378
+        "fibril_density": 25.41421469155844,
+        "num_junctions": 182148,
+        "skeleton_length": 200386
       },
       "texture": {
-        "glcm_contrast": 35.17828146015579,
-        "glcm_dissimilarity": 3.9089207379776205,
-        "glcm_homogeneity": 0.26682945169578876,
-        "glcm_energy": 0.07044874966128119,
-        "glcm_correlation": 0.6499183031331686,
-        "mean_surface_roughness": 461.75160537077903,
-        "std_surface_roughness": 770.2375352876223,
-        "max_surface_roughness": 12510.736582573729
+        "glcm_contrast": 57.176681303964656,
+        "glcm_dissimilarity": 5.559361225267511,
+        "glcm_homogeneity": 0.1809897601220816,
+        "glcm_energy": 0.036637025351726034,
+        "glcm_correlation": 0.7156076360311183,
+        "mean_surface_roughness": 941.6388841246633,
+        "std_surface_roughness": 742.6405446636979,
+        "max_surface_roughness": 12543.844273997367
       },
       "fractures": {
-        "num_fractures": 47,
-        "total_fracture_area": 818260.0,
-        "fracture_length": 7028,
-        "damage_severity": 104.22255478896103,
+        "num_fractures": 237,
+        "total_fracture_area": 808015.5,
+        "fracture_length": 14991,
+        "damage_severity": 103.4282416801948,
         "severity_class": "Crítico",
-        "avg_aspect_ratio": 2.9520734265638287
+        "avg_aspect_ratio": 2.8381641510039057
       }
     }
   },
@@ -178,172 +178,172 @@
       "filename": "ouricuri_DC_180d.png",
       "fiber": "ouricuri",
       "image_size": [
-        760,
+        770,
         1024
       ],
       "orientation": {
-        "mean_angle": 3.7325417949608406,
-        "std_angle": 102.64852585027856,
+        "mean_angle": 13.735290792723767,
+        "std_angle": 100.87065441080082,
         "orientation_index": 0.0
       },
       "porosity": {
-        "porosity_pct": 32.43395353618421,
-        "num_pores": 238,
-        "mean_pore_area": 1060.563025210084,
-        "pore_circularity": 0.36662607008381387,
-        "aspect_ratio": 2.3076376046369513
+        "porosity_pct": 58.74759030032467,
+        "num_pores": 175,
+        "mean_pore_area": 2646.9314285714286,
+        "pore_circularity": 0.41417240342596406,
+        "aspect_ratio": 2.4211046461731596
       },
       "structure": {
-        "fibril_density": 35.01143606085526,
-        "num_junctions": 253547,
-        "skeleton_length": 272473
+        "fibril_density": 33.24447037337662,
+        "num_junctions": 243314,
+        "skeleton_length": 262126
       },
       "texture": {
-        "glcm_contrast": 55.184058029441765,
-        "glcm_dissimilarity": 5.481700551006982,
-        "glcm_homogeneity": 0.19034200141364607,
-        "glcm_energy": 0.0394677884729957,
-        "glcm_correlation": 0.6755675645985,
-        "mean_surface_roughness": 684.242951824455,
-        "std_surface_roughness": 633.7301585179499,
-        "max_surface_roughness": 13335.657836507331
+        "glcm_contrast": 53.022880802301714,
+        "glcm_dissimilarity": 5.263747135704422,
+        "glcm_homogeneity": 0.20125228636308665,
+        "glcm_energy": 0.042388466233766534,
+        "glcm_correlation": 0.7169914007232225,
+        "mean_surface_roughness": 675.6651348418808,
+        "std_surface_roughness": 605.7058941356828,
+        "max_surface_roughness": 11763.953543831834
       },
       "fractures": {
-        "num_fractures": 187,
-        "total_fracture_area": 859218.5,
-        "fracture_length": 20950,
-        "damage_severity": 111.75132349917763,
+        "num_fractures": 43,
+        "total_fracture_area": 810358.5,
+        "fracture_length": 5552,
+        "damage_severity": 103.12683898133118,
         "severity_class": "Crítico",
-        "avg_aspect_ratio": 2.252452637687309
+        "avg_aspect_ratio": 2.4942867679533127
       }
     },
     "ouricuri_DC_30d": {
       "filename": "ouricuri_DC_30d.png",
       "fiber": "ouricuri",
       "image_size": [
-        770,
+        768,
         1024
       ],
       "orientation": {
-        "mean_angle": 6.59504371463965,
-        "std_angle": 103.8049513479922,
+        "mean_angle": 8.68643315648002,
+        "std_angle": 104.04177243880096,
         "orientation_index": 0.0
       },
       "porosity": {
-        "porosity_pct": 63.67517248376623,
-        "num_pores": 96,
-        "mean_pore_area": 5229.854166666667,
-        "pore_circularity": 0.39811319614673923,
-        "aspect_ratio": 2.234027852380515
+        "porosity_pct": 57.78821309407552,
+        "num_pores": 139,
+        "mean_pore_area": 3269.5323741007196,
+        "pore_circularity": 0.36201778606492896,
+        "aspect_ratio": 2.2540734456043263
       },
       "structure": {
-        "fibril_density": 36.096920657467535,
-        "num_junctions": 269066,
-        "skeleton_length": 284617
+        "fibril_density": 39.66013590494792,
+        "num_junctions": 300426,
+        "skeleton_length": 311900
       },
       "texture": {
-        "glcm_contrast": 56.73440756025842,
-        "glcm_dissimilarity": 5.60006448495805,
-        "glcm_homogeneity": 0.1774543230550689,
-        "glcm_energy": 0.04509410633946455,
-        "glcm_correlation": 0.6325644090590059,
-        "mean_surface_roughness": 711.5108568384981,
-        "std_surface_roughness": 662.7249886798033,
-        "max_surface_roughness": 9851.316213789705
+        "glcm_contrast": 115.56022878503798,
+        "glcm_dissimilarity": 7.90497165405168,
+        "glcm_homogeneity": 0.13752240337558702,
+        "glcm_energy": 0.03474050685476968,
+        "glcm_correlation": 0.48804481278711176,
+        "mean_surface_roughness": 1174.656162607404,
+        "std_surface_roughness": 850.499072086302,
+        "max_surface_roughness": 12794.131296217418
       },
       "fractures": {
-        "num_fractures": 148,
-        "total_fracture_area": 811707.5,
-        "fracture_length": 18470,
-        "damage_severity": 104.11709872159089,
+        "num_fractures": 45,
+        "total_fracture_area": 808384.0,
+        "fracture_length": 12367,
+        "damage_severity": 103.5776138305664,
         "severity_class": "Crítico",
-        "avg_aspect_ratio": 2.3649305697236915
+        "avg_aspect_ratio": 2.756831934724198
       }
     },
     "ouricuri_ST_180d": {
       "filename": "ouricuri_ST_180d.png",
       "fiber": "ouricuri",
       "image_size": [
-        760,
+        758,
         1024
       ],
       "orientation": {
-        "mean_angle": 8.96575353150553,
-        "std_angle": 99.15531045331558,
+        "mean_angle": 11.55751227765362,
+        "std_angle": 100.25592354665685,
         "orientation_index": 0.0
       },
       "porosity": {
-        "porosity_pct": 67.16886821546053,
-        "num_pores": 111,
-        "mean_pore_area": 4709.324324324324,
-        "pore_circularity": 0.35779454406201605,
-        "aspect_ratio": 3.173666363225247
+        "porosity_pct": 63.77275210257256,
+        "num_pores": 153,
+        "mean_pore_area": 3235.2875816993464,
+        "pore_circularity": 0.38187110698213306,
+        "aspect_ratio": 2.93336577348478
       },
       "structure": {
-        "fibril_density": 29.462376644736842,
-        "num_junctions": 207758,
-        "skeleton_length": 229288
+        "fibril_density": 30.20889161444591,
+        "num_junctions": 215702,
+        "skeleton_length": 234479
       },
       "texture": {
-        "glcm_contrast": 44.87894507242053,
-        "glcm_dissimilarity": 4.279873276065961,
-        "glcm_homogeneity": 0.29679227616487047,
-        "glcm_energy": 0.07029775326234147,
-        "glcm_correlation": 0.8493049406123887,
-        "mean_surface_roughness": 769.5238759142327,
-        "std_surface_roughness": 1229.2122260270214,
-        "max_surface_roughness": 16335.568856718735
+        "glcm_contrast": 67.24488452220227,
+        "glcm_dissimilarity": 5.620515138122482,
+        "glcm_homogeneity": 0.20864954345342596,
+        "glcm_energy": 0.039534603893248726,
+        "glcm_correlation": 0.7859593092603337,
+        "mean_surface_roughness": 1012.666531990906,
+        "std_surface_roughness": 1125.703408479122,
+        "max_surface_roughness": 14158.423797582003
       },
       "fractures": {
-        "num_fractures": 164,
-        "total_fracture_area": 1028597.5,
-        "fracture_length": 40046,
-        "damage_severity": 134.74256013569078,
+        "num_fractures": 211,
+        "total_fracture_area": 954965.5,
+        "fracture_length": 50003,
+        "damage_severity": 126.25316931893141,
         "severity_class": "Crítico",
-        "avg_aspect_ratio": 3.015752343462918
+        "avg_aspect_ratio": 2.683564576077796
       }
     },
     "ouricuri_ST_30d": {
       "filename": "ouricuri_ST_30d.png",
       "fiber": "ouricuri",
       "image_size": [
-        776,
+        768,
         1024
       ],
       "orientation": {
-        "mean_angle": 11.19706169395874,
-        "std_angle": 102.77887530683755,
+        "mean_angle": 15.688376296418852,
+        "std_angle": 99.43176224313981,
         "orientation_index": 0.0
       },
       "porosity": {
-        "porosity_pct": 49.36913559117268,
-        "num_pores": 302,
-        "mean_pore_area": 1299.0033112582782,
-        "pore_circularity": 0.3032015108012125,
-        "aspect_ratio": 2.6793293661373654
+        "porosity_pct": 50.06752014160156,
+        "num_pores": 512,
+        "mean_pore_area": 769.037109375,
+        "pore_circularity": 0.3946835605253656,
+        "aspect_ratio": 3.1170349379887488
       },
       "structure": {
-        "fibril_density": 33.918306016430414,
-        "num_junctions": 251909,
-        "skeleton_length": 269523
+        "fibril_density": 30.495707194010418,
+        "num_junctions": 222627,
+        "skeleton_length": 239828
       },
       "texture": {
-        "glcm_contrast": 44.7785445179907,
-        "glcm_dissimilarity": 4.7965674234840865,
-        "glcm_homogeneity": 0.21614203724486752,
-        "glcm_energy": 0.05036981317054348,
-        "glcm_correlation": 0.6091248629116863,
-        "mean_surface_roughness": 585.5979957508893,
-        "std_surface_roughness": 624.5304255877489,
-        "max_surface_roughness": 10467.435883979211
+        "glcm_contrast": 51.21650556007151,
+        "glcm_dissimilarity": 5.123571392923751,
+        "glcm_homogeneity": 0.1993673626241568,
+        "glcm_energy": 0.046758544236631075,
+        "glcm_correlation": 0.6134726257081174,
+        "mean_surface_roughness": 679.3505266991932,
+        "std_surface_roughness": 623.2151836020798,
+        "max_surface_roughness": 12108.071271217152
       },
       "fractures": {
-        "num_fractures": 32,
-        "total_fracture_area": 812402.5,
-        "fracture_length": 5676,
-        "damage_severity": 102.59449752335695,
+        "num_fractures": 47,
+        "total_fracture_area": 794991.5,
+        "fracture_length": 3420,
+        "damage_severity": 101.3058344523112,
         "severity_class": "Crítico",
-        "avg_aspect_ratio": 4.159225884296278
+        "avg_aspect_ratio": 3.2347065913324182
       }
     }
   }
