@@ -197,7 +197,7 @@ def main():
     
     # Arquivos comuns
     bib_file = Path("referencias.bib")
-    csl_file = Path("apa.csl")
+    csl_file = Path("springer-vancouver.csl")
     apendices_pt = Path("apendices.md")
     
     # Verificar arquivos necessários
