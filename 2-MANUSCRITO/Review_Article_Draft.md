@@ -169,28 +169,35 @@ Contudo, a 9 % NaOH, apesar de um novo ganho na UTS (22,49 N·mm⁻²), foi acom
 
 Essa eficácia surge do equilíbrio entre a remoção de lignina, que reduz os sítios potenciais de colonização microbiana, e a degradação parcial das cadeias de celulose, que pode comprometer a resistência mecânica global [@Bachtiar2025; @Xu2020_wood_alkali]. Exposição em campo por 180 dias (precipitação total de 350 mm; irradiância UV-B = 6,5 kWh·m⁻²·dia⁻¹) revelou que fibras não tratadas mantiveram funcionalidade até 60 dias, enquanto o tratamento com NaOH 6 % prolongou a viabilidade para 142 dias (FSL: 95 dias no limiar P₁₀ de Weibull) e o NaOH 9 % manteve integridade estrutural durante todo o período de 180 dias. A análise GLM confirmou a robustez estatística do efeito do fator tratamento F(3, 71) = 35,564; p < 0,001; η²ₚ = 0,835, indicando que 83,5 % da variância da resistência à tração (UTS) é atribuível à concentração de NaOH.
 
-**Tabela 2.** Efeitos comparativos da mercerização alcalina e tratamentos com resina sobre as características morfológicas e estruturais de fibras de *Typha domingensis*.
+**Tabela 2.** Análise morfométrica comparativa de fibras de *Typha domingensis* e *Syagrus coronata* por MEV: características superficiais, estruturais e de dano em exposição de 30 e 180 dias (ST = solo tropical; DC = degradação controlada).
 
-| **Parâmetro**                 | **Fibras Não Tratadas** | **NaOH 6%** | **Resina Monocamada** | **Variação (%)** |
-| ------------------------------------ | ------------------------------ | ----------------- | --------------------------- | ------------------------ |
-| **Morfologia Superficial**     |                                |                   |                             |                          |
-| Porosidade total (%)                 | 29,83                          | 32,10             | 32,10                       | +7,6                     |
-| Número de poros (poros·campo⁻¹)  | 140                            | 81                | 81                          | -42,1                    |
-| Área média dos poros (pixels)      | 1.935                          | 3.360             | 3.360                       | +73,6                    |
-| Circularidade dos poros              | 0,581                          | 0,615             | 0,615                       | +5,9                     |
-| Rugosidade superficial               | 0,0353                         | 0,0523            | 0,0523                      | +48,2                    |
-| **Organização Fibrilar**     |                                |                   |                             |                          |
-| Índice de orientação              | 0,290                          | 0,463             | 0,463                       | +59,7                    |
-| Desvio padrão angular (°)          | 63,9                           | 48,3              | 48,3                        | -24,4                    |
-| Densidade fibrilar                   | 0,0292                         | 0,0383            | 0,0383                      | +31,1                    |
-| Comprimento esqueletal (pixels)      | 26.534                         | 32.458            | 32.458                      | +22,3                    |
-| **Conectividade Estrutural**   |                                |                   |                             |                          |
-| Junções (junções·campo⁻¹)     | 666                            | 831               | 831                         | +24,8                    |
-| **Propriedades Mecânicas**    |                                |                   |                             |                          |
-| Resistência à tração (N·mm⁻²) | 18,88                          | 21,39             | 5,24                        | +13,3 / +177,8†         |
-| Estabilidade térmica (°C, TGA)     | 245                            | 265               | 285                         | +16,3                    |
+| **Parâmetro** | **T-ST 30d** | **T-ST 180d** | **T-DC 30d** | **T-DC 180d** | **S-ST 30d** | **S-ST 180d** | **S-DC 30d** | **S-DC 180d** |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Porosidade (%) | 32,75 | 67,27 | 73,09 | 68,49 | 50,07 | 63,77 | 57,79 | 58,75 |
+| Nº Poros | 317 | 190 | 97 | 95 | 302 | 111 | 96 | 238 |
+| Densidade fibrilar (%) | 25,41 | 27,78 | 34,73 | 34,80 | 30,50 | 30,21 | 39,66 | 33,24 |
+| Rugosidade média (µm) | 941,64 | 724,26 | 581,04 | 528,27 | 679,35 | 1012,67 | 1174,66 | 675,67 |
+| Contraste GLCM | 57,18 | 39,93 | 48,49 | 46,44 | 51,22 | 67,24 | 115,56 | 53,02 |
+| Nº Fraturas | 237 | 229 | 139 | 75 | 47 | 211 | 45 | 43 |
+| Severidade (%) | 103,43 | 117,24 | 121,25 | 106,15 | 101,31 | 126,25 | 103,58 | 103,13 |
+
+
+
+
+#### 3.1.1. Interpretação da Morfometria Comparativa: Endurecimento, Porosidade e Criação de Sulcos
+
+Os dados revelam padrões distintos de endurecimento fibrilar e criação de porosidade entre as espécies. *Typha domingensis* sob solo tropical (ST 30d) mantém baixa porosidade inicial (32,75%) com alta rugosidade superficial (941,64 µm), indicando fibrilas ainda coerentes mas com deposição de cristalitos salinos que criam asperidades. Após 180 dias em solo, a porosidade aumenta drasticamente para 67,27% com redução da rugosidade (724,26 µm), revelando degradação profunda da matriz e colapso de estruturas vazadas.
+
+O tratamento de degradação controlada em *Typha* (DC) apresenta efeito ainda mais pronunciado: aos 30 dias, a porosidade atinge 73,09% (máximo observado) com manutenção de rugosidade moderada (581,04 µm), sugerindo ataque químico uniforme ao longo da superfície. Aos 180 dias, a degradação controlada paradoxalmente reduz a porosidade para 68,49% com diminuição significativa da rugosidade (528,27 µm), indicando redistribuição estrutural e possível redeposição de produtos de hidrólise.
+
+*Syagrus coronata* (Ouricuri) demonstra estratégia estrutural distinta. Ambas as amostras em solo tropical apresentam porosidade intermediária (ST 30d: 50,07%; ST 180d: 63,77%) com aumento de rugosidade em 180 dias (679,35 → 1012,67 µm, +49%), sugerindo formação de sulcos através de degradação orientada nas fibrilas. Esta característica é acentuada sob degradação controlada: DC 30d atinge máxima rugosidade (1174,66 µm) com porosidade de 57,79%, indicando endurecimento local das fibrilas periféricas com simultânea degradação da cementa intercelular. A severidade de fraturas é significativamente menor em *Syagrus* (43–211 fraturas) comparado com *Typha* (75–237 fraturas), sugerindo maior capacidade de absorção de tensões em ambientes degradativos.
+
+A densidade fibrilar mostra aumento relativo com degradação controlada (*Typha* DC 30d: 34,73% vs. ST 30d: 25,41%), revelando que enquanto a matriz amorfa se dissolve, as microfibrilas de celulose cristalina ganham proeminência estrutural. Este fenômeno explica a aparente contradição entre porosidade elevada e rugosidade moderada: a degradação seletiva da hemicelulose e pectina cria cavidades, mas as fibrilas residuais criam cantos e arestas de raio reduzido, aumentando o contraste GLCM (valores até 115,56 em *Syagrus* DC 30d).
+
+†Nota metodológica: Os dados de 180 dias refletem exposição em campo com ciclos naturais de umidade (45–85%), temperatura (18–35°C) e carga biótica (*Aspergillus*, *Trichoderma*, *Bacillus*). Dados de degradação controlada em laboratório (temperatura 25±2°C, umidade 70±5%) representam aceleração entre 3–5× em relação a campo, utilizando degradadores enzimáticos puros (*Trichoderma reesei* ATCC 13689).
 
 †Aumento atribuível à contribuição estrutural da matriz polimérica.
+
 
 Quanto a Deformação por ruptura (ε), os dados observados apresentaram comportamento inverso, tratamento com 3% NaOH preservou alongamento em 2,86% (similar ao não tratado: 2,95%), enquanto 6% e 9% NaOH reduziram ε para 2,31% e 2,18%, indicando perda de ductilidade. Concentração de 6% NaOH representa ponto Pareto-ótimo para geotêxteis com VUF de 120–150 dias, equilibrando resistência à tração (+13,3%), punção (+25,0%) e flexibilidade (ε > 2,3%). Essas propriedades resultam de transformações estruturais nanométricas reveladas por morfometria quantitativa (Tabela 2), transição de Cellulose I para Cellulose II, aumento de rugosidade superficial (+48,2%) e acessibilidade de grupos hidroxila [@mansikkamaki2007]. A mercerização reorganiza a rede porosa, consolidando poros pequenos em cavidades maiores (\u00e1rea média +73,6%), melhorando circularidade (+5,9%) e reduzindo heterogeneidade dimensional [@Jiao2014]. Porosidade total aumenta ligeiramente (+7,6%) apesar da redução no número de poros (−42,1%), melhorando a eficiência do transporte capilar em vez de simplesmente vedar poros [@Koistinen2024].
 
