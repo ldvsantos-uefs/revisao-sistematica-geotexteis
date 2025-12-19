@@ -153,8 +153,6 @@ Inserção estratégica de referências em afirmações técnicas:
 
 ## 🤖 Configuração de Agentes e Prompts
 
-### Agente Principal: GitHub Copilot (Claude Sonnet 4.5)
-
 **Instruções de Sistema Ativas:**
 
 #### 1. Comportamento Geral
@@ -186,7 +184,6 @@ Tool: replace_string_in_file
 #### 4. Notebooks Jupyter
 ```
 Tool: edit_notebook_file
-- Usar copilot_getNotebookSummary para obter Cell IDs
 - Preservar whitespace/indentação exatamente
 - NÃO executar células Markdown
 - Executar células ao adicionar/editar
@@ -360,12 +357,6 @@ pandoc Review_Article_Draft.md -o Manuscrito_com_Referencias.docx \
   --csl=apa.csl
 ```
 
-### Continuar com GitHub Copilot
-1. Abrir Review_Article_Draft.md no VS Code
-2. Iniciar novo chat no Copilot
-3. Referenciar este arquivo: "Veja DOCUMENTACAO_SESSAO.md para contexto"
-4. Continuar editando normalmente
-
 ---
 
 ## 📞 Comandos Úteis de Referência
@@ -446,5 +437,4 @@ lang: pt-br
 
 **Última Atualização:** 2 de dezembro de 2025  
 **Versão:** 1.0  
-**Criado por:** GitHub Copilot (Claude Sonnet 4.5)  
-**Usuário:** Luiz Diego Vidal Santos
+**Criado por:** Luiz Diego Vidal Santos

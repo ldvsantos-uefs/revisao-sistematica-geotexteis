@@ -1,0 +1,46 @@
+graph TD
+    subgraph "**Chemical Composition**"
+        A1["Typha domingensis<br/>L/C = 0.46<br/>↓ Lignin (22%)<br/>↑ Cellulose (48%)"]
+        A2["Syagrus coronata<br/>L/C = 0.80<br/>↑ Lignin (32%)<br/>↓ Cellulose (40%)"]
+    end
+    
+    subgraph "**Biodegradation Kinetics**"
+        B1["k = 0.0118 day⁻¹<br/>Half-life: 59 days<br/>Mechanism: Rapid<br/>surface erosion"]
+        B2["k = 0.0082 day⁻¹<br/>Half-life: 85 days<br/>Mechanism: Slow<br/>radial penetration"]
+    end
+    
+    subgraph "**Mechanical Strength**"
+        C1["T₀: 3.57 N·mm⁻²<br/>T₆₀: 1.31 N·mm⁻² (-63%)<br/>Failure: ≤60 days"]
+        C2["T₀: 3.14 N·mm⁻²<br/>T₉₀: Integrity maintained<br/>Failure: ≥90 days"]
+    end
+    
+    subgraph "**FSL - Weibull P₁₀**"
+        D1["β = 2.3<br/>η = 68 days<br/>FSL = 42 days<br/><span style='color:red'>⚠ Short duration</span>"]
+        D2["β = 2.8<br/>η = 85 days<br/>FSL = 38 days*<br/><span style='color:orange'>⚠ Soft failure</span>"]
+    end
+    
+    subgraph "**FSL Strategies**"
+        E1["Untreated:<br/>60 days"]
+        E2["NaOH 6%:<br/>142 days (+137%)<br/>FSL P₁₀: 95 days"]
+        E3["Monolayer resin:<br/>120 days (+100%)<br/>FSL P₁₀: 128 days"]
+        E4["Bilayer resin:<br/>90 days (delamination)<br/><span style='color:red'>❌ Abrupt failure</span>"]
+    end
+    
+    A1 --> B1
+    A2 --> B2
+    B1 --> C1
+    B2 --> C2
+    C1 --> D1
+    C2 --> D2
+    D1 --> E1
+    D1 --> E2
+    D1 --> E3
+    D1 --> E4
+    
+    style A1 fill:#E8F4F8,stroke:#333,stroke-width:2px
+    style A2 fill:#FFF4E6,stroke:#333,stroke-width:2px
+    style D1 fill:#FFB6C1,stroke:#333,stroke-width:3px
+    style D2 fill:#FFE4B5,stroke:#333,stroke-width:3px
+    style E2 fill:#90EE90,stroke:#333,stroke-width:2px
+    style E3 fill:#90EE90,stroke:#333,stroke-width:2px
+    style E4 fill:#FF6B6B,stroke:#333,stroke-width:2px

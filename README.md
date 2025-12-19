@@ -112,13 +112,6 @@ O manuscrito cita 13 referências-chave organizadas em:
 
 Este trabalho é parte de uma tese/dissertação acadêmica.
 
-## 🔗 Links Relacionados
-
-- [Pandoc](https://pandoc.org/) - Processamento de documentos
-- [BibTeX](http://www.bibtex.org/) - Gerenciamento de referências
-- [GitHub Copilot](https://github.com/features/copilot) - Assistente de codificação
-
----
 
 **Última atualização:** Dezembro 2025
 **Repositório GitHub:** https://github.com/ldvsantos-uefs/revisao-sistematica-geotexteis

@@ -338,5 +338,4 @@ O artigo está **pronto para submissão** após compilação Pandoc e revisão f
 
 ---
 
-**Documento gerado por:** GitHub Copilot (Claude Sonnet 4.5)  
 **Última atualização:** 2025-02-05

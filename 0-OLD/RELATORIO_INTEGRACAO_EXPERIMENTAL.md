@@ -211,4 +211,3 @@ O manuscrito evoluiu de uma síntese descritiva para um documento técnico de **
 
 ---
 
-*Relatório preparado por: Copilot AI | Data: 2025-01-XX | Revisão: V1.0*
