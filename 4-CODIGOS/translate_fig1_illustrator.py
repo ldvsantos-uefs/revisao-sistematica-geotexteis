@@ -168,4 +168,28 @@ def translate_figure_1():
         # Configure Export Options
         export_options = win32com.client.Dispatch("Illustrator.ExportOptionsPNG24")
         export_options.AntiAliasing = True
-        export_options
+        export_options.Transparency = True
+        export_options.ArtBoardClipping = True
+        export_options.HorizontalScale = 300.0 # 300% scale for high res (approx 300 DPI if base is 72)
+        export_options.VerticalScale = 300.0
+        
+        # Export type 5 is PNG24
+        # SaveAs is for AI/EPS/PDF. Export is for images.
+        doc.Export(str(output_png), 5, export_options)
+        
+        # Close without saving changes to the original AI file
+        # 2 = aiDoNotSaveChanges
+        doc.Close(2)
+        
+        print("Success! Figure 1 translated and exported.")
+        
+    except Exception as e:
+        print(f"\nCRITICAL ERROR: Could not automate Illustrator.")
+        print(f"Details: {e}")
+        print("\nPossible causes:")
+        print("1. Adobe Illustrator is not installed or not running.")
+        print("2. A dialog box is open in Illustrator blocking the script.")
+        print("3. Permissions issue.")
+
+if __name__ == "__main__":
+    translate_figure_1()

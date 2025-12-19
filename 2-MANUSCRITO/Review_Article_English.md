@@ -63,7 +63,7 @@ This asymmetry of reactivity controls the rate of mass and stiffness loss over t
 
 **Figure 1.** Multilevel hierarchical architecture of lignocellulosic fibers and the influence of composition on recalcitrance: **(a)** Schematic representation of the main linear cellulose chain polymers, **(b)** Supramolecular organization of the crystalline core of cellulose microfibrils, **(c)** Cross-section of the plant cell wall, and **(d)** Tissue Level and L/C Ratio: Schematic comparison of *Typha* (low lignification) and *Syagrus* (high lignification) fiber bundles.
 
-![](../3-IMAGENS/fig_01.png)
+![](../5-DADOS/MEV-ANALISE/resultados_en/fig_01_english.png)
 
 The chemical characterization of *Syagrus coronata* fibers (Table 1) demonstrates 32% lignin versus 22% in *Typha domingensis*, a compositional difference that translates into contrasting degradation trajectories under field exposure. Untreated *Typha* fibers lose mechanical viability after 60 days of environmental exposure (63.2% reduction in tensile strength), while *Syagrus* maintains observable structural integrity up to 90 days, evidencing the recalcitrance conferred by the higher lignin content [@Holanda20251].
 
