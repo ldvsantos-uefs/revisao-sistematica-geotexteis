@@ -1,0 +1,65 @@
+Wavenumber,Transmittance,Assignment,Description
+4000,95,Baseline,Baseline region
+3900,95,Baseline,Baseline region
+3800,94,Baseline,Baseline region
+3700,93,Baseline,Baseline region
+3600,92,Baseline,Baseline region
+3500,88,O-H region,Hydroxyl groups region start
+3400,82,O-H region,Hydroxyl groups region
+3340,75,O-H stretching,Hydroxyl groups - cellulose/hemicellulose
+3280,80,O-H region,Hydroxyl groups region
+3200,85,O-H region,Hydroxyl groups region end
+3100,90,Baseline,Baseline region
+3000,92,Baseline,Baseline region
+2950,90,C-H region,Aliphatic C-H stretching start
+2920,85,C-H stretching,Aliphatic C-H from cellulose
+2852,82,C-H stretching,C-H aliphatic chains
+2800,88,C-H region,Aliphatic C-H stretching end
+2700,92,Baseline,Baseline region
+2600,94,Baseline,Baseline region
+2500,95,Baseline,Baseline region
+2400,95,Baseline,Baseline region
+2300,95,Baseline,Baseline region
+2200,95,Baseline,Baseline region
+2100,95,Baseline,Baseline region
+2000,95,Baseline,Baseline region
+1900,95,Baseline,Baseline region
+1800,94,Baseline,Baseline region
+1750,92,C=O region,Carbonyl region start
+1732,88,C=O stretching,Carbonyl from hemicellulose/lignin
+1700,90,C=O region,Carbonyl region
+1650,92,Baseline,Baseline region
+1600,91,Aromatic,Aromatic lignin region
+1590,89,Syringyl lignin,Syringyl ring - characteristic Ouricuri
+1550,90,Aromatic,Aromatic lignin region
+1500,91,Aromatic,Aromatic lignin region
+1450,89,CH2 region,Methylene deformation start
+1429,87,CH2 bending,CH2 deformation - cellulose
+1400,89,CH2 region,Methylene deformation
+1350,90,C-O region,C-O vibration region
+1315,88,C-O stretching,C-O vibration - cellulose
+1280,89,C-O region,C-O vibration region
+1250,87,C-O-C region,C-O-C ether linkages start
+1234,85,C-O-C stretching,Syringyl ring and C-O lignin/xylan
+1200,88,C-O-C region,C-O-C ether linkages
+1180,86,C-O region,C-O cellulose region
+1163,84,C-O cellulose,C-O stretching cellulose (sulfate group)
+1140,86,C-O region,C-O cellulose region
+1100,85,C-O region,C-O cellulose region
+1060,83,C-O region,C-O stretching region
+1035,82,C-O stretching,C-O stretching - cellulose
+1000,84,C-O region,C-O stretching region
+950,86,Glycosidic,β-glycosidic region start
+920,85,Glycosidic,β-glycosidic linkages
+896,83,β-glycosidic,β-glycosidic bond - cellulose structure
+870,85,Glycosidic,β-glycosidic region
+850,86,Baseline,Baseline region
+800,88,Baseline,Baseline region
+750,89,Baseline,Baseline region
+700,90,Baseline,Baseline region
+650,91,Baseline,Baseline region
+600,92,Baseline,Baseline region
+550,93,Baseline,Baseline region
+500,94,Baseline,Baseline region
+450,94,Baseline,Baseline region
+400,95,Baseline,Baseline region

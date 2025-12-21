@@ -1,0 +1,12 @@
+RESIN MODEL (OLS + HC3 robust SE)
+Formula: UTS ~ Days_c * C(Species, Treatment(reference="Typha domingensis")) * C(Treatment_Level, Treatment(reference="Untreated"))
+N = 154
+R^2 = 0.490 (adj 0.450)
+
+Key interpretation (fixed-effects):
+- Main effect of Days_c: average degradation/gain rate (MPa/day) at reference categories.
+- Interaction Days_c:Treatment indicates change in degradation rate under resin vs untreated.
+- Species interactions indicate different time trends between Typha and Syagrus.
+
+Robust (HC3) term tests are in resin_wald_terms_hc3.csv.
+Effect sizes (partial eta^2) are in resin_anova_type2.csv.

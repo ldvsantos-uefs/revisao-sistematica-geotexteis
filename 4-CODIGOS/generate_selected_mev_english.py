@@ -124,9 +124,8 @@ class ComprehensiveMEVAnalyzer:
         print("  -> Generating Fracture Analysis Figure...")
         
         fig, axes = plt.subplots(2, 4, figsize=(20, 10))
-        # fig.suptitle('Fracture and Surface Damage Analysis',
-        #              fontsize=16, fontweight='bold', y=0.98)
         
+        # Configuração completa: 8 imagens (a-h)
         images_config = [
             ('taboa', 'taboa_ST_30d', 0, 0, 'a', 'Typha - Untreated 30d'),
             ('taboa', 'taboa_ST_180d', 0, 1, 'b', 'Typha - Untreated 180d'),

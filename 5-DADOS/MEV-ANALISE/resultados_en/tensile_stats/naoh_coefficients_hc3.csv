@@ -1,0 +1,17 @@
+term,coef,se_hc3,t_hc3,p_hc3
+Intercept,2.4909001765592764,0.22169773126740336,11.235569089134465,5.066151195936283e-20
+"C(Species, Treatment(reference=""Typha domingensis""))[T.Syagrus coronata]",-0.8500643465057878,1.997637062571978,-0.4255349294587683,0.6712706693210833
+"C(Treatment_Level, Treatment(reference=""0% NaOH""))[T.3% NaOH]",2.390712228684128,0.43450479510200724,5.502153844177642,2.436161082321031e-07
+"C(Treatment_Level, Treatment(reference=""0% NaOH""))[T.6% NaOH]",1.3597689595085753,0.5957268665819256,2.2825375785222826,0.024362918302620735
+"C(Treatment_Level, Treatment(reference=""0% NaOH""))[T.9% NaOH]",5.7155643621124,0.5227985431229378,10.93263253560438,2.525067548556115e-19
+"C(Species, Treatment(reference=""Typha domingensis""))[T.Syagrus coronata]:C(Treatment_Level, Treatment(reference=""0% NaOH""))[T.3% NaOH]",-0.2840866920327963,2.4894487048055245,-0.11411630674872215,0.9093517521997005
+"C(Species, Treatment(reference=""Typha domingensis""))[T.Syagrus coronata]:C(Treatment_Level, Treatment(reference=""0% NaOH""))[T.6% NaOH]",0.3068245470082559,2.1980216723039536,0.13959122918321554,0.8892359377530372
+"C(Species, Treatment(reference=""Typha domingensis""))[T.Syagrus coronata]:C(Treatment_Level, Treatment(reference=""0% NaOH""))[T.9% NaOH]",-2.7856932978378586,2.131503374781397,-1.306914795818024,0.1939427280303247
+Days_c,-0.02145209179895604,0.003964555142409705,-5.410970721400332,3.650824299506378e-07
+"Days_c:C(Species, Treatment(reference=""Typha domingensis""))[T.Syagrus coronata]",-0.22652357822296662,0.07896789457324078,-2.8685528396970437,0.004936880769581973
+"Days_c:C(Treatment_Level, Treatment(reference=""0% NaOH""))[T.3% NaOH]",-0.022318621419570472,0.008412336938376943,-2.6530822033237027,0.009145649250281135
+"Days_c:C(Treatment_Level, Treatment(reference=""0% NaOH""))[T.6% NaOH]",-0.010128788237890578,0.009408954143360411,-1.0765052187057507,0.2840355286523541
+"Days_c:C(Treatment_Level, Treatment(reference=""0% NaOH""))[T.9% NaOH]",-0.0359403835140604,0.00954846634551218,-3.7639954117817602,0.00026905051482869645
+"Days_c:C(Species, Treatment(reference=""Typha domingensis""))[T.Syagrus coronata]:C(Treatment_Level, Treatment(reference=""0% NaOH""))[T.3% NaOH]",0.13112929813076338,0.09131490248564096,1.4360120260916134,0.15381117660747265
+"Days_c:C(Species, Treatment(reference=""Typha domingensis""))[T.Syagrus coronata]:C(Treatment_Level, Treatment(reference=""0% NaOH""))[T.6% NaOH]",0.15945909433487165,0.08135606242307661,1.9600148972996652,0.052500452966413404
+"Days_c:C(Species, Treatment(reference=""Typha domingensis""))[T.Syagrus coronata]:C(Treatment_Level, Treatment(reference=""0% NaOH""))[T.9% NaOH]",0.17544429994687716,0.08093350511641537,2.1677585777919384,0.03231296010059611

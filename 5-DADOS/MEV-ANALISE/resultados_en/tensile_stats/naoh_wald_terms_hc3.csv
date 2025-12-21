@@ -1,0 +1,9 @@
+term,stat,df_constraint,pvalue_hc3
+Intercept,[[126.23801276]],1,5.0661511959362685e-20
+"C(Species, Treatment(reference=""Typha domingensis""))",[[0.18107998]],1,0.6712706693210927
+"C(Treatment_Level, Treatment(reference=""0% NaOH""))",[[43.28218164]],3,1.3348879916557905e-18
+"C(Species, Treatment(reference=""Typha domingensis"")):C(Treatment_Level, Treatment(reference=""0% NaOH""))",[[2.65178756]],3,0.052225787716866014
+Days_c,[[29.27860415]],1,3.6508242995063175e-07
+"Days_c:C(Species, Treatment(reference=""Typha domingensis""))",[[8.22859539]],1,0.00493688076958187
+"Days_c:C(Treatment_Level, Treatment(reference=""0% NaOH""))",[[5.99859721]],3,0.0007949269191094417
+"Days_c:C(Species, Treatment(reference=""Typha domingensis"")):C(Treatment_Level, Treatment(reference=""0% NaOH""))",[[1.75018243]],3,0.1609248730226057

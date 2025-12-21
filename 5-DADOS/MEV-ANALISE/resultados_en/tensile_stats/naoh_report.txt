@@ -1,0 +1,12 @@
+NAOH MODEL (OLS + HC3 robust SE)
+Formula: UTS ~ Days_c * C(Species, Treatment(reference="Typha domingensis")) * C(Treatment_Level, Treatment(reference="0% NaOH"))
+N = 127
+R^2 = 0.681 (adj 0.638)
+
+Key interpretation (fixed-effects):
+- Days_c: average time trend (MPa/day).
+- Days_c:Treatment indicates how NaOH level changes the time trend.
+- Species interactions indicate different NaOH sensitivity between Typha and Syagrus.
+
+Robust (HC3) term tests are in naoh_wald_terms_hc3.csv.
+Effect sizes (partial eta^2) are in naoh_anova_type2.csv.
