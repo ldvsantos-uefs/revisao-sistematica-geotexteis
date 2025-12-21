@@ -22,6 +22,7 @@ from pathlib import Path
 from typing import Optional
 
 import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
 import seaborn as sns
 
@@ -29,6 +30,105 @@ try:
     import pyreadstat  # type: ignore
 except Exception:  # pragma: no cover
     pyreadstat = None
+
+
+def _annotate_panel_label(fig: plt.Figure, panel_label: str) -> None:
+    fig.text(
+        0.01,
+        0.99,
+        f"({panel_label})",
+        ha="left",
+        va="top",
+        fontsize=12,
+        fontweight="bold",
+    )
+
+
+def _linear_fit_r2(x: pd.Series, y: pd.Series) -> tuple[float, float, Optional[float]]:
+    """Return slope/intercept and R² of a simple linear fit y = a*x + b."""
+
+    x_vals = np.asarray(x, dtype=float)
+    y_vals = np.asarray(y, dtype=float)
+
+    valid = np.isfinite(x_vals) & np.isfinite(y_vals)
+    x_vals = x_vals[valid]
+    y_vals = y_vals[valid]
+
+    if x_vals.size < 2 or np.unique(x_vals).size < 2:
+        return 0.0, float(np.mean(y_vals)) if y_vals.size else 0.0, None
+
+    slope, intercept = np.polyfit(x_vals, y_vals, deg=1)
+    y_hat = slope * x_vals + intercept
+
+    ss_res = float(np.sum((y_vals - y_hat) ** 2))
+    ss_tot = float(np.sum((y_vals - float(np.mean(y_vals))) ** 2))
+    if ss_tot <= 0:
+        return float(slope), float(intercept), None
+
+    r2 = 1.0 - ss_res / ss_tot
+    return float(slope), float(intercept), float(r2)
+
+
+def _write_group_stats(
+    df: pd.DataFrame,
+    *,
+    group_cols: list[str],
+    value_col: str,
+    out_path: Path,
+) -> pd.DataFrame:
+    stats = (
+        df.groupby(group_cols, as_index=False, observed=False)[value_col]
+        .agg(n="count", mean="mean", std="std", min="min", max="max")
+        .sort_values(group_cols)
+        .reset_index(drop=True)
+    )
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    stats.to_csv(out_path, index=False)
+    return stats
+
+
+def _report_missing_combinations(
+    *,
+    df: pd.DataFrame,
+    out_path: Path,
+    expected_days: list[int],
+    species: list[str],
+    levels: list[str],
+    level_col: str,
+    title: str,
+    strict: bool,
+) -> pd.DataFrame:
+    clean = df.copy()
+    clean = clean.dropna(subset=["Days", "UTS", "Species", level_col])
+    clean["Days"] = pd.to_numeric(clean["Days"], errors="coerce")
+    clean = clean.dropna(subset=["Days"])
+    clean["Days"] = clean["Days"].astype(int)
+    clean["Species"] = clean["Species"].astype(str).str.strip()
+    clean[level_col] = clean[level_col].astype(str).str.strip()
+
+    present = set(zip(clean["Species"].tolist(), clean[level_col].tolist(), clean["Days"].tolist()))
+
+    missing_rows: list[dict[str, object]] = []
+    for sp in species:
+        for lvl in levels:
+            for day in expected_days:
+                if (sp, lvl, day) not in present:
+                    missing_rows.append({"Species": sp, level_col: lvl, "Days": day})
+
+    missing_df = pd.DataFrame(missing_rows)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    missing_df.to_csv(out_path, index=False)
+
+    if not missing_df.empty:
+        msg = (
+            f"{title}: faltam dados para {len(missing_df)} combinações (Species x {level_col} x Days). "
+            f"Veja o relatório: {out_path}"
+        )
+        if strict:
+            raise ValueError(msg)
+        print(f"WARNING: {msg}")
+
+    return missing_df
 
 
 def _load_resin_tensile(data_path: Path) -> pd.DataFrame:
@@ -281,6 +381,10 @@ def load_and_plot_tensile() -> None:
             print("WARNING: Syagrus+NaOH dataset not found inside workspace or external folder; NaOH panel may show only Typha.")
 
     df = pd.concat(frames, ignore_index=True)
+    # Não mascarar problemas: removemos NaN só para cálculo/plot, mas geramos relatórios de completude.
+    df = df.dropna(subset=["Days", "UTS", "Species", "Treatment_Type", "Treatment_Level"]).copy()
+
+    strict_validate = os.environ.get("STRICT_TENSILE_VALIDATE", "0").strip() in {"1", "true", "True", "YES", "yes"}
 
     # Classic paper styling (similar to the example figure you provided)
     plt.rcParams.update(
@@ -337,6 +441,13 @@ def load_and_plot_tensile() -> None:
     resin_df = df[df["Treatment_Type"] == "Resin"].copy()
     resin_df["Treatment_Level"] = pd.Categorical(resin_df["Treatment_Level"], categories=resin_order, ordered=True)
 
+    _write_group_stats(
+        resin_df,
+        group_cols=["Species", "Treatment_Level", "Days"],
+        value_col="UTS",
+        out_path=output_dir / "tensile_resin_stats_by_day.csv",
+    )
+
     # IMPORTANT: avoid zig-zag/polygon lines by aggregating replicates per day
     # and ensuring monotonic x ordering.
     resin_plot = (
@@ -354,6 +465,17 @@ def load_and_plot_tensile() -> None:
     if resin_available_days:
         resin_min_day = min(resin_available_days)
 
+    _report_missing_combinations(
+        df=resin_df,
+        out_path=output_dir / "tensile_missing_resin.csv",
+        expected_days=[int(d) for d in resin_day_ticks],
+        species=["Typha domingensis", "Syagrus coronata"],
+        levels=resin_order,
+        level_col="Treatment_Level",
+        title="Figura 6A (Resin)",
+        strict=strict_validate,
+    )
+
     # Small padding so edge markers are not clipped
     resin_xpad = max(1.0, 0.02 * (resin_max_day - resin_min_day))
 
@@ -361,9 +483,12 @@ def load_and_plot_tensile() -> None:
 
     ax = axes[0]
     a_df = resin_plot[resin_plot["Species"] == "Typha domingensis"].copy()
+    a_r2_lines: list[str] = []
     for idx, treatment in enumerate(resin_order):
         subset = a_df[a_df["Treatment_Level"] == treatment].sort_values("Days")
+        subset = subset.dropna(subset=["Days", "UTS_mean"])
         if not subset.empty:
+            _, _, r2 = _linear_fit_r2(subset["Days"], subset["UTS_mean"])
             ax.plot(
                 subset["Days"],
                 subset["UTS_mean"],
@@ -375,6 +500,9 @@ def load_and_plot_tensile() -> None:
                 zorder=3,
                 antialiased=True,
             )
+
+            if r2 is not None:
+                a_r2_lines.append(f"{treatment}: R²={r2:.2f}")
 
     ax.set_xlabel("Exposure time (days)")
     ax.set_ylabel("UTS (MPa)")
@@ -385,14 +513,26 @@ def load_and_plot_tensile() -> None:
     ax.set_xticks(resin_day_ticks)
     ax.set_xlim(resin_min_day - resin_xpad, resin_max_day + resin_xpad)
     ax.margins(y=0.08)
-    ax.legend(loc='upper right', frameon=True, fancybox=False, edgecolor='black')
+    if a_r2_lines:
+        ax.text(
+            0.98,
+            0.98,
+            "\n".join(a_r2_lines),
+            transform=ax.transAxes,
+            ha="right",
+            va="top",
+            fontsize=8,
+        )
     sns.despine(ax=ax, left=False, bottom=False)
 
     ax = axes[1]
     b_df = resin_plot[resin_plot["Species"] == "Syagrus coronata"].copy()
+    b_r2_lines: list[str] = []
     for idx, treatment in enumerate(resin_order):
         subset = b_df[b_df["Treatment_Level"] == treatment].sort_values("Days")
+        subset = subset.dropna(subset=["Days", "UTS_mean"])
         if not subset.empty:
+            _, _, r2 = _linear_fit_r2(subset["Days"], subset["UTS_mean"])
             ax.plot(
                 subset["Days"],
                 subset["UTS_mean"],
@@ -405,6 +545,9 @@ def load_and_plot_tensile() -> None:
                 antialiased=True,
             )
 
+            if r2 is not None:
+                b_r2_lines.append(f"{treatment}: R²={r2:.2f}")
+
     ax.set_xlabel("Exposure time (days)")
     ax.set_title("Syagrus coronata")
     ax.minorticks_on()
@@ -413,10 +556,34 @@ def load_and_plot_tensile() -> None:
     ax.set_xticks(resin_day_ticks)
     ax.set_xlim(resin_min_day - resin_xpad, resin_max_day + resin_xpad)
     ax.margins(y=0.08)
-    ax.legend(loc='upper right', frameon=True, fancybox=False, edgecolor='black')
+    if b_r2_lines:
+        ax.text(
+            0.98,
+            0.98,
+            "\n".join(b_r2_lines),
+            transform=ax.transAxes,
+            ha="right",
+            va="top",
+            fontsize=8,
+        )
     sns.despine(ax=ax, left=False, bottom=False)
 
-    plt.tight_layout()
+    # Shared legend at top (treatments)
+    handles, labels = axes[0].get_legend_handles_labels()
+    if handles and labels:
+        fig.legend(
+            handles,
+            labels,
+            loc="upper center",
+            ncol=3,
+            frameon=True,
+            fancybox=False,
+            edgecolor='black',
+            bbox_to_anchor=(0.5, 1.02),
+        )
+
+    _annotate_panel_label(fig, panel_label="a")
+    plt.tight_layout(rect=[0.04, 0.04, 1.00, 0.92])
 
     output_file_resin = output_dir / "fig_tensile_resin_english.png"
     plt.savefig(output_file_resin, dpi=300, bbox_inches="tight")
@@ -430,6 +597,24 @@ def load_and_plot_tensile() -> None:
     naoh_df["Treatment_Level"] = naoh_df["Treatment_Level"].astype(str).str.strip()
     naoh_df = naoh_df[naoh_df["Treatment_Level"].isin(naoh_order)].copy()
     naoh_df["Treatment_Level"] = pd.Categorical(naoh_df["Treatment_Level"], categories=naoh_order, ordered=True)
+
+    _write_group_stats(
+        naoh_df,
+        group_cols=["Treatment_Level", "Species", "Days"],
+        value_col="UTS",
+        out_path=output_dir / "tensile_naoh_stats_by_day.csv",
+    )
+
+    _report_missing_combinations(
+        df=naoh_df,
+        out_path=output_dir / "tensile_missing_naoh.csv",
+        expected_days=[int(d) for d in day_ticks],
+        species=["Typha domingensis", "Syagrus coronata"],
+        levels=naoh_order,
+        level_col="Treatment_Level",
+        title="Figura 6B (NaOH)",
+        strict=strict_validate,
+    )
 
     # Aggregate replicates per day within each subplot/species
     naoh_plot = (
@@ -451,22 +636,40 @@ def load_and_plot_tensile() -> None:
 
     for idx, (ax, level) in enumerate(zip(axes_list, naoh_order)):
         sub = naoh_plot[naoh_plot["Treatment_Level"] == level].copy()
-        
+
+        r2_lines: list[str] = []
         for species_name, color in species_palette.items():
-            species_data = sub[sub["Species"] == species_name]
+            species_data = sub[sub["Species"] == species_name].sort_values("Days")
+            species_data = species_data.dropna(subset=["Days", "UTS_mean"])
             if not species_data.empty:
+                _, _, r2 = _linear_fit_r2(species_data["Days"], species_data["UTS_mean"])
+                short_name = species_name.replace(' domingensis', '').replace(' coronata', '')
                 linestyle = '-' if species_name == "Typha domingensis" else '--'
                 ax.plot(
-                    species_data.sort_values("Days")["Days"],
-                    species_data.sort_values("Days")["UTS_mean"],
+                    species_data["Days"],
+                    species_data["UTS_mean"],
                     color=color,
                     linestyle=linestyle,
                     marker=species_markers.get(species_name, 'o'),
                     markersize=4.5,
-                    label=species_name.replace(' domingensis', '').replace(' coronata', ''),
+                    label=short_name,
                     zorder=3,
                     antialiased=True,
                 )
+
+                if r2 is not None:
+                    r2_lines.append(f"{short_name}: R²={r2:.2f}")
+
+        if r2_lines:
+            ax.text(
+                0.98,
+                0.98,
+                "\n".join(r2_lines),
+                transform=ax.transAxes,
+                ha="right",
+                va="top",
+                fontsize=8,
+            )
 
         ax.set_title(level)
         ax.minorticks_on()
@@ -482,7 +685,7 @@ def load_and_plot_tensile() -> None:
             if handles:
                 legend_handles, legend_labels = handles, labels
 
-    # Shared legend at top
+    # Shared legend at top (species)
     if legend_handles and legend_labels:
         fig.legend(
             legend_handles,
@@ -499,7 +702,9 @@ def load_and_plot_tensile() -> None:
     fig.text(0.5, 0.02, "Exposure time (days)", ha='center')
     fig.text(0.02, 0.5, "UTS (MPa)", va='center', rotation='vertical')
 
-    plt.tight_layout(rect=[0.04, 0.04, 1, 0.96])
+    _annotate_panel_label(fig, panel_label="b")
+
+    plt.tight_layout(rect=[0.04, 0.04, 1.00, 0.92])
 
     output_file_naoh = output_dir / "fig_tensile_naoh_english.png"
     plt.savefig(output_file_naoh, dpi=300, bbox_inches="tight")
