@@ -122,7 +122,7 @@ Embora a FTIR descreva grupos funcionais, o arranjo cristalino avaliado por difr
 Na caracterização mecânica dessas fibras, Fontes et al. @Fontes2021 reportaram resistências à tração iniciais próximas entre as espécies, com 3,14 N·mm⁻² para *Syagrus* e 3,57 N·mm⁻² para *Typha* não tratada. Em conjunto, variações composicionais e estruturais observadas por FTIR/DRX/TGA são consistentes com diferenças na integridade microfibrilar e no desempenho mecânico inicial.
 
 **Figura 4.** Difratograma de raios X (DRX) da fibra de *Typha domingensis* e *Syagrus coronata*
-![](../3-IMAGENS/fig_drx.png){width=70%}
+![](../3-IMAGENS/fig_drx_final.png){width=70%}
 
 A maior estabilidade térmica de *Syagrus*, associada ao teor de lignina, pode se refletir em maior fração residual e potencial de contribuição ao estoque de carbono. Análises termogravimétricas sob atmosfera oxidativa (ar, 10 °C·min⁻¹) indicam que *Syagrus* retém ~28% de massa residual a 600 °C (carvão por condensação de lignina), versus ~21% para *Typha* [@Rowell1998]. Essa diferença é compatível com a persistência de esqueletos fibrosos de *Syagrus* após 180 dias em campo e com estimativas de sequestro de carbono no solo de 0,8–1,2 Mg C·ha⁻¹ pós-degradação, dependendo da densidade de implantação [@Santos2023_GeocompostosTypha].
 

@@ -124,7 +124,8 @@ Although FTIR explains functional groups, it is the crystalline arrangement obta
 Working with the mechanical characterization of these fibers, Fontes et al. @Fontes2021 demonstrated that this compositional balancing results in comparable initial tensile strengths, being 3.14 N·mm⁻² for *Syagrus* and 3.57 N·mm⁻² for untreated *Typha*. These structural variations detected by FTIR and TGA reflect directly on microfibril integrity and, consequently, on the initial mechanical strength of the geotextiles.
 
 **Figure 4.** X-ray diffractogram (XRD) of *Typha domingensis* and *Syagrus coronata* fiber.
-![](../5-DADOS/MEV-ANALISE/resultados_en/fig_drx_english.png){width=70%}
+
+![](../3-IMAGENS/fig_drx_final.png){width=70%}
 
 The superior thermal stability of *Syagrus*, stemming from this lignin density, translates directly into carbon sequestration potential. Thermogravimetric analyses under oxidative atmosphere (air, 10 °C·min⁻¹) indicate that *Syagrus* retains ~28% residual mass at 600 °C (char via lignin condensation), versus ~21% for *Typha* [@Rowell1998]. This difference correlates with the observed field persistence of *Syagrus* fibrous skeletons after 180 days, suggesting potential for long-term soil carbon sequestration, estimated at 0.8–1.2 Mg C·ha⁻¹ post-degradation, depending on implantation density [@Santos2023_GeocompostosTypha].
 
