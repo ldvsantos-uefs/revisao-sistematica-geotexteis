@@ -27,6 +27,11 @@ import pandas as pd
 import seaborn as sns
 
 try:
+    from scipy.stats import linregress  # type: ignore
+except Exception:  # pragma: no cover
+    linregress = None
+
+try:
     import pyreadstat  # type: ignore
 except Exception:  # pragma: no cover
     pyreadstat = None
@@ -85,6 +90,37 @@ def _write_group_stats(
     out_path.parent.mkdir(parents=True, exist_ok=True)
     stats.to_csv(out_path, index=False)
     return stats
+
+
+def _linregress_summary(x: pd.Series, y: pd.Series) -> dict[str, object]:
+    x_vals = pd.to_numeric(x, errors="coerce").astype(float)
+    y_vals = pd.to_numeric(y, errors="coerce").astype(float)
+    valid = np.isfinite(x_vals.to_numpy()) & np.isfinite(y_vals.to_numpy())
+    x_vals = x_vals[valid]
+    y_vals = y_vals[valid]
+
+    n = int(x_vals.shape[0])
+    if n < 2 or pd.Series(x_vals).nunique() < 2 or linregress is None:
+        return {
+            "n": n,
+            "beta": None,
+            "intercept": None,
+            "t": None,
+            "p": None,
+            "r2": None,
+        }
+
+    r = linregress(x_vals.to_numpy(), y_vals.to_numpy())
+    r2 = float(r.rvalue ** 2)
+    t_val = float(r.slope / r.stderr) if getattr(r, "stderr", None) not in (None, 0) else None
+    return {
+        "n": n,
+        "beta": float(r.slope),
+        "intercept": float(r.intercept),
+        "t": t_val,
+        "p": float(r.pvalue),
+        "r2": r2,
+    }
 
 
 def _report_missing_combinations(
@@ -456,6 +492,9 @@ def load_and_plot_tensile() -> None:
         .rename(columns={"UTS": "UTS_mean"})
     )
 
+    # Auditoria de regressão (usa as mesmas médias por dia plotadas)
+    regression_rows: list[dict[str, object]] = []
+
     # Resin figure: show up to 150 days (no 180d panel/ticks)
     resin_min_day = 30
     resin_max_day = 150
@@ -475,6 +514,31 @@ def load_and_plot_tensile() -> None:
         title="Figura 6A (Resin)",
         strict=strict_validate,
     )
+
+    for species_name in ["Typha domingensis", "Syagrus coronata"]:
+        for treatment in resin_order:
+            sub = (
+                resin_plot[
+                    (resin_plot["Species"] == species_name)
+                    & (resin_plot["Treatment_Level"] == treatment)
+                ]
+                .dropna(subset=["Days", "UTS_mean"])
+                .sort_values("Days")
+            )
+            summary = _linregress_summary(sub["Days"], sub["UTS_mean"])
+            regression_rows.append(
+                {
+                    "panel": "6A-Resin",
+                    "Species": species_name,
+                    "Series": treatment,
+                    "n_days": summary["n"],
+                    "beta_MPa_per_day": summary["beta"],
+                    "t": summary["t"],
+                    "p": summary["p"],
+                    "R2": summary["r2"],
+                    "days_used": ",".join([str(int(d)) for d in sub["Days"].tolist()]),
+                }
+            )
 
     # Small padding so edge markers are not clipped
     resin_xpad = max(1.0, 0.02 * (resin_max_day - resin_min_day))
@@ -622,6 +686,32 @@ def load_and_plot_tensile() -> None:
         .mean()
         .rename(columns={"UTS": "UTS_mean"})
     )
+
+    for level in naoh_order:
+        sublevel = naoh_plot[naoh_plot["Treatment_Level"] == level]
+        for species_name in ["Typha domingensis", "Syagrus coronata"]:
+            sub = (
+                sublevel[sublevel["Species"] == species_name]
+                .dropna(subset=["Days", "UTS_mean"])
+                .sort_values("Days")
+            )
+            summary = _linregress_summary(sub["Days"], sub["UTS_mean"])
+            regression_rows.append(
+                {
+                    "panel": "6B-NaOH",
+                    "Species": species_name,
+                    "Series": level,
+                    "n_days": summary["n"],
+                    "beta_MPa_per_day": summary["beta"],
+                    "t": summary["t"],
+                    "p": summary["p"],
+                    "R2": summary["r2"],
+                    "days_used": ",".join([str(int(d)) for d in sub["Days"].tolist()]),
+                }
+            )
+
+    if regression_rows:
+        pd.DataFrame(regression_rows).to_csv(output_dir / "tensile_regression_summary.csv", index=False)
 
     # NaOH padding so edge markers are not clipped
     naoh_xmin = min(day_ticks) if day_ticks else float(naoh_plot["Days"].min())
