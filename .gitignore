@@ -19,6 +19,15 @@ Thumbs.db
 temp/
 cache/
 
+# Artefatos gerados
+dist/diagnostics/
+dist/zenodo-package/
+dist/*.zip
+
+# Pacotes/saídas de submissão (gerados)
+2-MANUSCRITO/submissao_pmr/_build/
+2-MANUSCRITO/submissao_pmr/*.docx
+
 # Arquivos de saída do Pandoc (opcional - descomente se quiser gerar sempre)
 # *.docx
 # *.pdf
