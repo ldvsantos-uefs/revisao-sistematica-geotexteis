@@ -32,6 +32,7 @@ def main() -> int:
     manuscript: Path = args.manuscript
     bib_files = [
         repo_root / "2-MANUSCRITO" / "referencias.bib",
+        repo_root / "2-MANUSCRITO" / "bibliografia_extra.bib",
         repo_root / "2-MANUSCRITO" / "library.bib",
     ]
 
