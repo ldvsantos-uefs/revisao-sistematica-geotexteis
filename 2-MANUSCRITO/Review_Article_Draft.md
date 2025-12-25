@@ -29,7 +29,7 @@ A degradação de solos tropicais e os passivos de microplásticos associados ao
 Ensaios via Weibull confirmaram que a especificação baseada no percentil de confiabilidade ($P_{10}$), em detrimento da média simples, oferece um critério robusto para alinhar engenharia de superfície e janelas de serviço (90–150 dias). Conclui-se que a integração entre caracterização microestrutural e modelagem de confiabilidade valida o uso desses materiais em bioengenharia de solos tropicais.
 
 
-**Palavras-chave.** Controle de erosão; Poluição ambiental; Cinética de biodegradação; Serviços ecossistêmicos; Confiabilidade Weibull.
+**Palavras-chave.** Controle de erosão, Poluição ambiental, Cinética de biodegradação, Serviços ecossistêmicos e Confiabilidade Weibull.
 
 
 ## 1. Introdução
@@ -71,7 +71,7 @@ O delineamento experimental combinou a quantificação da resposta mecânica de 
 
 Para o conjunto em que se avaliou mercerização alcalina em geotêxteis de *Typha domingensis*, o tratamento foi realizado por imersão em solução de NaOH por 24 h nas concentrações de 3% (0,75 mol·L⁻¹), 6% (1,5 mol·L⁻¹) e 9% (2,25 mol·L⁻¹), mantendo-se relação de banho constante; após a reação, o material foi lavado em água corrente até neutralização e seco ao ar em ambiente sombreado e ventilado, em intervalo da ordem de dias, com registro fotográfico do processamento apresentado na Figura 1.
 
-O monitoramento de degradação natural foi conduzido em talude tropical com inclinação de 45° no Campus Rural da Universidade Federal de Sergipe, com instalação de unidades em parcelas retangulares ao longo da pendente, buscando reproduzir condição de aplicação em campo e minimizar efeitos de borda por retirada de material na porção central. A exposição ocorreu entre os meses de maio e novembro, período caracterizado por precipitação acumulada de aproximadamente 350 mm e irradiância UV-B média diária de 6,5 kWh·m⁻²·dia⁻¹, conforme monitoramento local.
+O monitoramento de degradação natural foi conduzido em talude tropical com inclinação de 45° no Campus Rural da Universidade Federal de Sergipe, com instalação de unidades em parcelas retangulares ao longo da pendente, buscando reproduzir condição de aplicação em campo e minimizar efeitos de borda por retirada de material na porção central (Figura X). A exposição ocorreu entre os meses de maio e novembro, período caracterizado por precipitação acumulada de aproximadamente 350 mm e irradiância UV-B média diária de 6,5 kWh·m⁻²·dia⁻¹, conforme monitoramento local.
 
 Para caracterizar a cinética de biodegradação em janela de serviço de até 180 dias, seções de aproximadamente 20 cm × 20 cm foram removidas em intervalos programados (0, 30, 60, 90, 120, 150 e 180 dias), com secagem prévia em estufa a 60 °C por 24 h antes da preparação dos corpos de prova.
 
@@ -314,7 +314,7 @@ A severidade permaneceu crítica em todas as condições (103,43–121,25%), o q
 
 Já em DC, o comportamento foi quase estacionário (45 → 43 fraturas; ~−4%, severidade ~103%), esse comportamento pode indicar que, sob condições laboratoriais uniformes, a evolução morfométrica do dano foi substancialmente menos pronunciada no intervalo analisado [@Nandagopal2021].
 
-A classificação de severidade, por faixas percentuais de dano (Leve <0,5%; Moderado 0,5–2%; Severo 2–5%; Crítico >5%), enquadra, a leitura por Weibull é útil já que o parâmetro de forma $\beta$ governa a variação temporal da taxa de falha, valores $\beta>1$ implicam *hazard* crescente e tendem a ser associados a desgaste progressivo [@Panasenko2012], ao passo que $\beta\approx 1$ seria compatível com falhas aleatórias dominadas por defeitos intrínsecos; assim, os $\beta$ estimados (2,3–4,2) são coerentes com um regime de dano acumulativo em fibras vegetais e sensível a condições ambientais [@Shadhin2022].
+A classificação de severidade por faixas percentuais de dano, isto é, leve (<0,5%), moderado (0,5–2%), severo (2–5%) e crítico (>5%), permite organizar a leitura e, nesse enquadramento, a Weibull torna-se útil porque o parâmetro de forma $\beta$ governa a variação temporal da taxa de falha: valores $\beta>1$ implicam *hazard* crescente e tendem a ser associados a desgaste progressivo [@Panasenko2012], ao passo que $\beta\approx 1$ seria compatível com falhas aleatórias dominadas por defeitos intrínsecos; assim, os $\beta$ estimados (2,3–4,2) são coerentes com um regime de dano acumulativo em fibras vegetais e sensível a condições ambientais [@Shadhin2022].
 
 No conjunto analisado, o limiar funcional $P_{10}$ ocorreu tipicamente quando as densidades de fraturas já estavam na ordem de 10\^2 fraturas·campo⁻¹, o que é coerente com um regime de taxa de falha crescente (\$\beta>1\$) [@Wang2014_bamboo_weibull] e com a interpretação de VUF como grandeza probabilística associada à perda acumulada de capacidade [@Staroverov2022].
 
