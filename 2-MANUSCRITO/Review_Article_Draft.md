@@ -71,14 +71,16 @@ O delineamento experimental combinou a quantificação da resposta mecânica de 
 
 Para o conjunto em que se avaliou mercerização alcalina em geotêxteis de *Typha domingensis*, o tratamento foi realizado por imersão em solução de NaOH por 24 h nas concentrações de 3% (0,75 mol·L⁻¹), 6% (1,5 mol·L⁻¹) e 9% (2,25 mol·L⁻¹), mantendo-se relação de banho constante; após a reação, o material foi lavado em água corrente até neutralização e seco ao ar em ambiente sombreado e ventilado, em intervalo da ordem de dias, com registro fotográfico do processamento apresentado na Figura 1.
 
-O monitoramento de degradação natural foi conduzido em talude tropical com inclinação de 45° no Campus Rural da Universidade Federal de Sergipe, com instalação de unidades em parcelas retangulares ao longo da pendente, buscando reproduzir condição de aplicação em campo e minimizar efeitos de borda por retirada de material na porção central (Figura X). A exposição ocorreu entre os meses de maio e novembro, período caracterizado por precipitação acumulada de aproximadamente 350 mm e irradiância UV-B média diária de 6,5 kWh·m⁻²·dia⁻¹, conforme monitoramento local.
+![**Figura 1.** Registro fotográfico da coleta, processamento e secagem de fibras vegetais em ambiente sombreado e ventilado.](../3-IMAGENS/metodologia_lc_k/coleta.png){width=90%}
+
+O monitoramento de degradação natural foi conduzido em talude tropical com inclinação de 45° no Campus Rural da Universidade Federal de Sergipe, com instalação de unidades em parcelas retangulares ao longo da pendente, buscando reproduzir condição de aplicação em campo e minimizar efeitos de borda por retirada de material na porção central (Figura 3). A exposição ocorreu entre os meses de maio e novembro, período caracterizado por precipitação acumulada de aproximadamente 350 mm e irradiância UV-B média diária de 6,5 kWh·m⁻²·dia⁻¹, conforme monitoramento local.
+
+![**Figura 3.** (a) Tear utilizado na confecção do geotêxtil e (b) talude experimental de instalação e exposição em campo.](../3-IMAGENS/talude.png){width=90%}
 
 Para caracterizar a cinética de biodegradação em janela de serviço de até 180 dias, seções de aproximadamente 20 cm × 20 cm foram removidas em intervalos programados (0, 30, 60, 90, 120, 150 e 180 dias), com secagem prévia em estufa a 60 °C por 24 h antes da preparação dos corpos de prova.
 
 
 Como a retirada e os ensaios são destrutivos e a integridade do material condiciona a possibilidade de preparo sob o mesmo protocolo, o número efetivo de corpos de prova por combinação espécie × tratamento × tempo variou ao longo da exposição, incluindo combinações ausentes em tempos tardios.
-
-![**Figura 1.** Registro fotográfico da coleta, processamento e secagem de fibras vegetais em ambiente sombreado e ventilado.](../3-IMAGENS/metodologia_lc_k/coleta.png){width=90%}
 
 As fibras foram selecionadas e preparadas para ensaios mecânicos e caracterização microestrutural, preservando-se a fração fibrosa de interesse (Figura 2).
 
@@ -308,9 +310,9 @@ Em *Syagrus coronata*, a progressão foi mais gradual, com porosidade aumentando
 
 *Nota. O overlay triplo combina a imagem base em escala de cinza (α=0,7), as regiões de fraturas abertas detectadas por limiarização (valores <50 níveis de cinza) em vermelho (α=0,4) e o esqueleto das fraturas em hot colormap (α=0,6).*
 
-A quantificação morfométrica das fraturas revelou dinâmica distinta entre as espécies. Em *Typha domingensis*, sob solo tropical (ST), o número de fraturas variou de 237 (ST 30d) para 229 (ST 180d, estabilização de ~−3%), enquanto em degradação controlada (DC) caiu de 139 para 75 (−46%), sugerindo que a exposição em campo, com ciclos higrotérmicos variáveis, promove acúmulo de dano mais heterogêneo do que a condição laboratorial controlada [@Nezafatkhah2025_weathering_review]. 
+A quantificação morfométrica das fraturas revelou dinâmica distinta entre as espécies. Em *Typha domingensis*, sob solo tropical (ST), o número de fraturas variou de 237 (ST 30d) para 229 (ST 180d, estabilização de ~−3%), enquanto em degradação controlada (DC) caiu de 139 para 75 (−46%), sugerindo que a exposição em campo, com ciclos higrotérmicos variáveis, promove acúmulo de dano mais heterogêneo do que a condição laboratorial controlada [@Nezafatkhah2025_weathering_review].
 
-A severidade permaneceu crítica em todas as condições (103,43–121,25%), o que, no conjunto analisado, é consistente com degradação estrutural intensa ao longo do período de exposição [@Voyiadjis2007_microcrack_tensor]. Em *Syagrus coronata*, a trajetória foi mais abrupta em campo. Sob ST, as fraturas aumentaram de 47 (30d) para 211 (180d, +349%), com severidade máxima de 126,25%, padrão compatível com integridade inicial mais elevada seguida por intensificação do dano quando condições ambientais favorecem a progressão de fissuras [@Carneiro2017]. 
+A severidade permaneceu crítica em todas as condições (103,43–121,25%), o que, no conjunto analisado, é consistente com degradação estrutural intensa ao longo do período de exposição [@Voyiadjis2007_microcrack_tensor]. Em *Syagrus coronata*, a trajetória foi mais abrupta em campo. Sob ST, as fraturas aumentaram de 47 (30d) para 211 (180d, +349%), com severidade máxima de 126,25%, padrão compatível com integridade inicial mais elevada seguida por intensificação do dano quando condições ambientais favorecem a progressão de fissuras [@Carneiro2017].
 
 Já em DC, o comportamento foi quase estacionário (45 → 43 fraturas; ~−4%, severidade ~103%), esse comportamento pode indicar que, sob condições laboratoriais uniformes, a evolução morfométrica do dano foi substancialmente menos pronunciada no intervalo analisado [@Nandagopal2021].
 
