@@ -73,18 +73,18 @@ Para o conjunto em que se avaliou mercerização alcalina em geotêxteis de *Typ
 
 ![**Figura 1.** Registro fotográfico da coleta, processamento e secagem de fibras vegetais em ambiente sombreado e ventilado.](../3-IMAGENS/metodologia_lc_k/coleta.png){width=90%}
 
-O monitoramento de degradação natural foi conduzido em talude tropical com inclinação de 45° no Campus Rural da Universidade Federal de Sergipe, com instalação de unidades em parcelas retangulares ao longo da pendente, buscando reproduzir condição de aplicação em campo e minimizar efeitos de borda por retirada de material na porção central (Figura 3). A exposição ocorreu entre os meses de maio e novembro, período caracterizado por precipitação acumulada de aproximadamente 350 mm e irradiância UV-B média diária de 6,5 kWh·m⁻²·dia⁻¹, conforme monitoramento local.
+O monitoramento de degradação natural foi conduzido em talude tropical com inclinação de 45° no Campus Rural da Universidade Federal de Sergipe, com instalação de unidades em parcelas retangulares ao longo da pendente, buscando reproduzir condição de aplicação em campo e minimizar efeitos de borda por retirada de material na porção central (Figura 2). A exposição ocorreu entre os meses de maio e novembro, período caracterizado por precipitação acumulada de aproximadamente 350 mm e irradiância UV-B média diária de 6,5 kWh·m⁻²·dia⁻¹, conforme monitoramento local.
 
-![**Figura 3.** (a) Tear utilizado na confecção do geotêxtil e (b) talude experimental de instalação e exposição em campo.](../3-IMAGENS/talude.png){width=90%}
+![**Figura 2.** (a) Tear utilizado na confecção do geotêxtil e (b) talude experimental de instalação e exposição em campo.](../3-IMAGENS/talude.png){width=90%}
 
 Para caracterizar a cinética de biodegradação em janela de serviço de até 180 dias, seções de aproximadamente 20 cm × 20 cm foram removidas em intervalos programados (0, 30, 60, 90, 120, 150 e 180 dias), com secagem prévia em estufa a 60 °C por 24 h antes da preparação dos corpos de prova.
 
 
 Como a retirada e os ensaios são destrutivos e a integridade do material condiciona a possibilidade de preparo sob o mesmo protocolo, o número efetivo de corpos de prova por combinação espécie × tratamento × tempo variou ao longo da exposição, incluindo combinações ausentes em tempos tardios.
 
-As fibras foram selecionadas e preparadas para ensaios mecânicos e caracterização microestrutural, preservando-se a fração fibrosa de interesse (Figura 2).
+As fibras foram selecionadas e preparadas para ensaios mecânicos e caracterização microestrutural, preservando-se a fração fibrosa de interesse (Figura 3).
 
-![**Figura 2.** Aspecto macroscópico da fração fibrosa e do limbo vegetal utilizada na preparação de amostras.](../3-IMAGENS/metodologia_lc_k/fibra_limbo.jpg){width=80%}
+![**Figura 3.** Aspecto macroscópico da fração fibrosa e do limbo vegetal utilizada na preparação de amostras.](../3-IMAGENS/metodologia_lc_k/fibra_limbo.jpg){width=80%}
 
 ### Tração e punção em fibras
 
