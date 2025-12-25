@@ -1,21 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Gera os DOCX do pacote de submissão PMR a partir dos arquivos .md.
+"""Gera os DOCX do pacote de submissão (ICP) a partir dos arquivos .md.
 
-Este script é um wrapper para `2 - MANUSCRITO/gerar-docx.py`.
+Wrapper para `4-CODIGOS/gerar-docx.py` (usa Pandoc por baixo).
 
-Ele gera DOCX para:
+Gera DOCX para:
 - title_page.md -> title_page.docx
 - cover_letter_en.md -> cover_letter_en.docx
 - statements.md -> statements.docx
-- biographical_notes.md -> biographical_notes.docx
-
-Além disso, por padrão, também gera:
-- artigo_cref_2.md -> artigo_cref_2.docx
-- apendice_tabelas_informacionais.md -> apendice_tabelas_informacionais.docx
-
-Opcionalmente, pode gerar/atualizar o manuscrito anônimo (DOCX) se você informar
-um Markdown de entrada em inglês e anonimizado.
 """
 
 from __future__ import annotations
@@ -44,30 +36,23 @@ def run_gerar_docx(gerar_docx_py: Path, input_md: Path, output_docx: Path) -> in
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Gera os DOCX do pacote PMR a partir dos .md usando gerar-docx.py"
+        description="Gera os DOCX do pacote ICP a partir dos .md usando gerar-docx.py"
     )
     parser.add_argument(
         "--out-dir",
         default=None,
         help=(
-            "Diretório de saída para os DOCX gerados (padrão: 2 - MANUSCRITO/submissao_pmr/_build)."
-        ),
-    )
-    parser.add_argument(
-        "--manuscript-input",
-        default=None,
-        help=(
-            "Markdown do manuscrito anônimo (em inglês) para gerar manuscript_anonymous_en.docx. "
-            "Se não informado, o manuscrito não é gerado por este script."
+            "Diretório de saída para os DOCX gerados (padrão: 2-MANUSCRITO/submissao_icp/_build)."
         ),
     )
     return parser.parse_args()
 
 
 def main() -> int:
-    repo_root = Path(__file__).resolve().parents[1]  # .../2 - MANUSCRITO
-    gerar_docx_py = repo_root / "gerar-docx.py"
-    pmr_dir = repo_root / "submissao_pmr"
+    repo_root = Path(__file__).resolve().parents[2]
+    manuscript_dir = repo_root / "2-MANUSCRITO"
+    icp_dir = manuscript_dir / "submissao_icp"
+    gerar_docx_py = repo_root / "4-CODIGOS" / "gerar-docx.py"
 
     if not gerar_docx_py.exists():
         print(f"[ERRO] Não encontrei {gerar_docx_py}")
@@ -75,16 +60,13 @@ def main() -> int:
 
     args = parse_args()
 
-    out_dir = Path(args.out_dir).expanduser().resolve() if args.out_dir else (pmr_dir / "_build")
+    out_dir = Path(args.out_dir).expanduser().resolve() if args.out_dir else (icp_dir / "_build")
     out_dir.mkdir(parents=True, exist_ok=True)
 
     mapping: list[tuple[Path, Path]] = [
-        (pmr_dir / "title_page.md", out_dir / "title_page.docx"),
-        (pmr_dir / "cover_letter_en.md", out_dir / "cover_letter_en.docx"),
-        (pmr_dir / "statements.md", out_dir / "statements.docx"),
-        (pmr_dir / "biographical_notes.md", out_dir / "biographical_notes.docx"),
-        (repo_root / "artigo_cref_2.md", out_dir / "artigo_cref_2.docx"),
-        (repo_root / "apendice_tabelas_informacionais.md", out_dir / "apendice_tabelas_informacionais.docx"),
+        (icp_dir / "title_page.md", out_dir / "title_page.docx"),
+        (icp_dir / "cover_letter_en.md", out_dir / "cover_letter_en.docx"),
+        (icp_dir / "statements.md", out_dir / "statements.docx"),
     ]
 
     missing = [str(inp) for (inp, _) in mapping if not inp.exists()]
@@ -100,22 +82,8 @@ def main() -> int:
         if rc != 0:
             exit_code = rc
 
-    if args.manuscript_input:
-        manuscript_md = Path(args.manuscript_input).expanduser().resolve()
-        manuscript_out = out_dir / "manuscript_anonymous_en.docx"
-        if not manuscript_md.exists():
-            print(f"[ERRO] manuscript-input não encontrado: {manuscript_md}")
-            return 2
-        rc = run_gerar_docx(gerar_docx_py, manuscript_md, manuscript_out)
-        if rc != 0:
-            exit_code = rc
-    else:
-        print(
-            "[INFO] manuscript_anonymous_en.docx não foi gerado por este script (use --manuscript-input)."
-        )
-
     if exit_code == 0:
-        print("[OK] Pacote PMR: DOCX gerados com sucesso.")
+        print("[OK] Pacote ICP: DOCX gerados com sucesso.")
     return exit_code
 
 

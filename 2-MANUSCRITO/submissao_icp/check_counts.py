@@ -70,12 +70,11 @@ def _count_words(s: str) -> int:
 
 
 def main() -> int:
-    default_input = Path(
-        r"C:/Users/vidal/OneDrive/Documentos/13 - CLONEGIT/artigo-posdoc/ARTIGO CREF/2 - MANUSCRITO/submissao_pmr/manuscript_anonymous_en.docx"
-    )
+    manuscript_dir = Path(__file__).resolve().parents[1]
+    default_input = manuscript_dir / "Review_Article_English.docx"
 
     parser = argparse.ArgumentParser(
-        description="Conta palavras e figuras (aprox.) do arquivo principal de submissão PMR."
+        description="Conta palavras e figuras (aprox.) de um DOCX (ex.: manuscrito para submissão)."
     )
     parser.add_argument(
         "--input",

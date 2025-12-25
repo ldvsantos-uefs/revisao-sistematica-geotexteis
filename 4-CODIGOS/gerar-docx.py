@@ -8,6 +8,9 @@ Uso: python gerar-docx.py
 Gera o arquivo revisao_artigo.docx a partir do Review_Article_Draft.md.
 """
 
+from __future__ import annotations
+
+import argparse
 import os
 import subprocess
 import sys
@@ -23,10 +26,14 @@ def _resource_path_arg(paths: list[Path]) -> str:
     return os.pathsep.join(unique)
 
 
+def _ensure_list[T](value: T | list[T]) -> list[T]:
+    return value if isinstance(value, list) else [value]
+
+
 def gerar_docx(
     md_file: Path,
     output_file: Path,
-    bib_file: Path,
+    bib_file: Path | list[Path],
     csl_file: Path,
     reference_doc: Path | None = None,
     apendices_file: Path | None = None,
@@ -39,7 +46,7 @@ def gerar_docx(
     Args:
         md_file: Arquivo Markdown de entrada
         output_file: Arquivo DOCX de saída
-        bib_file: Arquivo de bibliografia
+        bib_file: Arquivo(s) de bibliografia
         csl_file: Arquivo de estilo de citação
         apendices_file: Arquivo de apêndices (opcional)
     
@@ -71,12 +78,12 @@ def gerar_docx(
     # Comando Pandoc
     cmd = [
         "pandoc",
-        str(md_file.name if md_file.is_absolute() else md_file),
+        str(md_file),
     ]
     
     # Adicionar apêndices ANTES do --citeproc
     if apendices_file and apendices_file.exists():
-        cmd.append(str(apendices_file.name if apendices_file.is_absolute() else apendices_file))
+        cmd.append(str(apendices_file))
         print(f"[INFO] Incluindo apendices: {apendices_file.name}")
     
     # Adicionar resource-path para encontrar CSL/BIB/figuras (compatível com Windows via os.pathsep)
@@ -85,10 +92,17 @@ def gerar_docx(
     cmd.extend(["--resource-path", _resource_path_arg(resource_paths)])
     
     # Adicionar processamento de citações
+    cmd.append("--citeproc")
+
+    for bf in _ensure_list(bib_file):
+        cmd.extend([
+            "--bibliography",
+            str(bf),
+        ])
+
     cmd.extend([
-        "--citeproc",
-        "--bibliography", str(bib_file.name if bib_file.is_absolute() else bib_file),
-        "--csl", str(csl_file.name if csl_file.is_absolute() else csl_file),
+        "--csl",
+        str(csl_file),
     ])
     
     # Adicionar modelo de formatação se existir
@@ -97,10 +111,10 @@ def gerar_docx(
         if reference_doc.exists():
             cmd.extend([
                 "--reference-doc",
-                str(reference_doc.name if reference_doc.is_absolute() else reference_doc),
+                str(reference_doc),
             ])
     
-    cmd.extend(["-o", str(output_file.name if output_file.is_absolute() else output_file)])
+    cmd.extend(["-o", str(output_file)])
     
     print("Executando Pandoc...")
     
@@ -150,7 +164,7 @@ def gerar_docx(
 def gerar_pdf(
     md_file: Path,
     output_file: Path,
-    bib_file: Path,
+    bib_file: Path | list[Path],
     csl_file: Path,
     pdf_engine: str = "xelatex",
 ) -> int:
@@ -182,11 +196,16 @@ def gerar_pdf(
         "pandoc",
         str(md_file),
         "--citeproc",
-        "--bibliography", str(bib_file),
+    ]
+
+    for bf in _ensure_list(bib_file):
+        cmd.extend(["--bibliography", str(bf)])
+
+    cmd.extend([
         "--csl", str(csl_file),
         "-o", str(output_file),
         "--pdf-engine", pdf_engine,
-    ]
+    ])
 
     print("Executando Pandoc para PDF...")
     try:
@@ -210,6 +229,19 @@ def gerar_pdf(
         print(f"Erro inesperado: {e}")
         return 1
 
+
+def _parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description=(
+            "Gera DOCX via Pandoc a partir de Markdown. Sem argumentos, gera os DOCX padrão do manuscrito. "
+            "Com --input/--output, gera um DOCX específico (ex.: pacote de submissão)."
+        )
+    )
+    parser.add_argument("--input", default=None, help="Arquivo Markdown de entrada")
+    parser.add_argument("--output", default=None, help="Arquivo DOCX de saída")
+    parser.add_argument("--pdf", "-p", action="store_true", help="(modo padrão) também gerar PDF do manuscrito PT")
+    return parser.parse_args()
+
 def main():
     # Resolver caminhos a partir da raiz do repositório (Windows-friendly)
     script_dir = Path(__file__).resolve().parent
@@ -223,13 +255,17 @@ def main():
     print("=" * 70)
     print("GERADOR DE REVISÃO DE ESCOPO - WORD")
     print("=" * 70)
+
+    args = _parse_args()
     
     # Arquivos comuns (sempre dentro de 2-MANUSCRITO)
     bib_file = manuscript_dir / "referencias.bib"
+    bib_extra = manuscript_dir / "bibliografia_extra.bib"
     csl_file = manuscript_dir / "springer-vancouver.csl"
     reference_doc = manuscript_dir / "modelo_formatacao.docx"
     
     # Verificar arquivos necessários
+    # `library.bib` é opcional: quando existe, agrega mais referências ao citeproc
     arquivos_necessarios = [bib_file, csl_file]
     arquivos_faltando = [f for f in arquivos_necessarios if not f.exists()]
     
@@ -249,6 +285,39 @@ def main():
     # Resource-path: manuscrito + raiz do repositório (resolve imagens em ../3-IMAGENS etc.)
     resource_paths = [manuscript_dir, repo_root]
 
+    bib_files: list[Path] = [bib_file]
+    if bib_extra.exists():
+        bib_files.append(bib_extra)
+
+    # ========================================================================
+    # MODO: gerar um DOCX específico (wrapper para pacotes de submissão)
+    # ========================================================================
+    if args.input or args.output:
+        if not (args.input and args.output):
+            print("\nErro: use --input e --output juntos.")
+            return 1
+
+        input_md = Path(args.input).expanduser().resolve()
+        output_docx = Path(args.output).expanduser().resolve()
+        if not input_md.exists():
+            print(f"\nErro: arquivo de entrada não encontrado: {input_md}")
+            return 1
+
+        output_docx.parent.mkdir(parents=True, exist_ok=True)
+
+        # Inclui o diretório do input no resource-path para resolver imagens/arquivos relativos
+        rp = [input_md.parent, manuscript_dir, repo_root]
+        rc = gerar_docx(
+            input_md,
+            output_docx,
+            bib_files,
+            csl_file,
+            reference_doc=reference_doc,
+            cwd=input_md.parent,
+            resource_paths=rp,
+        )
+        return 0 if rc == 0 else 1
+
     # Versão PT
     md_pt = manuscript_dir / "Review_Article_Draft.md"
     docx_pt = manuscript_dir / "Review_Article_Draft.docx"
@@ -257,7 +326,7 @@ def main():
         result_pt = gerar_docx(
             md_pt,
             docx_pt,
-            bib_file,
+            bib_files,
             csl_file,
             reference_doc=reference_doc,
             cwd=manuscript_dir,
@@ -276,7 +345,7 @@ def main():
         result_en = gerar_docx(
             md_en,
             docx_en,
-            bib_file,
+            bib_files,
             csl_file,
             reference_doc=reference_doc,
             cwd=manuscript_dir,
@@ -289,12 +358,12 @@ def main():
 
     # Gerar PDF opcionalmente
     # Use argumento de linha de comando: python gerar-docx.py --pdf
-    if len(sys.argv) > 1 and sys.argv[1] in ("--pdf", "-p"):
+    if args.pdf:
         pdf_output = manuscript_dir / "Review_Article_Draft.pdf"
         print("\n[INFO] Opcao de PDF detectada - gerando PDF com xelatex...")
         if md_pt.exists():
             total += 1
-            result_pdf = gerar_pdf(md_pt, pdf_output, bib_file, csl_file, pdf_engine="xelatex")
+            result_pdf = gerar_pdf(md_pt, pdf_output, bib_files, csl_file, pdf_engine="xelatex")
             if result_pdf == 0:
                 sucessos += 1
         else:

@@ -28,6 +28,9 @@ dist/*.zip
 2-MANUSCRITO/submissao_pmr/_build/
 2-MANUSCRITO/submissao_pmr/*.docx
 
+2-MANUSCRITO/submissao_icp/_build/
+2-MANUSCRITO/submissao_icp/*.docx
+
 # Arquivos de saída do Pandoc (opcional - descomente se quiser gerar sempre)
 # *.docx
 # *.pdf
