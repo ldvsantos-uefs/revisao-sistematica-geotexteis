@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import re
 from pathlib import Path
 
@@ -18,7 +19,17 @@ def extract_bibtex_keys(text: str) -> set[str]:
 
 def main() -> int:
     repo_root = Path(__file__).resolve().parents[1]
-    manuscript = repo_root / "2-MANUSCRITO" / "Review_Article_Draft.md"
+
+    parser = argparse.ArgumentParser(description="Verifica citekeys no manuscrito vs entradas .bib")
+    parser.add_argument(
+        "--manuscript",
+        type=Path,
+        default=repo_root / "2-MANUSCRITO" / "Review_Article_Draft.md",
+        help="Caminho para o manuscrito .md (default: 2-MANUSCRITO/Review_Article_Draft.md)",
+    )
+    args = parser.parse_args()
+
+    manuscript: Path = args.manuscript
     bib_files = [
         repo_root / "2-MANUSCRITO" / "referencias.bib",
         repo_root / "2-MANUSCRITO" / "library.bib",

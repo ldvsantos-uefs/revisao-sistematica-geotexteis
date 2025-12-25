@@ -1,14 +1,23 @@
+import argparse
 import re
 import collections
 from pathlib import Path
 
-MANUSCRIPT = Path(
-    r"C:\Users\vidal\OneDrive\Documentos\13 - CLONEGIT\artigo-posdoc\2-ARTIGO_REVISAO\2-MANUSCRITO\Review_Article_Draft.md"
-)
-
 
 def main() -> int:
-    text = MANUSCRIPT.read_text(encoding="utf-8")
+    repo_root = Path(__file__).resolve().parents[1]
+
+    parser = argparse.ArgumentParser(description="Encontra citekeys duplicados no manuscrito Pandoc")
+    parser.add_argument(
+        "--manuscript",
+        type=Path,
+        default=repo_root / "2-MANUSCRITO" / "Review_Article_Draft.md",
+        help="Caminho para o manuscrito .md (default: 2-MANUSCRITO/Review_Article_Draft.md)",
+    )
+    args = parser.parse_args()
+    manuscript: Path = args.manuscript
+
+    text = manuscript.read_text(encoding="utf-8")
     lines = text.splitlines()
 
     bracket_pat = re.compile(r"\[([^\]]*?@[^\]]*?)\]")

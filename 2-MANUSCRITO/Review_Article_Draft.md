@@ -94,7 +94,7 @@ Os ensaios de punção estática do tipo CBR foram tratados como medida compleme
 
 ### Índice de Lignina/Celulose (L/C)
 
-A quantificação da razão lignina/celulose (L/C) foi realizada por espectroscopia de infravermelho por transformada de Fourier (FTIR) em equipamento PerkinElmer Spectrum Two, com aquisição no modo ATR, varredura entre 4000 e 400 cm⁻¹, resolução de 4 cm⁻¹ e média de 32 varreduras por espectro. A análise espectral concentrou-se nas bandas características atribuídas à celulose (1030 cm⁻¹) e à lignina (1510 cm⁻¹), conforme metodologia descrita por @Pandey1999. A razão L/C foi estimada pela relação entre as intensidades de absorção nessas bandas, conforme a equação: 
+A quantificação da razão lignina/celulose (L/C) foi realizada por espectroscopia de infravermelho por transformada de Fourier (FTIR) em equipamento PerkinElmer Spectrum Two, com aquisição no modo ATR, varredura entre 4000 e 400 cm⁻¹, resolução de 4 cm⁻¹ e média de 32 varreduras por espectro. A análise espectral concentrou-se nas bandas características atribuídas à celulose (1030 cm⁻¹) e à lignina (1510 cm⁻¹), conforme metodologia descrita por @Pandey1999. A razão L/C foi estimada pela relação entre as intensidades de absorção nessas bandas, conforme a equação:
 
 \[L/C = \frac{I_{1510}}{I_{1030}}\]
 onde \(I_{1510}\) e \(I_{1030}\) representam as intensidades de absorção nas respectivas bandas.
@@ -144,11 +144,11 @@ Para *Typha* (L/C = 0,46), isso resulta em $k$ = 0,0118 dia⁻¹, o que implica 
 
 **Tabela 1.** Perfil químico-mecânico comparativo de fibras lignocelulósicas tropicais para geotêxteis biodegradáveis.
 
-| Espécie                    | Celulose (%) | Lignina (%) | L/C  | Tração inicial (N/mm) | Deformação (%) | k (dia⁻¹) | t½ (dias) | VUF P₁₀ (dias)† |
-| --------------------------- | ------------ | ----------- | ---- | ----------------------- | ---------------- | ----------- | ---------- | ------------------ |
-| **Typha domingensis** | 48           | 22          | 0.46 | 107.6 ± 25.3           | 2.9 ± 2.1       | 0.0118      | 59         | 42                 |
-| **Juncus sp.**        | n.d.         | n.d.        | n.d. | 72.6 ± 16.9            | n.d.             | >0.015*     | <46*       | <30*               |
-| **Syagrus coronata**  | 48‡         | 32          | 0.67 | 142.1 ± 31.6           | 2.9 ± 2.1       | 0.0082      | 85         | 38§               |
+| Espécie | Celulose (%) | Lignina (%) | L/C | Tração inicial (N/mm) | Deformação (%) | k (dia⁻¹) | t½ (dias) | VUF P₁₀ (dias)† |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| **Typha domingensis** | 48 | 22 | 0.46 | 107.6 ± 25.3 | 2.9 ± 2.1 | 0.0118 | 59 | 42 |
+| **Juncus sp.** | n.d. | n.d. | n.d. | 72.6 ± 16.9 | n.d. | >0.015* | <46* | <30* |
+| **Syagrus coronata** | 48‡ | 32 | 0.67 | 142.1 ± 31.6 | 2.9 ± 2.1 | 0.0082 | 85 | 38§ |
 
 **Notas.** n.d. = não determinado, VUF é baseada no 10º percentil de falha Weibull (P₁₀), e os valores marcados com asterisco são estimados a partir de perda de 97% aos 60 dias, ao passo que o símbolo ‡ indica estimativa consistente com a razão L/C adotada (celulose ≈ lignina/(L/C)); por consistência interna, valores de L/C e parâmetros derivados (k, t½) devem ser internamente consistentes entre equação, tabela e texto.
 
@@ -189,7 +189,7 @@ Essa colonização fúngica se associa à atividade extracelular de celulases, q
 
 Segundo @Schneider2023, a biodegradação de matrizes lignocelulósicas decorre de dois mecanismos simultâneos: erosão superficial induzida por ataque enzimático a partir da cutícula e penetração radial de hifas que formam túneis microscópicos e zonas de cavitação sob tração. @Nilsson1988 documentaram por microscopia eletrônica que a erosão superficial domina os primeiros 30 dias de exposição, evoluindo posteriormente para penetração radial que rompe a lamela média lignificada e compromete a coesão entre células adjacentes, processo compatível com o comportamento mecânico observado em ensaios de tração e punção.
 
-A análise termogravimétrica (TGA), que mensura a perda de massa com o aumento da temperatura, permite acompanhar mudanças associadas à exposição ambiental. Conforme reportado por @Cardoso2023_TGA_biomass, observa-se um ombro inicial entre 220 e 280°C, atribuído à pirólise de hemicelulose, cuja intensidade tende a diminuir com o avanço da degradação. 
+A análise termogravimétrica (TGA), que mensura a perda de massa com o aumento da temperatura, permite acompanhar mudanças associadas à exposição ambiental. Conforme reportado por @Cardoso2023_TGA_biomass, observa-se um ombro inicial entre 220 e 280°C, atribuído à pirólise de hemicelulose, cuja intensidade tende a diminuir com o avanço da degradação.
 
 O pico principal de celulose (300–360°C) desloca-se para temperaturas inferiores à medida que a despolimerização progride, enquanto a fração atribuída à lignina acima de 400°C tende a permanecer mais estável [@Liu2008]. Esse padrão é consistente com a interpretação de @Leng2020_TGA_PKM de que a lignina atua como resíduo mais recalcitrante, persistindo após a degradação e contribuindo para o acúmulo de carbono orgânico no solo.
 
@@ -223,7 +223,8 @@ A mercerização com hidróxido de sódio (NaOH) remove seletivamente lignina e 
 
 Neste estudo, essa reestruturação morfológica produziu relação não monotônica entre resistência mecânica e concentração alcalina. As fibras não tratadas apresentaram resistência à tração (UTS) média de 18,88 N·mm⁻², enquanto o tratamento com 3% de NaOH resultou em 17,62 N·mm⁻², diferença estatisticamente não significativa. A concentração intermediária de 6% NaOH elevou a UTS para 21,39 N·mm⁻², aumento de 13,3% em relação ao controle, acompanhado de incremento na resistência à punção.
 
-Trabalhando com fibras de tamareira (*Phoenix dactylifera*), @Oushabi2017 relataram aumento de 76% na resistência à tração após tratamento com 5% de NaOH, efeito atribuído à remoção efetiva de materiais não celulósicos e à maior exposição de microfibrilas de celulose. Em linha com essa evidência, @Garg2022 e @Narayana2021 indicam que concentrações alcalinas intermediárias removem seletivamente frações amorfas de lignina e hemicelulose, reduzem impurezas superficiais, melhoram a molhabilidade e ampliam a adesão interfacial sem comprometer a cristalinidade da celulose, configurando rede fibrilar mais coesa e eficiente na transferência de carga.
+Trabalhando com fibras de tamareira (*Phoenix dactylifera*), @Oushabi2017 relataram aumento de 76% na resistência à tração após tratamento com 5% de NaOH e atribuíram esse ganho à remoção efetiva de constituintes não celulósicos e à maior exposição de microfibrilas de celulose. Em linha com essa evidência, @Garg2022 e @Narayana2021 indicam que concentrações alcalinas intermediárias removem seletivamente frações amorfas de lignina e hemicelulose, reduzem impurezas superficiais, melhoram a molhabilidade e ampliam a adesão interfacial sem comprometer a cristalinidade da celulose, configurando rede fibrilar mais coesa e eficiente na transferência de carga.
+
 
 Em paralelo, estudos recentes em compósitos reforçados por fibras naturais reportam ganhos mecânicos e alterações morfológicas, bem como dependência não linear do desempenho em função de carregamento e tratamento [@Kar2024; @Kar2025VNL], o que oferece suporte convergente, ainda que fora do escopo estrito de geotêxteis, à interpretação de que arquitetura fibrilar e compatibilização superficial modulam mecanismos de dano e trajetória de desempenho [@Aruchamy2024; @Ayrilmis2024; @Palanisamy2024].
 
@@ -251,9 +252,9 @@ Nesse contexto, a morfometria quantitativa sugere que o balanço observado decor
 
 Concomitantemente, a mercerização reorganiza a rede porosa ao fundir poros pequenos em cavidades de maior área média (+73,6%), elevando a circularidade (+5,9%) e reduzindo a heterogeneidade dimensional [@Jiao2014], de modo que a porosidade total cresce moderadamente (+7,6%) apesar da queda no número de poros (−42,1%), o que melhora a eficiência do transporte capilar em vez de simplesmente vedar canais [@Koistinen2024].
 
-Enquanto mercerização otimiza estrutura interna, a proteção externa depende de estratégias de barreira. Para quantificar a tendência temporal observada na Figura 9, ajustou-se regressão linear simples entre tempo de exposição (dias) e UTS média (N/mm²), por espécie e por condição de tratamento (médias por tempo de exposição). Em *Typha domingensis*, a monocamada de resina exibiu declínio linear acentuado entre 30–120 dias: para cada dia adicional de exposição, houve redução média de 0,084 N/mm² na UTS (β = −0,084; t = −10,339; p = 0,009; R² = 0,982; 98,2% da variância explicada). O controle (não tratado) apresentou tendência fraca e não significativa (β = −0,034; t = −1,128; p = 0,377; R² = 0,389; 38,9% da variância explicada), enquanto a bicamada mostrou queda moderada, porém sem evidência estatística robusta no intervalo disponível (β = −0,046; t = −2,767; p = 0,110; R² = 0,793; 79% da variância explicada).
+Enquanto mercerização otimiza estrutura interna, a proteção externa depende de estratégias de barreira. Para quantificar a tendência temporal observada na Figura 9, ajustou-se regressão linear simples entre tempo de exposição (dias) e UTS média (N/mm²), por espécie e por condição de tratamento (médias por tempo de exposição). Em *Typha domingensis*, a monocamada de resina exibiu declínio linear acentuado entre 30–120 dias: para cada dia adicional de exposição, houve redução média de 0,084 N/mm² na UTS (β = −0,084 N/mm²·dia⁻¹, IC95% [−0,120, −0,049], p = 0,009, f² = 53,45, R² = 0,982). O controle (não tratado) apresentou tendência fraca (β = −0,034 N/mm²·dia⁻¹, IC95% [−0,161, 0,094], p = 0,377, f² = 0,64, R² = 0,389), enquanto a bicamada mostrou queda moderada no intervalo disponível (β = −0,046 N/mm²·dia⁻¹, IC95% [−0,116, 0,025], p = 0,110, f² = 3,83, R² = 0,793).
 
-Em *Syagrus coronata*, as séries sugerem trajetória menos linear (queda inicial e estabilização em níveis baixos), além de lacunas em tempos tardios, o que reduz poder inferencial quando o ajuste é feito por pontos de tempo. No conjunto, o padrão reforça que o tempo de exposição governa a perda de UTS, ao passo que espécie e tratamento modulam a forma da curva temporal (Figura 9).
+Em *Syagrus coronata*, as regressões também apresentaram coeficientes negativos sob condições de resina, porém sem evidência estatística significativa quando o ajuste é feito por pontos de tempo, controle (β = −0,214 N/mm²·dia⁻¹, IC95% [−1,750, 1,323], p = 0,328, f² = 3,12, R² = 0,757), monocamada (β = −0,162 N/mm²·dia⁻¹, IC95% [−0,406, 0,083], p = 0,126, f² = 1,48, R² = 0,596) e bicamada (β = −0,221 N/mm²·dia⁻¹, IC95% [−0,667, 0,224], p = 0,166, f² = 2,28, R² = 0,695). Esse padrão é compatível com trajetória menos linear (queda inicial e estabilização em níveis baixos), além de lacunas em tempos tardios, o que reduz poder inferencial quando o ajuste é feito por pontos de tempo; no conjunto, reforça-se que o tempo de exposição governa a perda de UTS, ao passo que espécie e tratamento modulam a forma da curva temporal (Figura 9).
 
 
 **Figura 9.** Resistência à tração (UTS, N/mm) sob diferentes condições de tratamento, **(a)** revestimento com resina (Não tratado/Monocamada/Bicamada) para *Typha domingensis* e *Syagrus coronata*; **(b)** mercerização alcalina com NaOH (0%, 3%, 6%, 9%) para *Typha domingensis* e *Syagrus coronata*.
@@ -292,7 +293,7 @@ Essas diferenças cinéticas permitem alinhar a escolha de tratamento à janela 
 
 ## 4. Enquadramento Conceitual de Confiabilidade e Desempenho Ambiental
 
-A variabilidade intrínseca dos geotêxteis naturais favorece a modelagem estocástica da perda de desempenho. Nesse contexto, a distribuição de Weibull ($R(t) = e^{-(t/\eta)^\beta}$) representa a heterogeneidade estrutural, em que $\beta > 1$ (1,8–4,2) é associado a falha por desgaste progressivo (fadiga/hidrólise), em contraste com falha aleatória ($\beta \approx 1$). 
+A variabilidade intrínseca dos geotêxteis naturais favorece a modelagem estocástica da perda de desempenho. Nesse contexto, a distribuição de Weibull ($R(t) = e^{-(t/\eta)^\beta}$) representa a heterogeneidade estrutural, em que $\beta > 1$ (1,8–4,2) é associado a falha por desgaste progressivo (fadiga/hidrólise), em contraste com falha aleatória ($\beta \approx 1$).
 
 Além disso, a engenharia de superfície tende a elevar $\beta$ (reduzindo a variabilidade) e $\eta$, estendendo a vida útil [@Luqman2023]. Definida aqui como o tempo para 10% de falha ($P_{10}$), a Vida Útil Funcional (VUF) pode aumentar de 42 dias (*Typha* natural) para cerca de 95 dias (6% NaOH) e para a ordem de 92 dias em condição resinada em monocamada, enquanto $\eta$ pode alcançar ~128 dias (Tabela 3), cobrindo a janela crítica de ~90 dias para ancoragem vegetal.
 
@@ -339,7 +340,7 @@ Nesse enquadramento, a VUF deixa de ser um atributo fixo e passa a ser tratada c
 **Tabela 3.** Síntese do elo L/C → $k$ → parâmetros de Weibull (β, η, $P_{10}$) → VUF em diferentes espécies e condições de tratamento.
 
 | **Espécie/Tratamento** | **β (forma)** | **η (escala, dias)** | **P₁₀ (dias)** | **k (taxa/dia⁻¹)** | **Mecanismo de Falha** |
-|---|:---:|:---:|:---:|:---:|---|
+| --- | :---: | :---: | :---: | :---: | --- |
 | Typha não tratada (controle) | 2,3 | 68 | 42 | 0,0118 | Hidrólise enzimática + UV |
 | Typha + NaOH 6% | 2,8 | 142 | 95 | 0,0073 | Degradação retardada por deslignificação |
 | Typha + NaOH 9% | 3,1 | 155 | 108 | 0,0062 | Degradação reduzida, início de fragilidade |
