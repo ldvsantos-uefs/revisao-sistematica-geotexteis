@@ -422,7 +422,7 @@ def load_and_plot_tensile() -> None:
 
     strict_validate = os.environ.get("STRICT_TENSILE_VALIDATE", "0").strip() in {"1", "true", "True", "YES", "yes"}
 
-    # Classic paper styling (similar to the example figure you provided)
+    # Styling aligned with the puncture curve figures (gray vs red, light grid, boxed axes)
     plt.rcParams.update(
         {
             'font.family': 'serif',
@@ -435,32 +435,33 @@ def load_and_plot_tensile() -> None:
             'legend.fontsize': 9,
             'axes.linewidth': 1.0,
             'lines.linewidth': 1.2,
+            'axes.grid': True,
+            'grid.alpha': 0.4,
+            'grid.linewidth': 0.5,
         }
     )
 
     sns.set_style(
         "white",
         {
-            'axes.grid': False,
             'axes.edgecolor': 'black',
             'axes.spines.top': True,
             'axes.spines.right': True,
         },
     )
 
-    # Colors/markers inspired by classic journal plots
-    # - Use markers + connecting lines; legend inside axes with boxed frame.
-    treatment_colors = ["#000000", "#00aa44", "#1f77b4"]  # black, green, blue
-    treatment_markers = ['o', '^', 'D']
+    # Resin (3 levels): keep a neutral baseline and red shades for coatings
+    treatment_colors = ["0.35", "#c0392b", "#8e2a1f"]  # untreated, monolayer, bilayer
+    treatment_markers = ['o', 'o', 'o']
 
-    # Species styling for NaOH panels
+    # Species styling for NaOH panels (match puncture gray vs red)
     species_palette = {
-        "Typha domingensis": "#000000",  # black
-        "Syagrus coronata": "#1f77b4",   # blue
+        "Typha domingensis": "0.35",
+        "Syagrus coronata": "#c0392b",
     }
     species_markers = {
         "Typha domingensis": 'o',
-        "Syagrus coronata": 'D',
+        "Syagrus coronata": 'o',
     }
 
     resin_order = ["Untreated", "Monolayer Resin", "Bilayer Resin"]
@@ -574,6 +575,7 @@ def load_and_plot_tensile() -> None:
     ax.minorticks_on()
     ax.tick_params(which='both', direction='in', top=True, right=True, length=4)
     ax.tick_params(which='minor', length=2)
+    ax.grid(True, which='major', linewidth=0.5, alpha=0.4)
     ax.set_xticks(resin_day_ticks)
     ax.set_xlim(resin_min_day - resin_xpad, resin_max_day + resin_xpad)
     ax.margins(y=0.08)
@@ -587,7 +589,7 @@ def load_and_plot_tensile() -> None:
             va="top",
             fontsize=8,
         )
-    sns.despine(ax=ax, left=False, bottom=False)
+    sns.despine(ax=ax, left=False, bottom=False, top=False, right=False)
 
     ax = axes[1]
     b_df = resin_plot[resin_plot["Species"] == "Syagrus coronata"].copy()
@@ -617,6 +619,7 @@ def load_and_plot_tensile() -> None:
     ax.minorticks_on()
     ax.tick_params(which='both', direction='in', top=True, right=True, length=4)
     ax.tick_params(which='minor', length=2)
+    ax.grid(True, which='major', linewidth=0.5, alpha=0.4)
     ax.set_xticks(resin_day_ticks)
     ax.set_xlim(resin_min_day - resin_xpad, resin_max_day + resin_xpad)
     ax.margins(y=0.08)
@@ -630,7 +633,7 @@ def load_and_plot_tensile() -> None:
             va="top",
             fontsize=8,
         )
-    sns.despine(ax=ax, left=False, bottom=False)
+    sns.despine(ax=ax, left=False, bottom=False, top=False, right=False)
 
     # Shared legend at top (treatments)
     handles, labels = axes[0].get_legend_handles_labels()
@@ -765,10 +768,11 @@ def load_and_plot_tensile() -> None:
         ax.minorticks_on()
         ax.tick_params(which='both', direction='in', top=True, right=True, length=4)
         ax.tick_params(which='minor', length=2)
+        ax.grid(True, which='major', linewidth=0.5, alpha=0.4)
         ax.set_xticks(day_ticks)
         ax.set_xlim(naoh_xmin - naoh_xpad, naoh_xmax + naoh_xpad)
         ax.margins(y=0.08)
-        sns.despine(ax=ax, left=False, bottom=False)
+        sns.despine(ax=ax, left=False, bottom=False, top=False, right=False)
         
         if idx == 0:
             handles, labels = ax.get_legend_handles_labels()
