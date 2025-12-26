@@ -6,7 +6,6 @@ bibliography: referencias.bib
 fig-align: center
 lang: pt-br
 ---
-
 Luiz Diego Vidal Santos, ORCID: 0000-0001-8659-8557, <ldvsantos@uefs.uefs.br>*, Universidade Estadual de Feira de Santana – UEFS, Pós-graduação em Planejamento Territorial, Feira de Santana - BA, Brasil
 
 Francisco Sandro Rodrigues Holanda, ORCID: 0009-0000-9358-0531, <fholanda@academico.ufs.br>, Universidade Federal de Sergipe, Departamento de Engenharia Agronômica, São Cristóvão – SE, Brasil
@@ -28,12 +27,9 @@ Alceu Pedrotti, ORCID: 0000-0003-3086-8399, <alceupedrotti@gmail.com>, Universid
 A degradação de solos tropicais e os passivos de microplásticos associados aos geossintéticos convencionais exigem soluções de bioengenharia baseadas em materiais renováveis com funcionalidade temporizada. O presente estudo avalia a viabilidade técnica e a durabilidade funcional de geotêxteis produzidos a partir de *Typha domingensis* e *Syagrus coronata*, utilizando modelagem probabilística para propor especificações de engenharia baseadas na degradação química e mecânica em ambiente real. Os resultados demonstram que a arquitetura química das fibras, especificamente a razão lignina/celulose, condiciona a cinética de degradação, definindo janelas de serviço entre 60 e 180 dias. A mercerização alcalina (6% NaOH) promoveu reorganização morfoestrutural crítica, equilibrando resistência e ductilidade para estender a Vida Útil Funcional (VUF) ao patamar necessário para o estabelecimento vegetativo. Tratamentos por resinas exibiram comportamento não linear, onde a aplicação monocamada retardou a degradação (~120 dias), mas sobreposições induziram delaminação precoce.
 Ensaios via Weibull confirmaram que a especificação baseada no percentil de confiabilidade ($P_{10}$), em detrimento da média simples, oferece um critério robusto para alinhar engenharia de superfície e janelas de serviço (90–150 dias). Conclui-se que a integração entre caracterização microestrutural e modelagem de confiabilidade valida o uso desses materiais em bioengenharia de solos tropicais.
 
-
 **Palavras-chave.** Controle de erosão, Poluição ambiental, Cinética de biodegradação, Serviços ecossistêmicos e Confiabilidade Weibull.
 
-
 ## 1. Introdução
-
 
 A degradação do solo em regiões tropicais opera através de mecanismos distintos daqueles observados em contextos temperados, sobretudo devido a maior intensidade pluviométrica e as temperaturas elevadas. Segundo @Brady2009, esses fatores aceleram a mineralização da matéria orgânica, que conjugada a Oxissolos intemperizados, resulta em taxas elevadas de perda de nutrientes por lixiviação.
 
@@ -69,20 +65,30 @@ A hipótese central investigada é que a razão L/C atua como principal variáve
 
 O delineamento experimental combinou a quantificação da resposta mecânica de fibras naturais sob carregamento monotônico com a caracterização morfológica por microscopia eletrônica de varredura (MEV), mantendo a inferência sobre vida útil de serviço vinculada a métricas mensuráveis e a protocolos normativos de ensaio. As intervenções de engenharia de superfície incluíram mercerização alcalina em NaOH (3%, 6% e 9%) e revestimento polimérico à base de resina Hydronorth® em duas dosagens areais (0,0932 e 0,1864 mL·m⁻²), preservadas como variáveis de processo na consolidação dos dados.
 
-Para o conjunto em que se avaliou mercerização alcalina em geotêxteis de *Typha domingensis*, o tratamento foi realizado por imersão em solução de NaOH por 24 h nas concentrações de 3% (0,75 mol·L⁻¹), 6% (1,5 mol·L⁻¹) e 9% (2,25 mol·L⁻¹), mantendo-se relação de banho constante; após a reação, o material foi lavado em água corrente até neutralização e seco ao ar em ambiente sombreado e ventilado, em intervalo da ordem de dias, com registro fotográfico do processamento apresentado na Figura 1.
+### Coleta e processamento das fibras
 
-![**Figura 1.** Registro fotográfico da coleta, desfibramento, processamento e secagem de fibras vegetais em ambiente sombreado e ventilado.](../3-IMAGENS/metodologia_lc_k/coleta.png){width=90%}
+As matérias-primas vegetais foram obtidas por coleta manual e submetidas a pré-processamento físico antes da confecção dos geotêxteis. No caso de *Typha domingensis* (taboa), plantas foram selecionadas e coletadas em áreas úmidas do Baixo São Francisco. A extração/desfibramento das fibras foi realizada com ferramentas de lâmina lisa para preservar a integridade do material, com incisões executadas acima do sistema radicular para permitir a rebrota. Após a extração, as fibras foram encaminhadas ao laboratório para secagem à sombra (tipicamente 6–8 dias, ≈8 dias), seguida de separação/seleção antes das etapas de manufatura do geotêxtil (Figura 1).
 
-O monitoramento de degradação natural foi conduzido em talude tropical com inclinação de 45° no Campus Rural da Universidade Federal de Sergipe, com instalação de unidades em parcelas retangulares ao longo da pendente, buscando reproduzir condição de aplicação em campo e minimizar efeitos de borda por retirada de material na porção central (Figura 2). A exposição ocorreu entre os meses de maio e novembro, período caracterizado por precipitação acumulada de aproximadamente 350 mm e irradiância UV-B média diária de 6,5 kWh·m⁻²·dia⁻¹, conforme monitoramento local.
+![Figura 1. Registro fotográfico da coleta e extração de fibras de *Typha domingensis* (taboa), com etapas de colheita, desfibramento e secagem preliminar.](../3-IMAGENS/metodologia_lc_k/coleta_taboa.png){width=90%}
 
-![**Figura 2.** (a) Tear utilizado na confecção do geotêxtil e (b) talude experimental de instalação e exposição em campo.](../3-IMAGENS/talude.png){width=90%}
+Para *Syagrus coronata* (ouricuri), o material foliar foi coletado com instrumentos de lâmina lisa, priorizando cortes no pecíolo a aproximadamente 2 cm acima da bainha para reduzir dano e permitir regeneração; em seguida, as fibras foram secas à sombra em ambiente ventilado por cerca de seis dias, reunidas em feixes (≈3 kg) e armazenadas em local seco e bem ventilado até o processamento (Figura 2).
+
+Como procedimento de padronização dimensional para a etapa de trançado e para reduzir variabilidade geométrica entre amostras, as fibras de *Syagrus coronata* foram desfibradas até diâmetro aproximado de 4 mm. As espécies estudadas foram registradas no Sistema Nacional de Gestão do Patrimônio Genético e do Conhecimento Tradicional Associado (SisGen), sob o código A2B3842.
+
+![Figura 2. (a) *Syagrus coronata* (ouricuri), (b) corte manual das fibras no pecíolo (~0,02 m acima da bainha) e (c) secagem à sombra em ambiente ventilado.](../3-IMAGENS/coleta_ouricuri.png){width=90%}
+
+
+Para o conjunto em que se avaliou mercerização alcalina em geotêxteis de *Typha domingensis* e *Syagrus coronata*, o tratamento foi realizado por imersão em solução de NaOH por 24 h nas concentrações de 3% (0,75 mol·L⁻¹), 6% (1,5 mol·L⁻¹) e 9% (2,25 mol·L⁻¹), mantendo-se relação de banho constante. Após a reação, o material foi lavado em água corrente até neutralização e seco ao ar em ambiente sombreado e ventilado, em intervalo da ordem de 48 horas.
+
+O monitoramento de degradação natural foi conduzido em talude tropical com inclinação de 45° no Campus Rural da Universidade Federal de Sergipe, com instalação de unidades em parcelas retangulares ao longo da pendente, buscando reproduzir condição de aplicação em campo e minimizar efeitos de borda por retirada de material na porção central (Figura 3). A exposição ocorreu entre os meses de maio e novembro, período caracterizado por precipitação acumulada de aproximadamente 350 mm e irradiância UV-B média diária de 6,5 kWh·m⁻²·dia⁻¹, conforme monitoramento local.
+
+![Figura 3. (a) Tear utilizado na confecção do geotêxtil e (b) talude experimental de instalação e exposição em campo.](../3-IMAGENS/talude.png){width=90%}
 
 Para caracterizar a cinética de biodegradação em janela de serviço de até 180 dias, seções de aproximadamente 20 cm × 20 cm foram removidas em intervalos programados (0, 30, 60, 90, 120, 150 e 180 dias), com secagem prévia em estufa a 60 °C por 24 h antes da preparação dos corpos de prova.
 
-
 Como a retirada e os ensaios são destrutivos e a integridade do material condiciona a possibilidade de preparo sob o mesmo protocolo, o número efetivo de corpos de prova por combinação espécie × tratamento × tempo variou ao longo da exposição, incluindo combinações ausentes em tempos tardios.
 
-As fibras foram selecionadas e preparadas para ensaios mecânicos e caracterização microestrutural, preservando-se a fração fibrosa de interesse (Figura 1).
+As fibras foram selecionadas e preparadas para ensaios mecânicos e caracterização microestrutural, preservando-se a fração fibrosa de interesse (Figuras 1–2).
 
 ### Tração e punção em fibras
 
@@ -96,7 +102,6 @@ A quantificação da razão lignina/celulose (L/C) foi realizada por espectrosco
 
 \[L/C = \frac{I_{1510}}{I_{1030}}\]
 onde \(I_{1510}\) e \(I_{1030}\) representam as intensidades de absorção nas respectivas bandas.
-
 
 ### MEV e extração de descritores morfológicos
 
@@ -126,7 +131,7 @@ As microfibrilas resultantes, imersas em matriz amorfa de hemiceluloses constitu
 
 Em termos funcionais, diferenças na razão lignina/celulose e na distribuição microestrutural desses constituintes tendem a se traduzir em trajetórias contrastantes de degradação e, por consequência, em janelas distintas de Vida Útil Funcional sob condições ambientais semelhantes [@Haviland2024]. Nesse enquadramento, a fração lignínica atua como componente relativamente mais recalcitrante e hidrofóbico, modulando acessibilidade a água e agentes degradantes e influenciando a taxa de perda de capacidade mecânica ao longo do tempo [@Nguyen2024].
 
-**Figura 3.** Arquitetura hierárquica multinível de fibras lignocelulósicas sendo, **(a)** Representação esquemática dos principais polímeros de cadeias lineares de celulose, **(b)** Organização supramolecular do núcleo cristalino das microfibrilas de celulose, **(c)** Seção transversal da parede celular vegetal e **(d)** Nível do Tecido e Razão L/C: Comparação esquemática de feixes de fibras de *Typha* (baixa lignificação) e *Syagrus* (alta lignificação).
+**Figura 4.** Arquitetura hierárquica multinível de fibras lignocelulósicas sendo, **(a)** Representação esquemática dos principais polímeros de cadeias lineares de celulose, **(b)** Organização supramolecular do núcleo cristalino das microfibrilas de celulose, **(c)** Seção transversal da parede celular vegetal e **(d)** Nível do Tecido e Razão L/C: Comparação esquemática de feixes de fibras de *Typha* (baixa lignificação) e *Syagrus* (alta lignificação).
 
 ![ ](../3-IMAGENS/fig_01.png)
 
@@ -142,11 +147,11 @@ Para *Typha* (L/C = 0,46), isso resulta em $k$ = 0,0118 dia⁻¹, o que implica 
 
 **Tabela 1.** Perfil químico-mecânico comparativo de fibras lignocelulósicas tropicais para geotêxteis biodegradáveis.
 
-| Espécie | Celulose (%) | Lignina (%) | L/C | Tração inicial (N/mm) | Deformação (%) | k (dia⁻¹) | t½ (dias) | VUF P₁₀ (dias)† |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Typha domingensis** | 48 | 22 | 0.46 | 107.6 ± 25.3 | 2.9 ± 2.1 | 0.0118 | 59 | 42 |
-| **Juncus sp.** | n.d. | n.d. | n.d. | 72.6 ± 16.9 | n.d. | >0.015* | <46* | <30* |
-| **Syagrus coronata** | 48‡ | 32 | 0.67 | 142.1 ± 31.6 | 2.9 ± 2.1 | 0.0082 | 85 | 38§ |
+| Espécie                    | Celulose (%) | Lignina (%) | L/C  | Tração inicial (N/mm) | Deformação (%) | k (dia⁻¹) | t½ (dias) | VUF P₁₀ (dias)† |
+| --------------------------- | ------------ | ----------- | ---- | ----------------------- | ---------------- | ----------- | ---------- | ------------------ |
+| **Typha domingensis** | 48           | 22          | 0.46 | 107.6 ± 25.3           | 2.9 ± 2.1       | 0.0118      | 59         | 42                 |
+| **Juncus sp.**        | n.d.         | n.d.        | n.d. | 72.6 ± 16.9            | n.d.             | >0.015*     | <46*       | <30*               |
+| **Syagrus coronata**  | 48‡         | 32          | 0.67 | 142.1 ± 31.6           | 2.9 ± 2.1       | 0.0082      | 85         | 38§               |
 
 **Notas.** n.d. = não determinado, VUF é baseada no 10º percentil de falha Weibull (P₁₀), e os valores marcados com asterisco são estimados a partir de perda de 97% aos 60 dias, ao passo que o símbolo ‡ indica estimativa consistente com a razão L/C adotada (celulose ≈ lignina/(L/C)); por consistência interna, valores de L/C e parâmetros derivados (k, t½) devem ser internamente consistentes entre equação, tabela e texto.
 
@@ -156,19 +161,19 @@ O comportamento bifásico, caracterizado por fase inicial de manutenção aparen
 
 Espectroscopia no Infravermelho por Transformada de Fourier (FTIR) vincula assinaturas espectrais à composição relativa e à organização química da parede celular, oferecendo suporte mecanístico para diferenças de recalcitrância e de acessibilidade a água e agentes degradantes.
 
-**Figura 4.** Comparação de espectros FTIR entre *Typha domingensis* e *Syagrus coronata*.
-![Figura 4](../3-IMAGENS/figura_ftir_comparativa.png){width=100%}
+**Figura 5.** Comparação de espectros FTIR entre *Typha domingensis* e *Syagrus coronata*.
+![Figura 5](../3-IMAGENS/figura_ftir_comparativa.png){width=100%}
 
 *Nota. As diferenças espectrais mais relevantes são coerentes com maior contribuição relativa de frações mais hidrofílicas em *Typha* e com maior contribuição aromática associada à lignina em *Syagrus*.*
 
 Essa composição bioquímica tende a se refletir na cinética de degradação. Segundo @Santos2023_PatenteTaboa, *Typha* perde 50% da resistência inicial em aproximadamente 60 dias sob condições de campo; no conjunto experimental aqui analisado, *Syagrus* manteve integridade funcional por períodos superiores a 120 dias, coerente com uma trajetória de degradação mais lenta. Nesse conjunto de resultados, a razão lignina/celulose (L/C) aparece como um marcador útil para descrever diferenças de recalcitrância e de ritmo de perda de capacidade, com *Typha* associada a degradação mais rápida e *Syagrus* a degradação mais lenta.
 
-Embora a FTIR descreva grupos funcionais, o arranjo cristalino avaliado por difração de raios X (Figura 5) contribui para a integridade física. @Segal1959 propuseram metodologia que indica índices de cristalinidade de 52% para *Typha* versus 46% para *Syagrus*. Segundo @Boerjan2003, esse contraste sugere que o maior teor de lignina em *Syagrus* pode compensar a cristalinidade reduzida, ao preencher a fração amorfa e elevar a rigidez. As fibras de *Typha domingensis* exibem picos de celulose I em 2θ ≈ 14,8° (plano 1-10/110), 16,4° (110) e 22,6° (200) [@Rowell1998].
+Embora a FTIR descreva grupos funcionais, o arranjo cristalino avaliado por difração de raios X (Figura 6) contribui para a integridade física. @Segal1959 propuseram metodologia que indica índices de cristalinidade de 52% para *Typha* versus 46% para *Syagrus*. Segundo @Boerjan2003, esse contraste sugere que o maior teor de lignina em *Syagrus* pode compensar a cristalinidade reduzida, ao preencher a fração amorfa e elevar a rigidez. As fibras de *Typha domingensis* exibem picos de celulose I em 2θ ≈ 14,8° (plano 1-10/110), 16,4° (110) e 22,6° (200) [@Rowell1998].
 
 Na caracterização mecânica dessas fibras, @Fontes2021 reportaram resistências à tração iniciais próximas entre as espécies, com 3,14 N·mm⁻² para *Syagrus* e 3,57 N·mm⁻² para *Typha* não tratada. Em conjunto, variações composicionais e estruturais observadas por FTIR/DRX/TGA são consistentes com diferenças na integridade microfibrilar e no desempenho mecânico inicial.
 
-**Figura 5.** Difratograma de raios X (DRX) da fibra de *Typha domingensis* e *Syagrus coronata*
-![Figura 5](../3-IMAGENS/fig_drx_final.png){width=70%}
+**Figura 6.** Difratograma de raios X (DRX) da fibra de *Typha domingensis* e *Syagrus coronata*
+![Figura 6](../3-IMAGENS/fig_drx_final.png){width=70%}
 
 A maior estabilidade térmica de *Syagrus*, associada ao teor de lignina, pode se refletir em maior fração residual. Análises termogravimétricas sob atmosfera oxidativa (ar, 10 °C·min⁻¹) indicam que *Syagrus* retém ~28% de massa residual a 600 °C, versus ~21% para *Typha* [@Marchi2023].
 
@@ -216,7 +221,6 @@ Neste estudo, essa reestruturação morfológica produziu relação não monotô
 
 Trabalhando com fibras de tamareira (*Phoenix dactylifera*), @Oushabi2017 relataram aumento de 76% na resistência à tração após tratamento com 5% de NaOH e atribuíram esse ganho à remoção efetiva de constituintes não celulósicos e à maior exposição de microfibrilas de celulose. Em linha com essa evidência, @Garg2022 e @Narayana2021 indicam que concentrações alcalinas intermediárias removem seletivamente frações amorfas de lignina e hemicelulose, reduzem impurezas superficiais, melhoram a molhabilidade e ampliam a adesão interfacial sem comprometer a cristalinidade da celulose, configurando rede fibrilar mais coesa e eficiente na transferência de carga.
 
-
 Em paralelo, estudos recentes em compósitos reforçados por fibras naturais reportam ganhos mecânicos e alterações morfológicas, bem como dependência não linear do desempenho em função de carregamento e tratamento [@Kar2024; @Kar2025VNL], o que oferece suporte convergente, ainda que fora do escopo estrito de geotêxteis, à interpretação de que arquitetura fibrilar e compatibilização superficial modulam mecanismos de dano e trajetória de desempenho [@Aruchamy2024; @Ayrilmis2024; @Palanisamy2024].
 
 A 9% NaOH, embora a UTS atinja 22,49 N·mm⁻², observam-se indícios de corrosão superficial e possível despolimerização, com maior fragilidade e apenas melhora modesta na resistência à punção (Tabela 2). Há relatos de que tratamentos com índice alcalino elevado, após uma fase inicial de limpeza estrutural e rearranjo cristalino, podem também degradar a matriz celulósica [@Amior2022]. A exposição prolongada a soluções concentradas de NaOH pode induzir hidrólise alcalina das ligações glicosídicas, reduzir o grau de polimerização da celulose e comprometer a integridade estrutural das fibras [@Nurazzi2021].
@@ -225,9 +229,9 @@ Conforme observado por @Bartos2020, os resultados convergem, portanto, para uma 
 
 Esse balanço envolve a remoção parcial de lignina, que pode reduzir sítios de colonização microbiana, e a preservação de cadeias de celulose com alto grau de polimerização, cuja degradação comprometeria a resistência global [@Xu2013]. No conjunto analisado em campo por 180 dias, fibras não tratadas mantiveram funcionalidade por cerca de 60 dias, enquanto o tratamento com 6% NaOH prolongou a viabilidade estrutural para 142 dias (VUF de 95 dias no limiar $P_{10}$ de Weibull). Na condição de 9% NaOH, observou-se preservação de integridade estrutural com censura ao longo de todo o período de 180 dias.
 
-Um modelo linear por mínimos quadrados ordinários, sintetizado por ANOVA tipo II, indica que o tempo de exposição domina a variabilidade da UTS, mantendo-se um efeito adicional de tratamento com NaOH e de interações, sugerindo que a engenharia de superfície deve ser tratada como variável de controle de trajetória, e não apenas como ganho instantâneo de resistência (Figura 7).
+Um modelo linear por mínimos quadrados ordinários, sintetizado por ANOVA tipo II, indica que o tempo de exposição domina a variabilidade da UTS, mantendo-se um efeito adicional de tratamento com NaOH e de interações, sugerindo que a engenharia de superfície deve ser tratada como variável de controle de trajetória, e não apenas como ganho instantâneo de resistência (Figura 8).
 
-**Figura 6.** Microscopia eletrônica de varredura (MEV) comparativa de fibras de *Typha domingensis* e *Syagrus coronata* sob diferentes tratamentos e tempos de exposição.
+**Figura 7.** Microscopia eletrônica de varredura (MEV) comparativa de fibras de *Typha domingensis* e *Syagrus coronata* sob diferentes tratamentos e tempos de exposição.
 
 ![ ](../3-IMAGENS/figura_mev_originais.png){width=100%}
 
@@ -245,25 +249,26 @@ Concomitantemente, a mercerização reorganiza a rede porosa ao fundir poros peq
 
 Enquanto mercerização otimiza estrutura interna, a proteção externa depende de estratégias de barreira. Para quantificar a tendência temporal observada na Figura 7, ajustou-se regressão linear simples entre tempo de exposição (dias) e UTS média (N/mm²), por espécie e por condição de tratamento (médias por tempo de exposição). Em *Typha domingensis*, a monocamada de resina exibiu declínio linear acentuado entre 30–120 dias: para cada dia adicional de exposição, houve redução média de 0,084 N/mm² na UTS (β = −0,084 N/mm²·dia⁻¹, IC95% [−0,120, −0,049], p = 0,009, f² = 53,45, R² = 0,982). O controle (não tratado) apresentou tendência fraca (β = −0,034 N/mm²·dia⁻¹, IC95% [−0,161, 0,094], p = 0,377, f² = 0,64, R² = 0,389), enquanto a bicamada mostrou queda moderada no intervalo disponível (β = −0,046 N/mm²·dia⁻¹, IC95% [−0,116, 0,025], p = 0,110, f² = 3,83, R² = 0,793).
 
-Em *Syagrus coronata*, as regressões também apresentaram coeficientes negativos sob condições de resina, porém sem evidência estatística significativa quando o ajuste é feito por pontos de tempo, controle (β = −0,214 N/mm²·dia⁻¹, IC95% [−1,750, 1,323], p = 0,328, f² = 3,12, R² = 0,757), monocamada (β = −0,162 N/mm²·dia⁻¹, IC95% [−0,406, 0,083], p = 0,126, f² = 1,48, R² = 0,596) e bicamada (β = −0,221 N/mm²·dia⁻¹, IC95% [−0,667, 0,224], p = 0,166, f² = 2,28, R² = 0,695). Esse padrão é compatível com trajetória menos linear (queda inicial e estabilização em níveis baixos), além de lacunas em tempos tardios, o que reduz poder inferencial quando o ajuste é feito por pontos de tempo; no conjunto, reforça-se que o tempo de exposição governa a perda de UTS, ao passo que espécie e tratamento modulam a forma da curva temporal (Figura 7).
+Em *Syagrus coronata*, as regressões também apresentaram coeficientes negativos sob condições de resina, porém sem evidência estatística significativa quando o ajuste é feito por pontos de tempo, controle (β = −0,214 N/mm²·dia⁻¹, IC95% [−1,750, 1,323], p = 0,328, f² = 3,12, R² = 0,757), monocamada (β = −0,162 N/mm²·dia⁻¹, IC95% [−0,406, 0,083], p = 0,126, f² = 1,48, R² = 0,596) e bicamada (β = −0,221 N/mm²·dia⁻¹, IC95% [−0,667, 0,224], p = 0,166, f² = 2,28, R² = 0,695). Esse padrão é compatível com trajetória menos linear (queda inicial e estabilização em níveis baixos), além de lacunas em tempos tardios, o que reduz poder inferencial quando o ajuste é feito por pontos de tempo; no conjunto, reforça-se que o tempo de exposição governa a perda de UTS, ao passo que espécie e tratamento modulam a forma da curva temporal (Figura 8).
 
-
-**Figura 7.** Resistência à tração (UTS, N/mm) sob diferentes condições de tratamento, **(a)** revestimento com resina (Não tratado/Monocamada/Bicamada) para *Typha domingensis* e *Syagrus coronata*; **(b)** mercerização alcalina com NaOH (0%, 3%, 6%, 9%) para *Typha domingensis* e *Syagrus coronata*.
+**Figura 8.** Resistência à tração (UTS, N/mm) sob diferentes condições de tratamento, **(a)** revestimento com resina (Não tratado/Monocamada/Bicamada) para *Typha domingensis* e *Syagrus coronata*; **(b)** mercerização alcalina com NaOH (0%, 3%, 6%, 9%) para *Typha domingensis* e *Syagrus coronata*.
 
 ![ ](../5-DADOS/MEV-ANALISE/resultados_en/fig_tensile_resin_english.png){width=80%}
 ![ ](../5-DADOS/MEV-ANALISE/resultados_en/fig_tensile_naoh_english.png){width=80%}
 
 A resistência à punção (CBR) complementa a caracterização mecânica ao mensurar a capacidade de distribuição de carga sob solicitação concentrada, parâmetro crítico para geotêxteis implantados sobre substratos irregulares [@Cholewa2019]. Os ensaios foram conduzidos em fibras submetidas aos mesmos tratamentos de mercerização alcalina e revestimento polimérico, permitindo avaliar a sinergia entre rigidez axial e capacidade de absorção de impacto localizado.
 
-**Figura 8.** Punção estática (CBR) em fibras, **(a)** *Typha domingensis* (taboa) e **(b)** *Syagrus coronata* (ouricuri).
+**Figura 9.** Punção estática (CBR) em fibras, **(a)** *Typha domingensis* (taboa) e **(b)** *Syagrus coronata* (ouricuri).
 
-![Figura 8a](../3-IMAGENS/puncao_taboa.png){width=85%}
+![Figura 9a](../3-IMAGENS/puncao_taboa.png){width=85%}
 
-![Figura 8b](../3-IMAGENS/puncao_ouricuri.png){width=85%}
+![Figura 9b](../3-IMAGENS/puncao_ouricuri.png){width=85%}
 
-Os resultados de punção apresentados na Figura 8 indicam que fibras de *Typha domingensis* tratadas com NaOH a 6% exibiram resposta mecânica consistente com a janela de serviço de 90–150 dias, mantendo capacidade de suportar cargas concentradas ao longo do período crítico para estabelecimento vegetativo [@Kumar2016]. Para *Syagrus coronata*, a maior razão L/C (0,67) conferiu resistência inicial superior e degradação mais lenta, coerente com a recalcitrância intrínseca observada nos ensaios de tração e nas análises de biodegradação [@Angst2017].
+Os resultados de punção apresentados na Figura 9 evidenciam a resposta não linear característica de solicitação concentrada, na qual a carga aumenta com a progressão do contato e da deformação até um regime de perfuração/ruptura localizada, seguido por queda de capacidade pós-pico. Sob essa ótica, diferenças na rigidez aparente inicial (inclinação do trecho inicial) e na extensão do amolecimento pós-pico são interpretadas como indicadores do grau de compactação do feixe fibroso, da capacidade de rearranjo sob compressão e do balanço entre rigidez e dissipação de energia — atributos que tendem a refletir a arquitetura lignocelulósica e o estado superficial das fibras.
 
-A interpretação dos dados de punção deve considerar a natureza destrutiva da amostragem e a heterogeneidade das matrizes lignocelulósicas [@Methacanon2010]. No conjunto analisado, a punção foi empregada como indicador complementar de integridade, sendo interpretada sobretudo em termos de tendência temporal e de comparação intratratamento. A preservação relativa de desempenho em tratamentos alcalinos moderados no intervalo intermediário de exposição permanece consistente com a lógica de proteção máxima entre 30–90 dias, período vital para ancoragem radicular [@Mickovski2009], ao passo que a manutenção de ductilidade ($\epsilon \approx 2,3–2,9\%$) em condições moderadas é essencial para absorver solicitações dinâmicas em taludes, evitando a fragilização associada a alcalinidade elevada [@Vivek2019].
+Importante, no presente conjunto, a punção foi realizada como caracterização mecânica inicial em fibras não submetidas ao protocolo de exposição temporal para degradação em campo. Assim, a Figura 9 deve ser lida como uma linha de base para comparação entre espécies/condições, e não como evidência direta de retenção de desempenho ao longo do tempo de exposição. A inferência de cinética de perda de capacidade em punção requer a repetição do ensaio em amostras removidas nos mesmos tempos de exposição adotados para tração/MEV.
+
+A interpretação dos resultados deve ainda considerar a natureza destrutiva da amostragem e a heterogeneidade das matrizes lignocelulósicas, que podem ampliar a dispersão entre repetições mesmo sob controle de protocolo [@Methacanon2010].
 
 Esse comportamento pode ser atribuído a danos interfaciais microscópicos. Microscopia eletrônica (15 keV) demonstrou delaminação interfacial entre resina e matriz lignocelulósica [@Petinakis2014]; além disso, ciclos higrotérmicos (18–35°C, 45–85% UR) induzem *swelling-shrinkage* repetitivo, descolando a resina e criando microambientes hidrofílicos propensos à colonização fúngica e à perda de aderência [@Tian2018_hygrothermal; @Fonseca-Garcia2019].
 
@@ -281,14 +286,13 @@ O tratamento com NaOH a 6% desloca essa fronteira para VUF ($P_{10}$) de 95 dias
 
 Essas diferenças cinéticas permitem alinhar a escolha de tratamento à janela de serviço e ao orçamento do projeto [@Vivek2020]. Para obras que demandam suporte estrutural entre 90 e 150 dias, típicas de culturas anuais e de controle de erosão restrito à estação chuvosa, o tratamento com 6% NaOH oferece combinação favorável de VUF (95 dias em $P_{10}$) e custo direto reduzido, sem custos adicionais de remoção ou descarte [@Tan2022]. Em cenários perenes, como restauração de margens ribeirinhas ou estabilização de taludes de rodovias, a resina em monocamada, apesar do custo unitário mais elevado, torna-se competitiva, pois a elevação da vida característica para ~128 dias (com VUF, $P_{10}$, na ordem de 92 dias; Tabela 3) e o aumento de confiabilidade tendem a compensar o investimento inicial [@Tanas2022].
 
-
 ## 4. Enquadramento Conceitual de Confiabilidade e Desempenho Ambiental
 
 A variabilidade intrínseca dos geotêxteis naturais favorece a modelagem estocástica da perda de desempenho. Nesse contexto, a distribuição de Weibull ($R(t) = e^{-(t/\eta)^\beta}$) representa a heterogeneidade estrutural, em que $\beta > 1$ (1,8–4,2) é associado a falha por desgaste progressivo (fadiga/hidrólise), em contraste com falha aleatória ($\beta \approx 1$).
 
 Além disso, a engenharia de superfície tende a elevar $\beta$ (reduzindo a variabilidade) e $\eta$, estendendo a vida útil [@Luqman2023]. Definida aqui como o tempo para 10% de falha ($P_{10}$), a Vida Útil Funcional (VUF) pode aumentar de 42 dias (*Typha* natural) para cerca de 95 dias (6% NaOH) e para a ordem de 92 dias em condição resinada em monocamada, enquanto $\eta$ pode alcançar ~128 dias (Tabela 3), cobrindo a janela crítica de ~90 dias para ancoragem vegetal.
 
-Como mostrado anteriormente na Figura 6, as imagens de MEV documentam a progressão temporal da degradação superficial em ambas as espécies. Em *Typha domingensis*, a porosidade superficial variou de 32,75% (ST 30d) a 73,09% (DC 30d), com comportamento não-monotônico: aumento de 32,75% → 67,27% em solo tropical (ST 30d → ST 180d), mas redução de 73,09% → 68,49% sob degradação controlada (DC 30d → DC 180d). A rugosidade superficial apresentou padrão inverso: máxima aos 30 dias (941,64 µm em ST; 581,04 µm em DC) reduzindo aos 180 dias (724,26 µm em ST; 528,27 µm em DC).
+Como mostrado anteriormente na Figura 7, as imagens de MEV documentam a progressão temporal da degradação superficial em ambas as espécies. Em *Typha domingensis*, a porosidade superficial variou de 32,75% (ST 30d) a 73,09% (DC 30d), com comportamento não-monotônico: aumento de 32,75% → 67,27% em solo tropical (ST 30d → ST 180d), mas redução de 73,09% → 68,49% sob degradação controlada (DC 30d → DC 180d). A rugosidade superficial apresentou padrão inverso: máxima aos 30 dias (941,64 µm em ST; 581,04 µm em DC) reduzindo aos 180 dias (724,26 µm em ST; 528,27 µm em DC).
 
 Esse padrão (rugosidade inicial elevada seguida de redução) é consistente com uma etapa inicial dominada por dano superficial e erosão/remoção de material mais acessível, seguida por reorganização topográfica associada ao avanço da degradação e à deposição/remoção de produtos na superfície [@Peng2020].
 
@@ -330,14 +334,14 @@ Nesse enquadramento, a VUF deixa de ser um atributo fixo e passa a ser tratada c
 
 **Tabela 3.** Síntese do elo L/C → $k$ → parâmetros de Weibull (β, η, $P_{10}$) → VUF em diferentes espécies e condições de tratamento.
 
-| **Espécie/Tratamento** | **β (forma)** | **η (escala, dias)** | **P₁₀ (dias)** | **k (taxa/dia⁻¹)** | **Mecanismo de Falha** |
-| --- | :---: | :---: | :---: | :---: | --- |
-| Typha não tratada (controle) | 2,3 | 68 | 42 | 0,0118 | Hidrólise enzimática + UV |
-| Typha + NaOH 6% | 2,8 | 142 | 95 | 0,0073 | Degradação retardada por deslignificação |
-| Typha + NaOH 9% | 3,1 | 155 | 108 | 0,0062 | Degradação reduzida, início de fragilidade |
-| Syagrus não tratada (controle) | 2,1 | 95 | 55 | 0,0095 | Hidrólise lenta (alta lignina) |
-| Syagrus + resina monocamada | 3,2 | 128 | 92 | 0,0061 | Proteção interfacial eficaz |
-| Compósito Typha-Ramie UV | 3,8 | 140 | 105 | 0,0052 | Envelhecimento por fotodegradação |
+| **Espécie/Tratamento**   | **β (forma)** | **η (escala, dias)** | **P₁₀ (dias)** | **k (taxa/dia⁻¹)** | **Mecanismo de Falha**                  |
+| ------------------------------- | :------------------: | :-------------------------: | :--------------------: | :------------------------: | --------------------------------------------- |
+| Typha não tratada (controle)   |         2,3         |             68             |           42           |           0,0118           | Hidrólise enzimática + UV                   |
+| Typha + NaOH 6%                 |         2,8         |             142             |           95           |           0,0073           | Degradação retardada por deslignificação  |
+| Typha + NaOH 9%                 |         3,1         |             155             |          108          |           0,0062           | Degradação reduzida, início de fragilidade |
+| Syagrus não tratada (controle) |         2,1         |             95             |           55           |           0,0095           | Hidrólise lenta (alta lignina)               |
+| Syagrus + resina monocamada     |         3,2         |             128             |           92           |           0,0061           | Proteção interfacial eficaz                 |
+| Compósito Typha-Ramie UV       |         3,8         |             140             |          105          |           0,0052           | Envelhecimento por fotodegradação           |
 
 **Legenda.** Nesta tabela, β representa o parâmetro de forma da distribuição de Weibull e, quando β > 1, é compatível com desgaste progressivo, ao passo que β → 1 é compatível com falha aproximadamente aleatória, η é o parâmetro de escala associado à vida característica em 63,2% de falha, P₁₀ é o tempo até 10% de probabilidade de falha (isto é, vida útil funcional com 90% de confiabilidade) e k representa a taxa de degradação de resistência.
 
@@ -347,10 +351,10 @@ Estudos recentes têm indicado a utilidade da Weibull na quantificação de conf
 
 Como síntese operacional, a perda de resistência pode ser tratada como um decaimento temporal governado por uma taxa efetiva $k$, enquanto efeitos do regime de exposição (p.ex., umidade e radiação) podem ser incorporados como fatores de correção específicos do sítio quando dados suficientes estiverem disponíveis. Essa formulação mantém a rastreabilidade entre parâmetros estimados ($k$, $\beta$, $\eta$, $P_{10}$) e o regime de exposição, evitando fixar coeficientes universais para componentes ambientais sem calibração explícita no conjunto de dados considerado.
 
-A síntese dessa abordagem integrada é apresentada na Figura 9, que conecta a composição química inicial (razão L/C) à cinética de degradação e, finalmente, à Vida Útil Funcional (VUF) parametrizada por Weibull. O fluxograma ilustra como as intervenções de engenharia de superfície deslocam as curvas de desempenho, permitindo o ajuste da durabilidade às necessidades específicas de cada projeto.
+A síntese dessa abordagem integrada é apresentada na Figura 11, que conecta a composição química inicial (razão L/C) à cinética de degradação e, finalmente, à Vida Útil Funcional (VUF) parametrizada por Weibull. O fluxograma ilustra como as intervenções de engenharia de superfície deslocam as curvas de desempenho, permitindo o ajuste da durabilidade às necessidades específicas de cada projeto.
 
-**Figura 9.** Diagrama de fluxo integrando composição química, expressa pela razão lignina/celulose, com o desempenho temporal e a Vida Útil Funcional de geotêxteis sob diferentes cenários de tratamento de superfície.
-![Figura 9](../3-IMAGENS/fig_2.png)
+**Figura 11.** Diagrama de fluxo integrando composição química, expressa pela razão lignina/celulose, com o desempenho temporal e a Vida Útil Funcional de geotêxteis sob diferentes cenários de tratamento de superfície.
+![Figura 11](../3-IMAGENS/fig_2.png)
 
 *Nota. O fluxograma articula constantes de degradação $k$ e meias-vidas $t_{1/2}$ medidas em campo, trajetórias de resistência mecânica até o ponto de falha e Vida Útil Funcional (VUF) derivada de distribuições de Weibull no percentil de projeto P₁₀.*
 
@@ -363,9 +367,6 @@ A redefinição da Vida Útil Funcional (VUF) sob uma ótica probabilística, fu
 As estratégias de modificação superficial indicam que a otimização do desempenho mecânico e da durabilidade não é linear. Tratamentos alcalinos moderados podem promover ganhos estruturais sem comprometer a flexibilidade, enquanto revestimentos poliméricos exigem equilíbrio entre hidrofobicidade e permeabilidade para reduzir falhas por delaminação. A análise de custo-efetividade sugere que intervenções de baixo custo podem estender a vida útil, tornando os geotêxteis naturais competitivos frente aos sintéticos em aplicações temporárias.
 
 Além do reforço mecânico, os geotêxteis lignocelulósicos podem contribuir para a restauração ecológica, promovendo serviços ecossistêmicos que vão além da estabilização do solo. Com a decomposição programada das fibras, pode haver contribuição para sequestro de carbono, melhoria da estrutura do solo e aumento da biodiversidade edáfica. Por sua vez, a sincronização entre a perda de resistência do geotêxtil e o desenvolvimento do sistema radicular da vegetação tende a favorecer uma transição gradual da estabilização artificial para a coesão natural.
-
-
-
 
 ## Referências
 
