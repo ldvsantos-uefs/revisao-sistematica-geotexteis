@@ -78,24 +78,30 @@ def parse_entry_name(entry_name: str) -> SpecimenEntry | None:
     days = int(m_days.group(2)) if m_days else 0
 
     # Resin treatments appear as OURICURI0 / OURICURI2 in folder names.
+    # In older exported sets they can also appear as OURICURI01 (camada simples).
     # Ignore NaOH-like markers (_O1_) here.
     if re.search(r'_O\d_', upper):
         return None
 
-    m_r = re.search(r'OURICURI\s*[-_]?\s*(\d)', upper)
-    if not m_r:
-        return None
-
-    r = int(m_r.group(1))
-    treatment_code = f'R{r}'
-    if treatment_code == 'R0':
-        treatment_label = 'Sem resina'
-    elif treatment_code == 'R1':
+    # Explicit overrides first (avoid matching only the first digit in OURICURI01)
+    if 'OURICURI01' in upper:
+        treatment_code = 'R1'
         treatment_label = 'Resina — camada simples'
-    elif treatment_code == 'R2':
-        treatment_label = 'Resina — camada dupla'
     else:
-        return None
+        m_r = re.search(r'OURICURI\s*[-_]?\s*(\d)', upper)
+        if not m_r:
+            return None
+
+        r = int(m_r.group(1))
+        treatment_code = f'R{r}'
+        if treatment_code == 'R0':
+            treatment_label = 'Sem resina'
+        elif treatment_code == 'R1':
+            treatment_label = 'Resina — camada simples'
+        elif treatment_code == 'R2':
+            treatment_label = 'Resina — camada dupla'
+        else:
+            return None
 
     return SpecimenEntry(
         entry_name=entry_name,
@@ -121,6 +127,16 @@ def plot_resin_ouricuri_from_zip(zip_path: Path, output_path: Path) -> None:
         for e in entries:
             by_treat.setdefault(e.treatment_code, []).append(e)
 
+        # Global baseline: use time zero from double layer (R2) as "tempo zero" for all.
+        baseline_group = by_treat.get('R2', [])
+        baseline_days = sorted({e.days for e in baseline_group})
+        if baseline_days:
+            baseline_day = 0 if 0 in baseline_days else baseline_days[0]
+            baseline_entries = [e for e in baseline_group if e.days == baseline_day][:4]
+        else:
+            baseline_day = min({e.days for e in entries})
+            baseline_entries = [e for e in entries if e.days == baseline_day][:4]
+
         fig, axes = plt.subplots(2, 2, figsize=(12, 9), sharex=False, sharey=False)
         axes = axes.flatten()
 
@@ -132,10 +148,13 @@ def plot_resin_ouricuri_from_zip(zip_path: Path, output_path: Path) -> None:
                 continue
 
             days_sorted = sorted({e.days for e in group})
-            day_a = days_sorted[0]
+
+            # User request: use the same "tempo zero" for all treatments.
+            # Here we take "tempo zero" from camada dupla (R2) as baseline.
+            day_a = baseline_day
             day_b = days_sorted[-1]
 
-            a_entries = [e for e in group if e.days == day_a][:4]
+            a_entries = baseline_entries
             b_entries = [e for e in group if e.days == day_b][:4]
 
             for e in a_entries:
@@ -147,10 +166,7 @@ def plot_resin_ouricuri_from_zip(zip_path: Path, output_path: Path) -> None:
                     df = read_specimen_curve(z.read(e.entry_name))
                     ax.plot(df['Extension_mm'], df['Load_N'], color='#c0392b', alpha=0.75, linewidth=1.2)
 
-            if day_b == day_a:
-                title = f"{group[0].treatment_label} | {day_a} d (n={len(a_entries)})"
-            else:
-                title = f"{group[0].treatment_label} | {day_a} d (n={len(a_entries)}) vs {day_b} d (n={len(b_entries)})"
+            title = f"{group[0].treatment_label} | 0 d (baseline) (n={len(a_entries)}) vs {day_b} d (n={len(b_entries)})"
 
             ax.set_title(title, fontsize=10)
             ax.set_xlabel('Extensão compressiva (mm)')
@@ -161,7 +177,7 @@ def plot_resin_ouricuri_from_zip(zip_path: Path, output_path: Path) -> None:
         from matplotlib.lines import Line2D
 
         legend_lines = [
-            Line2D([0], [0], color='0.35', lw=2, label='Antes (menor tempo) - curvas individuais'),
+            Line2D([0], [0], color='0.35', lw=2, label='Antes: 0 d (baseline) - curvas individuais'),
             Line2D([0], [0], color='#c0392b', lw=2, label='Depois (maior tempo) - curvas individuais'),
         ]
         fig.legend(handles=legend_lines, loc='upper center', ncol=2, frameon=True, bbox_to_anchor=(0.5, 1.02))
@@ -175,7 +191,10 @@ def plot_resin_ouricuri_from_zip(zip_path: Path, output_path: Path) -> None:
 
 def main() -> None:
     base = Path(r"c:\Users\vidal\OneDrive\Documentos\13 - CLONEGIT\artigo-posdoc\2-ARTIGO_REVISAO")
-    zip_path = base / r"5-DADOS\NAOH\Punção-20251226T152058Z-3-001.zip"
+    # Prefer the external published-article dataset (contains OURICURI01 = camada simples)
+    zip_path = Path(
+        r"C:\Users\vidal\OneDrive\Documentos\1 - ACADEMICO\20 - ARTIGOS\2 - ARTIGOS PUBLICADOS\ARTIGO NAOH TABOA (PUBLICADO)\2 - DADOS\Punção-BRUTOS.zip"
+    )
     out_path = base / r"3-IMAGENS\puncao_ouricuri_resina_curvas.png"
 
     plot_resin_ouricuri_from_zip(zip_path, out_path)
