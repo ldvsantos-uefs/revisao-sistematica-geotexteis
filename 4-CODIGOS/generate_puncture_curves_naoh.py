@@ -1,0 +1,203 @@
+from __future__ import annotations
+
+import re
+import zipfile
+from dataclasses import dataclass
+from io import BytesIO
+from pathlib import Path
+
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+
+
+@dataclass(frozen=True)
+class SpecimenEntry:
+    entry_name: str
+    species: str
+    treatment_code: str
+    treatment_label: str
+    days: int
+
+
+def _to_float_pt(value: str) -> float:
+    v = value.strip().strip('"')
+    if not v:
+        return float('nan')
+    v = v.replace('.', '').replace(',', '.') if v.count(',') == 1 and v.count('.') >= 1 else v.replace(',', '.')
+    try:
+        return float(v)
+    except Exception:
+        return float('nan')
+
+
+def read_specimen_curve(raw_bytes: bytes) -> pd.DataFrame:
+    """Parse a Zwick/Instron-like CSV exported in pt-BR format.
+
+    Expected structure:
+    - Header lines with key;"value";unit
+    - A line: Tempo;Extensão compressiva;Carga compressiva
+    - A units line: (sec);(mm);(N)
+    - Data lines with quoted decimal-comma numbers, separated by ';'
+    """
+
+    text = raw_bytes.decode('ISO-8859-1', errors='replace')
+    lines = [ln.strip() for ln in text.splitlines()]
+
+    start_idx = None
+    for i, ln in enumerate(lines):
+        if ln.startswith('Tempo;') and 'Carga' in ln:
+            start_idx = i + 2  # skip header + units line
+            break
+
+    if start_idx is None:
+        raise ValueError('Could not find data header (Tempo;...)')
+
+    data_lines = [ln for ln in lines[start_idx:] if ln]
+    if not data_lines:
+        raise ValueError('No data lines found')
+
+    rows: list[tuple[float, float, float]] = []
+    for ln in data_lines:
+        parts = [p.strip() for p in ln.split(';') if p.strip() != '']
+        if len(parts) < 3:
+            continue
+        t = _to_float_pt(parts[0])
+        ext = _to_float_pt(parts[1])
+        load = _to_float_pt(parts[2])
+        rows.append((t, ext, load))
+
+    df = pd.DataFrame(rows, columns=['Time_s', 'Extension_mm', 'Load_N'])
+    df = df.replace([np.inf, -np.inf], np.nan).dropna(subset=['Extension_mm', 'Load_N'])
+    return df
+
+
+def parse_entry_name(entry_name: str) -> SpecimenEntry | None:
+    if not re.search(r'Specimen_DadosEmBruto_\d+\.csv$', entry_name, flags=re.IGNORECASE):
+        return None
+
+    upper = entry_name.upper()
+
+    if 'TABOA' in upper:
+        species = 'Typha domingensis'
+    elif 'OURICURI' in upper:
+        species = 'Syagrus coronata'
+    else:
+        return None
+
+    m_days = re.search(r'(_|\s)(\d+)\s*DIAS', upper)
+    if not m_days:
+        return None
+    days = int(m_days.group(2))
+
+    m_t = re.search(r'_T(\d)_', upper)
+    if m_t:
+        t = int(m_t.group(1))
+        treatment_code = f'T{t}'
+        # Heuristic mapping for NaOH (Taboa dataset uses 0/3/6/9)
+        if treatment_code == 'T0':
+            treatment_label = '0% NaOH'
+        elif treatment_code == 'T1':
+            treatment_label = '3% NaOH'
+        elif treatment_code == 'T2':
+            treatment_label = '6% NaOH'
+        elif treatment_code == 'T3':
+            treatment_label = '9% NaOH'
+        else:
+            treatment_label = treatment_code
+    else:
+        # For ouricuri, some entries use O1/O2 etc
+        m_o = re.search(r'_O(\d)_', upper)
+        if not m_o:
+            return None
+        treatment_code = f'O{m_o.group(1)}'
+        treatment_label = treatment_code
+
+    return SpecimenEntry(
+        entry_name=entry_name,
+        species=species,
+        treatment_code=treatment_code,
+        treatment_label=treatment_label,
+        days=days,
+    )
+
+
+def plot_naoh_taboa_from_zip(zip_path: Path, output_path: Path) -> None:
+    with zipfile.ZipFile(zip_path, 'r') as z:
+        entries: list[SpecimenEntry] = []
+        for name in z.namelist():
+            parsed = parse_entry_name(name)
+            if parsed and parsed.species == 'Typha domingensis' and parsed.treatment_code in {'T0', 'T1', 'T2', 'T3'}:
+                entries.append(parsed)
+
+        if not entries:
+            raise RuntimeError('No Taboa NaOH specimen curves found in zip')
+
+        # Determine min/max days per treatment
+        by_treat: dict[str, list[SpecimenEntry]] = {}
+        for e in entries:
+            by_treat.setdefault(e.treatment_code, []).append(e)
+
+        fig, axes = plt.subplots(2, 2, figsize=(12, 9), sharex=False, sharey=False)
+        axes = axes.flatten()
+
+        treat_order = ['T0', 'T1', 'T2', 'T3']
+        for ax, treat in zip(axes, treat_order):
+            group = by_treat.get(treat, [])
+            if not group:
+                ax.set_axis_off()
+                continue
+
+            days_sorted = sorted({e.days for e in group})
+            day_a = days_sorted[0]
+            day_b = days_sorted[-1]
+
+            a_entries = [e for e in group if e.days == day_a][:4]
+            b_entries = [e for e in group if e.days == day_b][:4]
+
+            # plot A (earliest)
+            for e in a_entries:
+                raw = z.read(e.entry_name)
+                df = read_specimen_curve(raw)
+                ax.plot(df['Extension_mm'], df['Load_N'], color='0.35', alpha=0.75, linewidth=1.2)
+
+            # plot B (latest)
+            for e in b_entries:
+                raw = z.read(e.entry_name)
+                df = read_specimen_curve(raw)
+                ax.plot(df['Extension_mm'], df['Load_N'], color='#c0392b', alpha=0.75, linewidth=1.2)
+
+            title = f"{group[0].treatment_label} | {day_a} d (n={len(a_entries)}) vs {day_b} d (n={len(b_entries)})"
+            ax.set_title(title, fontsize=10)
+            ax.set_xlabel('Extensão compressiva (mm)')
+            ax.set_ylabel('Carga compressiva (N)')
+            ax.grid(True, which='major', linewidth=0.5, alpha=0.4)
+            ax.minorticks_on()
+
+        # Single legend proxy
+        from matplotlib.lines import Line2D
+
+        legend_lines = [
+            Line2D([0], [0], color='0.35', lw=2, label='Antes (menor tempo) - curvas individuais'),
+            Line2D([0], [0], color='#c0392b', lw=2, label='Depois (maior tempo) - curvas individuais'),
+        ]
+        fig.legend(handles=legend_lines, loc='upper center', ncol=2, frameon=True, bbox_to_anchor=(0.5, 1.02))
+
+        fig.suptitle('Punção (CBR) — Taboa (Typha domingensis) — NaOH', y=1.05, fontsize=13, fontweight='bold')
+        plt.tight_layout(rect=[0, 0, 1, 0.98])
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        fig.savefig(output_path, dpi=300, bbox_inches='tight')
+        plt.close(fig)
+
+
+def main() -> None:
+    base = Path(r"c:\Users\vidal\OneDrive\Documentos\13 - CLONEGIT\artigo-posdoc\2-ARTIGO_REVISAO")
+    zip_path = base / r"5-DADOS\NAOH\Punção-20251226T152058Z-3-001.zip"
+    out_path = base / r"3-IMAGENS\puncao_taboa_naoh_curvas.png"
+
+    plot_naoh_taboa_from_zip(zip_path, out_path)
+    print(f"Saved: {out_path}")
+
+
+if __name__ == '__main__':
+    main()
