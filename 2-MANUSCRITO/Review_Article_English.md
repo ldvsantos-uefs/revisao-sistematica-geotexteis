@@ -1,7 +1,7 @@
 ---
 title: "Durability Engineering in Natural Geotextiles for Tropical Soils"
 author: "Luiz Diego Vidal Santos"
-csl: springer-vancouver.csl
+csl: apa.csl
 bibliography: referencias.bib
 fig-align: center
 lang: en-us
@@ -155,28 +155,21 @@ However, the recalcitrance contrast summarized in Table 1 does not guarantee lin
 
 This biphasic behavior, characterized by an initial phase of apparent stiffness maintenance followed by sudden failure [@Phan2025], suggests that the percolation geometry of the lignin phase, and not only its global mass fraction, can influence biodegradation progression under shear and tensile stresses typical of vegetated slopes [@Zhang2024yao].
 
-The relationship between chemical composition and temporal performance, schematized in Figure 4, describes a continuous trajectory starting from L/C ratio, passing through degradation kinetics and reaching the evolution of mechanical resistance over time. The diagram integrates degradation constants $k$ and half-lives $t_{1/2}$, strength-loss curves to failure, and FSL estimates by the 10th percentile of Weibull failure models (P₁₀, with parameters β and η) [@Fakoor2023], as well as surface modification strategies by alkaline mercerization [@Ray2002] and polymeric coatings [@Lerpiniere2014] that shift this temporal curve.
-
-**Figure 4.** Flow diagram integrating chemical composition, expressed by lignin/cellulose ratio, with temporal performance and Functional Service Life of geotextiles under different surface-treatment scenarios.
-![Figure 4](../3-IMAGENS/fig_2.png)
-
-*Note. The flowchart articulates degradation constants $k$ and half-lives $t_{1/2}$ measured in the field, mechanical resistance trajectories up to failure, and Functional Service Life (FSL) derived from Weibull distributions at the design percentile P₁₀.*
-
 Fourier Transform Infrared Spectroscopy (FTIR) links spectral signatures to the relative composition and chemical organization of the cell wall, offering mechanistic support for differences in recalcitrance and accessibility to water and degrading agents.
 
-**Figure 5.** FTIR spectra comparison between *Typha domingensis* and *Syagrus coronata*.
-![Figure 5](../3-IMAGENS/figura_ftir_comparativa.png){width=100%}
+**Figure 4.** FTIR spectra comparison between *Typha domingensis* and *Syagrus coronata*.
+![Figure 4](../3-IMAGENS/figura_ftir_comparativa.png){width=100%}
 
 *Note. The most relevant spectral differences are coherent with higher relative contribution of more hydrophilic fractions in *Typha* and with higher aromatic contribution associated with lignin in *Syagrus*.*
 
 This composition tends to be reflected in degradation kinetics. According to @Santos2023_PatenteTaboa, *Typha* loses 50% of initial strength in approximately 60 days under field conditions; in the experimental set analyzed here, *Syagrus* maintained functional integrity for periods exceeding 120 days, coherent with a slower degradation trajectory. In this set of results, the L/C ratio appears as a useful marker to describe recalcitrance contrasts and the pace of capacity loss, with *Typha* associated with faster degradation and *Syagrus* with slower degradation.
 
-Although FTIR describes functional groups, crystalline arrangement assessed by X-ray diffraction (Figure 6) contributes to physical integrity. @Segal1959 proposed a method indicating crystallinity indices of 52% for *Typha* versus 46% for *Syagrus*. According to @Boerjan2003, this contrast suggests that higher lignin content in *Syagrus* can compensate reduced crystallinity by filling the amorphous fraction and increasing stiffness. *Typha domingensis* fibers exhibit cellulose I peaks at 2θ ≈ 14.8° (plane 1-10/110), 16.4° (110), and 22.6° (200) [@Rowell1998].
+Although FTIR describes functional groups, crystalline arrangement assessed by X-ray diffraction (Figure 5) contributes to physical integrity. @Segal1959 proposed a method indicating crystallinity indices of 52% for *Typha* versus 46% for *Syagrus*. According to @Boerjan2003, this contrast suggests that higher lignin content in *Syagrus* can compensate reduced crystallinity by filling the amorphous fraction and increasing stiffness. *Typha domingensis* fibers exhibit cellulose I peaks at 2θ ≈ 14.8° (plane 1-10/110), 16.4° (110), and 22.6° (200) [@Rowell1998].
 
 In mechanical characterization, @Fontes2021 reported similar initial tensile strength between species, with 3.14 N·mm⁻² for *Syagrus* and 3.57 N·mm⁻² for untreated *Typha*. Taken together, compositional and structural variations observed by FTIR/XRD/TGA are consistent with differences in microfibrillar integrity and initial mechanical performance.
 
-**Figure 6.** X-ray diffractogram (XRD) of *Typha domingensis* and *Syagrus coronata* fibers
-![Figure 6](../3-IMAGENS/fig_drx_final.png){width=70%}
+**Figure 5.** X-ray diffractogram (XRD) of *Typha domingensis* and *Syagrus coronata* fibers
+![Figure 5](../3-IMAGENS/fig_drx_final.png){width=70%}
 
 The higher thermal stability of *Syagrus*, associated with lignin content, may be reflected in larger residual fraction. Thermogravimetric analyses under oxidative atmosphere (air, 10 °C·min⁻¹) indicate that *Syagrus* retains ~28% residual mass at 600 °C, versus ~21% for *Typha* [@Marchi2023].
 
@@ -233,9 +226,9 @@ As observed by @Bartos2020, results converge to an optimal concentration window 
 
 This balance involves partial lignin removal, which can reduce microbial colonization sites, and preservation of cellulose chains with high degree of polymerization, whose degradation would compromise global strength [@Xu2013]. In the field dataset analyzed over 180 days, untreated fibers maintained functionality for about 60 days, while 6% NaOH extended structural viability to 142 days (FSL of 95 days at the Weibull $P_{10}$ threshold). Under 9% NaOH, structural integrity was preserved with censoring throughout the 180-day period.
 
-An ordinary least squares model, summarized by Type-II ANOVA, indicates that exposure time dominates UTS variability, with additional treatment effects and interactions, suggesting that surface engineering should be treated as a trajectory-control variable rather than only as an instantaneous strength gain (Figure 8).
+An ordinary least squares model, summarized by Type-II ANOVA, indicates that exposure time dominates UTS variability, with additional treatment effects and interactions, suggesting that surface engineering should be treated as a trajectory-control variable rather than only as an instantaneous strength gain (Figure 7).
 
-**Figure 7.** Comparative SEM micrographs of *Typha domingensis* and *Syagrus coronata* fibers under different treatments and exposure times.
+**Figure 6.** Comparative SEM micrographs of *Typha domingensis* and *Syagrus coronata* fibers under different treatments and exposure times.
 
 ![ ](../3-IMAGENS/figura_mev_originais.png){width=100%}
 
@@ -251,25 +244,25 @@ In this context, quantitative morphometry suggests that the observed balance res
 
 Concomitantly, mercerization reorganizes the pore network by fusing small pores into cavities with larger mean area (+73.6%), increasing circularity (+5.9%), and reducing dimensional heterogeneity [@Jiao2014], such that total porosity increases moderately (+7.6%) despite a decrease in pore number (−42.1%), which improves capillary transport efficiency rather than simply sealing channels [@Koistinen2024].
 
-While mercerization optimizes internal structure, external protection depends on barrier strategies. To quantify the temporal trend observed in Figure 8, simple linear regression was fitted between exposure time (days) and mean UTS (N/mm²), by species and treatment condition (means by exposure time). In *Typha domingensis*, monolayer resin exhibited a steep linear decline between 30–120 days: for each additional day of exposure, mean UTS decreased by 0.084 N/mm² (β = −0.084 N/mm²·day⁻¹, 95% CI [−0.120, −0.049], p = 0.009, f² = 53.45, R² = 0.982). The untreated control showed a weak trend (β = −0.034 N/mm²·day⁻¹, 95% CI [−0.161, 0.094], p = 0.377, f² = 0.64, R² = 0.389), whereas the double-layer showed a moderate decline in the available interval (β = −0.046 N/mm²·day⁻¹, 95% CI [−0.116, 0.025], p = 0.110, f² = 3.83, R² = 0.793).
+While mercerization optimizes internal structure, external protection depends on barrier strategies. To quantify the temporal trend observed in Figure 7, simple linear regression was fitted between exposure time (days) and mean UTS (N/mm²), by species and treatment condition (means by exposure time). In *Typha domingensis*, monolayer resin exhibited a steep linear decline between 30–120 days: for each additional day of exposure, mean UTS decreased by 0.084 N/mm² (β = −0.084 N/mm²·day⁻¹, 95% CI [−0.120, −0.049], p = 0.009, f² = 53.45, R² = 0.982). The untreated control showed a weak trend (β = −0.034 N/mm²·day⁻¹, 95% CI [−0.161, 0.094], p = 0.377, f² = 0.64, R² = 0.389), whereas the double-layer showed a moderate decline in the available interval (β = −0.046 N/mm²·day⁻¹, 95% CI [−0.116, 0.025], p = 0.110, f² = 3.83, R² = 0.793).
 
-In *Syagrus coronata*, regressions also presented negative coefficients under resin conditions, but without statistically significant evidence when fitting by time points: control (β = −0.214 N/mm²·day⁻¹, 95% CI [−1.750, 1.323], p = 0.328, f² = 3.12, R² = 0.757), monolayer (β = −0.162 N/mm²·day⁻¹, 95% CI [−0.406, 0.083], p = 0.126, f² = 1.48, R² = 0.596) and double-layer (β = −0.221 N/mm²·day⁻¹, 95% CI [−0.667, 0.224], p = 0.166, f² = 2.28, R² = 0.695). This pattern is compatible with a less linear trajectory (initial drop and stabilization at low levels), in addition to gaps at late times, which reduces inferential power when fitting by time points; overall, it reinforces that exposure time governs UTS loss, whereas species and treatment modulate curve shape (Figure 8).
+In *Syagrus coronata*, regressions also presented negative coefficients under resin conditions, but without statistically significant evidence when fitting by time points: control (β = −0.214 N/mm²·day⁻¹, 95% CI [−1.750, 1.323], p = 0.328, f² = 3.12, R² = 0.757), monolayer (β = −0.162 N/mm²·day⁻¹, 95% CI [−0.406, 0.083], p = 0.126, f² = 1.48, R² = 0.596) and double-layer (β = −0.221 N/mm²·day⁻¹, 95% CI [−0.667, 0.224], p = 0.166, f² = 2.28, R² = 0.695). This pattern is compatible with a less linear trajectory (initial drop and stabilization at low levels), in addition to gaps at late times, which reduces inferential power when fitting by time points; overall, it reinforces that exposure time governs UTS loss, whereas species and treatment modulate curve shape (Figure 7).
 
 
-**Figure 8.** Tensile strength (UTS, N/mm) under different treatment conditions, **(a)** resin coating (Untreated/Monolayer/Double-layer) for *Typha domingensis* and *Syagrus coronata*; **(b)** alkaline mercerization with NaOH (0%, 3%, 6%, 9%) for *Typha domingensis* and *Syagrus coronata*.
+**Figure 7.** Tensile strength (UTS, N/mm) under different treatment conditions, **(a)** resin coating (Untreated/Monolayer/Double-layer) for *Typha domingensis* and *Syagrus coronata*; **(b)** alkaline mercerization with NaOH (0%, 3%, 6%, 9%) for *Typha domingensis* and *Syagrus coronata*.
 
 ![ ](../5-DADOS/MEV-ANALISE/resultados_en/fig_tensile_resin_english.png){width=80%}
 ![ ](../5-DADOS/MEV-ANALISE/resultados_en/fig_tensile_naoh_english.png){width=80%}
 
 Puncture resistance (CBR) complements mechanical characterization by measuring the load distribution capacity under concentrated solicitation, a critical parameter for geotextiles deployed on irregular substrates [@Cholewa2019]. Tests were conducted on fibers under the same alkaline mercerization and polymeric coating treatments, allowing evaluation of the synergy between axial stiffness and local impact absorption.
 
-**Figure 9.** Static puncture (CBR) in fibers, **(a)** *Typha domingensis* (taboa) and **(b)** *Syagrus coronata* (ouricuri).
+**Figure 8.** Static puncture (CBR) in fibers, **(a)** *Typha domingensis* (taboa) and **(b)** *Syagrus coronata* (ouricuri).
 
-![Figure 9a](../3-IMAGENS/puncao_taboa.png){width=85%}
+![Figure 8a](../3-IMAGENS/puncao_taboa.png){width=85%}
 
-![Figure 9b](../3-IMAGENS/puncao_ouricuri.png){width=85%}
+![Figure 8b](../3-IMAGENS/puncao_ouricuri.png){width=85%}
 
-Results presented in Figure 9 indicate that *Typha domingensis* fibers treated with 6% NaOH exhibited a mechanical response consistent with the service window of 90–150 days, maintaining the ability to support concentrated loads throughout the critical period for vegetative establishment [@Kumar2016]. For *Syagrus coronata*, the higher L/C ratio (0.67) conferred higher initial strength and slower degradation, consistent with intrinsic recalcitrance observed in tensile tests and biodegradation analyses [@Angst2017].
+Results presented in Figure 8 indicate that *Typha domingensis* fibers treated with 6% NaOH exhibited a mechanical response consistent with the service window of 90–150 days, maintaining the ability to support concentrated loads throughout the critical period for vegetative establishment [@Kumar2016]. For *Syagrus coronata*, the higher L/C ratio (0.67) conferred higher initial strength and slower degradation, consistent with intrinsic recalcitrance observed in tensile tests and biodegradation analyses [@Angst2017].
 
 Interpretation of puncture data should consider the destructive nature of sampling and the heterogeneity of lignocellulosic matrices [@Methacanon2010]. In the analyzed set, puncture was employed as a complementary indicator of integrity and interpreted mainly in terms of temporal trend and intra-treatment comparison. Relative preservation of performance under moderate alkaline treatments in the intermediate exposure interval remains consistent with the logic of maximum protection between 30 and 90 days, a vital period for root anchorage [@Mickovski2009], while maintaining ductility ($\epsilon \approx 2.3–2.9\%$) under moderate conditions is essential to absorb dynamic solicitations in slopes, avoiding embrittlement associated with elevated alkalinity [@Vivek2019].
 
@@ -296,7 +289,7 @@ The intrinsic variability of natural geotextiles favors stochastic modeling of p
 
 In addition, surface engineering tends to increase $\beta$ (reducing variability) and $\eta$, extending service life [@Luqman2023]. Defined here as time to 10% failure ($P_{10}$), Functional Service Life can increase from 42 days (untreated *Typha*) to about 95 days (6% NaOH) and to on the order of 92 days for monolayer resin condition, while $\eta$ can reach ~128 days (Table 3), covering the critical ~90-day window for vegetative anchorage.
 
-As shown previously in Figure 7, SEM images document the temporal progression of surface degradation in both species. In *Typha domingensis*, surface porosity ranged from 32.75% (ST 30d) to 73.09% (DC 30d), with non-monotonic behavior: an increase from 32.75% to 67.27% under tropical soil exposure (ST 30d → ST 180d), but a reduction from 73.09% to 68.49% under controlled degradation (DC 30d → DC 180d). Surface roughness showed an inverse pattern, peaking at 30 days (941.64 µm in ST; 581.04 µm in DC) and decreasing at 180 days (724.26 µm in ST; 528.27 µm in DC).
+As shown previously in Figure 6, SEM images document the temporal progression of surface degradation in both species. In *Typha domingensis*, surface porosity ranged from 32.75% (ST 30d) to 73.09% (DC 30d), with non-monotonic behavior: an increase from 32.75% to 67.27% under tropical soil exposure (ST 30d → ST 180d), but a reduction from 73.09% to 68.49% under controlled degradation (DC 30d → DC 180d). Surface roughness showed an inverse pattern, peaking at 30 days (941.64 µm in ST; 581.04 µm in DC) and decreasing at 180 days (724.26 µm in ST; 528.27 µm in DC).
 
 This pattern (high initial roughness followed by reduction) is consistent with an initial stage dominated by surface damage and erosion/removal of more accessible material, followed by topographic reorganization associated with degradation advance and deposition/removal of products on the surface [@Peng2020].
 
@@ -354,6 +347,13 @@ In this sense, integrating Weibull reliability metrics (FSL) with linear models 
 Recent studies have indicated the utility of Weibull in quantifying mechanical reliability [@Wang2022] and probabilistic modeling in predicting degradation and failure in composites [@Bogdanov2023], offering a quantitative and reproducible framework for certification and quality control of lignocellulosic materials [@Kumar2024].
 
 As an operational synthesis, strength loss can be treated as a time-dependent decay governed by an effective rate $k$, while exposure regime effects (e.g., moisture and radiation) can be incorporated as site-specific correction factors when sufficient data are available. This formulation maintains traceability between estimated parameters ($k$, β, η, $P_{10}$) and exposure regime, avoiding fixed universal coefficients for environmental components without explicit calibration in the analyzed dataset.
+
+The synthesis of this integrated approach is presented in Figure 9, which connects the initial chemical composition (L/C ratio) to degradation kinetics and, finally, to the Functional Service Life (FSL) parameterized by Weibull. The flowchart illustrates how surface engineering interventions shift performance curves, allowing durability to be adjusted to the specific needs of each project.
+
+**Figure 9.** Flow diagram integrating chemical composition, expressed by lignin/cellulose ratio, with temporal performance and Functional Service Life of geotextiles under different surface-treatment scenarios.
+![Figure 9](../3-IMAGENS/fig_2.png)
+
+*Note. The flowchart articulates degradation constants $k$ and half-lives $t_{1/2}$ measured in the field, mechanical resistance trajectories up to failure, and Functional Service Life (FSL) derived from Weibull distributions at the design percentile P₁₀.*
 
 ## 5. Conclusions
 
